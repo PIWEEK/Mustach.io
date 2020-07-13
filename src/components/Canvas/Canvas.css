@@ -1,0 +1,10 @@
+.container-canvas {
+  background-color: #fff;
+  padding: 20px 20px 20px 6px;
+  width: 100%;
+  display: flex;
+}
+
+.canvas {
+  width: calc(100vh - 40px);
+}
