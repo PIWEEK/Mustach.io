@@ -1,0 +1,20 @@
+.App-header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 32px;
+  width: 90px;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'PT Serif', serif;
+  font-size: 39px;
+  margin: 0;
+  padding: 0;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+}
