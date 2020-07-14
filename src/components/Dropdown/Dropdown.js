@@ -15,7 +15,7 @@ const Dropdown = () => {
     <h2 onClick={()=>setVisible(!visible)}>{option} </h2>
     <ul className='options-list'>
       {
-        options.map(x=><li className={`option ${x===option?'selected': ''}`} onClick={()=>selectOption(x)}>{x}</li>)
+        options.map((x, index)=><li key={index} className={`option ${x===option?'selected': ''}`} onClick={()=>selectOption(x)}>{x}</li>)
       }
     </ul>
   </div>
