@@ -1,3 +1,13 @@
-.face {
+.vectors-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
   fill: none;
+  height: 180px;
+  width: 180px;
+  border-radius: 1.25rem;
+}
+.item:hover {
+  background-color: rgba(230, 234, 243, 0.4);
 }

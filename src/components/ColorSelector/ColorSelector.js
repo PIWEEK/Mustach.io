@@ -9,7 +9,6 @@ const ColorSelector = () => {
     setColorSelected(newColor);
   }
   const onChangeHandler = (e)=>{
-    console.log('////////////', e.target.value)
     setColorPickerValue(e.target.value);
     setColorSelected(e.target.value);
   }
