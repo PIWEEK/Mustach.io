@@ -1,0 +1,30 @@
+.color-selector-container {
+  display: flex;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.color-item {
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  margin-right: 1rem;
+}
+
+.separator {
+  background-color: #e6eaf3;
+  height: 34px;
+  margin-right: 1rem;
+  width: 2px;
+}
+
+.color-item.default {
+  background: url(../../assets/img/colorBG.png) center/cover no-repeat;
+}
+
+#picker {
+  position: absolute;
+  top: 70px;
+  visibility: hidden;
+}
