@@ -1,29 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ParametricMenu.css';
 import Dropdown from '../Dropdown/Dropdown';
 import ColorSelector from '../ColorSelector/ColorSelector';
 import SVGsList from '../SVGsList/SVGsList';
 
-const ParametricMenu = () => {
-  const miObj = {
-    faces: {
-      id:'face',
-      nTypes: 9
-    },
-    mouths: {
-      children: [
-        {id:'upper-lip', name: 'Upper Lip', nTypes: 9},
-        {id:'smile', name: 'Smile', nTypes: 9},
-        {id:'lower-lip', name: 'Lower Lip', nTypes: 9}
-      ]
-    }
-  }
+const ParametricMenu = ({state, dispatch}) => {
+  const [option, setOption] = useState('face');
+  const optiosMenu = Object.entries(state).map(x=>x[0])
+
+  const changeColor = (newColor) => dispatch({type: 'SET_COLOR_FACE', payload: newColor})
+  
   return ( 
     <div className="parametric-menu-container">
       <div>
-        <Dropdown />
-        <ColorSelector />
-        <SVGsList feature={miObj.faces}/>
+        <Dropdown
+          optiosMenu={optiosMenu}
+          option={option}
+          setOption={setOption} 
+        />
+        <ColorSelector colorSelected={state[option].colorSelected} changeColor={changeColor} />
+        <SVGsList feature={state[option]}/>
       </div>
     </div>
   )

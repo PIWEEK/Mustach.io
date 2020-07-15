@@ -3,6 +3,7 @@ h2 {
   font-size: 30px;
   line-height: 125%;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .dropdown-container {
