@@ -46,11 +46,12 @@ function App() {
     },
     mouth: {
       id: 'mouth',
-      children: [
-        {id:'upper-lip', name: 'Upper Lip', nTypes: 9, typeSelected: '', colorSelected: ''},
-        {id:'smile', name: 'Smile', nTypes: 9, typeSelected: '', colorSelected: ''},
-        {id:'lower-lip', name: 'Lower Lip', nTypes: 9, typeSelected: '', colorSelected: ''}
-      ],
+      colorSelected: '',
+      children: {
+        "upper": {id:'upper-lip', name: 'Upper Lip', nTypes: 28, typeSelected: ''},
+        "smile": {id:'smile', name: 'Smile', nTypes: 15, typeSelected: ''},
+        "lower": {id:'lower-lip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
+      },
     },
     neck: {
       id: 'neck',

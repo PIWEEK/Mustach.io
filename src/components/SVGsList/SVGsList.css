@@ -13,6 +13,7 @@
 
 .selected,
 .item:hover {
+  border-radius: 1.25rem;
   background-color: rgba(230, 234, 243, 0.4);
 }
 .item.empty {

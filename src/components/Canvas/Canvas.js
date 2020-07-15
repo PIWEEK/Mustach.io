@@ -14,7 +14,7 @@ const Canvas = ({state}) =>
         }
         {
           state.fringe.typeSelected && <use xlinkHref={`#${state.fringe.typeSelected}`} style={{fill:"none", stroke:`${state.fringe.colorSelected?state.fringe.colorSelected:'#000000'}`}} />
-        } 
+        }
       </svg>
     </div>
   </div>
