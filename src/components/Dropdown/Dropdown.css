@@ -1,6 +1,6 @@
 h2 {
   font-family: 'PT Serif', serif;
-  font-size: 36px;
+  font-size: 42px;
   line-height: 125%;
   margin: 0;
   text-transform: capitalize;
@@ -8,15 +8,16 @@ h2 {
 
 .dropdown-container {
   position: relative;
-  height: 40px;
+  height: 90px;
   overflow: hidden;
   transition: height .3s ease;
+  padding: 2rem;
 }
 .dropdown-container.visible {
-  height: 290px;
+  height: 370px;
 }
 .dropdown-container.visible .options-list {
-  top: 40px;
+  top: 80px;
 }
 .options-list {
   position: absolute;
@@ -32,11 +33,16 @@ h2 {
   font-family: 'PT Serif', serif;
   color: #b4bedb;
   margin: 0;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 143%;
   text-transform: capitalize;
 }
 
 .option.selected {
   color: #000000;
+  background: none;
+}
+
+.option:hover {
+  color: #899ACA;
 }
