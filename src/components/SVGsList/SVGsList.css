@@ -2,12 +2,20 @@
   display: flex;
   flex-wrap: wrap;
 }
-.item {
+
+.item svg {
+  border-radius: 1.25rem;
   fill: none;
   height: 180px;
   width: 180px;
-  border-radius: 1.25rem;
 }
+
+.selected,
 .item:hover {
   background-color: rgba(230, 234, 243, 0.4);
+}
+.item.empty {
+  border-radius: 1.25rem;
+  height: 180px;
+  width: 180px;  
 }

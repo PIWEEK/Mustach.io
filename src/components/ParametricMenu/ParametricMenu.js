@@ -8,7 +8,8 @@ const ParametricMenu = ({state, dispatch}) => {
   const [option, setOption] = useState('face');
   const optiosMenu = Object.entries(state).map(x=>x[0])
 
-  const changeColor = (newColor) => dispatch({type: 'SET_COLOR_FACE', payload: newColor})
+  const changeColor = (newColor) => dispatch({type: `SET_COLOR_${option.toUpperCase()}`, payload: newColor})
+  const changetypeSelected = (newType) => dispatch({type: `SET_TYPE_${option.toUpperCase()}`, payload: newType})
   
   return ( 
     <div className="parametric-menu-container">
@@ -19,7 +20,7 @@ const ParametricMenu = ({state, dispatch}) => {
           setOption={setOption} 
         />
         <ColorSelector colorSelected={state[option].colorSelected} changeColor={changeColor} />
-        <SVGsList feature={state[option]}/>
+        <SVGsList feature={state[option]} changetypeSelected={changetypeSelected} />
       </div>
     </div>
   )

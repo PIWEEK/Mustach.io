@@ -1,9 +1,10 @@
 import React from 'react';
+import './SVGsList.css'
 
-const SVGsList = ({feature}) => {
+const SVGsList = ({feature, changetypeSelected}) => {
 
   // const [featureMenu, setFeatureMenu] = useState('')
-  const svgIds = Array.from(Array(feature.nTypes).keys()).map(x => `${feature.id}-00${++x}`)
+  const svgIds = Array.from(Array(feature.nTypes).keys()).map(x => `${feature.id}-${++x}`)
 
   // const childrenMenu = (items) => {
   //   return (
@@ -16,11 +17,11 @@ const SVGsList = ({feature}) => {
     <div>
       {/* {feature.children && childrenMenu(feature.children)} */}
       <ul className='vectors-list'>
-        <li className="item">
+        <li className={`item empty ${feature.typeSelected===''?'selected':''}`} onClick={()=>changetypeSelected('')}>
         </li>
         {
-          svgIds.map(x=><li key={x}>
-            <svg xmlns='http://www.w3.org/2000/svg' className="item" style={{stroke: feature.colorSelected}}>
+          svgIds.map(x=><li key={x} className={`item ${x===feature.typeSelected?'selected':''}`} onClick={()=>changetypeSelected(x)}>
+            <svg xmlns='http://www.w3.org/2000/svg' style={{stroke: "#b4bedb"}}>
               <use xlinkHref={`#${x}`} />
             </svg>
           </li>)

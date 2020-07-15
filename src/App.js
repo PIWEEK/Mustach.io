@@ -10,19 +10,19 @@ function App() {
   const initialState = {
     face: {
       id: 'face',
-      nTypes: 9,
+      nTypes: 24,
       typeSelected: '',
       colorSelected: ''
     },
     hairstyle: {
       id: 'hairstyle',
-      nTypes: 9,
+      nTypes: 12,
       typeSelected: '',
       colorSelected: ''
     },
     fringe: {
       id: 'fringe',
-      nTypes: 9,
+      nTypes: 29,
       typeSelected: '',
       colorSelected: ''
     },
@@ -70,8 +70,16 @@ function App() {
     switch (action.type) {
       case 'SET_COLOR_FACE':
         return {...state, face:{...state.face,colorSelected: action.payload}}
-        case 'SET_TYPE_FACE':
-          return {...state, face:{...state.face,typeSelected:action.payload}}
+      case 'SET_TYPE_FACE':
+        return {...state, face:{...state.face,typeSelected:action.payload}}
+      case 'SET_COLOR_HAIRSTYLE':
+        return {...state, hairstyle:{...state.hairstyle,colorSelected: action.payload}}
+      case 'SET_TYPE_HAIRSTYLE':
+        return {...state, hairstyle:{...state.hairstyle,typeSelected:action.payload}}
+      case 'SET_COLOR_FRINGE':
+        return {...state, fringe:{...state.fringe,colorSelected: action.payload}}
+      case 'SET_TYPE_FRINGE':
+        return {...state, fringe:{...state.fringe,typeSelected:action.payload}}
       default:
         return state
     }
@@ -84,7 +92,7 @@ function App() {
       <AllSVGs />
       <Header />
       <div className="App-body">
-        <Canvas />
+        <Canvas state={state}/>
         <ParametricMenu state={state} dispatch={dispatch}/>
       </div>
     </div>

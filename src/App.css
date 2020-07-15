@@ -22,6 +22,7 @@ li {
 }
 .App-body {
   display: flex;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
