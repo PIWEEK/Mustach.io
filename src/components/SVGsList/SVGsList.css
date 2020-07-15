@@ -1,6 +1,7 @@
 .vectors-list {
   display: flex;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .item svg {

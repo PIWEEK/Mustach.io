@@ -16,7 +16,7 @@ const SVGsList = ({feature, changetypeSelected}) => {
   return (
     <div>
       {/* {feature.children && childrenMenu(feature.children)} */}
-      <ul className='vectors-list'>
+      <ul className='vectors-list' style={{height: "calc(100vh - 140px)"}}>
         <li className={`item empty ${feature.typeSelected===''?'selected':''}`} onClick={()=>changetypeSelected('')}>
         </li>
         {

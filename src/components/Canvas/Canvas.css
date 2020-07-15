@@ -1,7 +1,7 @@
 .container-canvas {
   background-color: #fff;
   padding: 20px 20px 20px 6px;
-  width: 100%;
+  width: auto;
   display: flex;
 }
 
