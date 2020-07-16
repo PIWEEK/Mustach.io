@@ -18,6 +18,15 @@ const Canvas = ({state}) =>
           state.hairstyle.typeSelected && <use xlinkHref={`#${state.hairstyle.typeSelected}`} style={{fill:"none", stroke:`${state.hairstyle.colorSelected?state.hairstyle.colorSelected:'#000000'}`}} />
         }
         {
+          state.wrinkles.children.head.typeSelected && <use xlinkHref={`#${state.wrinkles.children.head.typeSelected}`} style={{fill:"none", stroke:`${state.wrinkles.colorSelected?state.wrinkles.colorSelected:'#000000'}`}} />
+        }
+        {
+          state.wrinkles.children.mouth.typeSelected && <g>
+            <use xlinkHref={`#${state.wrinkles.children.mouth.typeSelected}`} style={{fill:"none", stroke:`${state.wrinkles.colorSelected?state.wrinkles.colorSelected:'#000000'}`}} />
+            <use xlinkHref={`#${state.wrinkles.children.mouth.typeSelected}`} style={{fill:"none", stroke:`${state.wrinkles.colorSelected?state.wrinkles.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />
+          </g>
+        }
+        {
           state.fringe.typeSelected && <use xlinkHref={`#${state.fringe.typeSelected}`} style={{fill:"none", stroke:`${state.fringe.colorSelected?state.fringe.colorSelected:'#000000'}`}} />
         }
         {

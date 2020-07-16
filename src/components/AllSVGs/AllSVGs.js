@@ -35,6 +35,30 @@ const AllSVGs = () =>(
       <path id="face-2" d="M129.992 97.1275L129.992 108C129.992 108 130.374 121.191 125.992 128C119.841 137.555 106.511 140 100.008 140C93.3774 140 80.1612 137.56 74.0081 128C69.6254 121.191 70.0085 108 70.0085 108L70.0083 97" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="face-1" d="M130.001 97.1279V108C130.001 108 132.045 124.463 126.001 132C119.247 140.423 106.543 140 100 140C93.3286 140 80.7561 140.427 73.9994 132C67.9561 124.462 69.9996 108 69.9996 108V97.1279" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
+      <path id="wrinklesmouth-15" d="M82.0322 119.532C82.0322 117.871 82.253 116.416 82.6762 115.146C83.3227 113.206 84.4416 111.695 85.9675 110.532" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-14" d="M82.0322 119.532C82.0322 117.871 84.253 109.416 84.6762 108.146C85.3227 106.206 86.4416 104.695 87.9675 103.532" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-13" d="M82.0322 119.532C82.0322 116.685 87 107.5 93.9675 103.532" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-12" d="M82.0322 119.531C82.0322 116.685 84.0322 100.999 95.9675 104.532" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-11" d="M82.0322 119.531C82.0322 117.721 82.8411 110.718 86.5 106.768" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-10" d="M79.9216 124.902C79.4114 123.165 78.2137 116.218 80.6109 111.397" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-9" d="M70 97C78.0769 106 78.5 117 78.5 117" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-8" d="M70 96.9997C70 96.9997 72 108 77.7143 112.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-7" d="M70 97C70 97 71.5 108 78.5 117" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-6" d="M70 96.9998C70.0003 109 72.4997 117 82.4995 117" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-5" d="M85.8481 115.814C81.7824 116.862 78.6448 116.215 76.1509 114.251" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-4" d="M85.8801 111.583C84.293 112.074 82.8385 112.292 81.5 112.263M76.1196 110.482C77.6815 111.596 79.4554 112.219 81.5 112.263M81.5 112.263L81.5 123.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-3" d="M85.88 111.582C84.293 112.073 82.8385 112.292 81.5 112.263C79.4554 112.218 77.6815 111.596 76.1196 110.482" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-2" d="M70 97C76 100.5 77.5 111.5 77.5 121" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesmouth-1" d="M80.0086 125.33C79.3604 124.64 77.1356 121.706 76.9996 119" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+      <path id="wrinklesforhead-7" d="M85.5 71C85.5 71 94.063 74 99.75 74C105.437 74 114 71 114 71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesforhead-6" d="M107 77.9965C104.596 78.5493 101.956 79.0009 99.75 79.0009C97.5436 79.0009 94.9042 78.5493 92.5 77.9965M73.5 76.0043C75.1581 75.4516 76.9783 75 78.5 75C80.0217 75 81.8419 75.4516 83.5 76.0043M126 76.0043C124.342 75.4516 122.522 75 121 75C119.478 75 117.658 75.4516 116 76.0043" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesforhead-5" d="M85.5 71C85.5 71 94.063 74 99.75 74C105.437 74 114 71 114 71M107 77.9961C104.596 78.5489 101.956 79.0004 99.75 79.0004C97.5436 79.0004 94.9042 78.5489 92.5 77.9961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesforhead-4" d="M107 77.9961C104.596 78.5489 101.956 79.0004 99.75 79.0004C97.5436 79.0004 94.9042 78.5489 92.5 77.9961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesforhead-3" d="M73.5 76.0039C75.1581 75.4511 76.9783 74.9996 78.5 74.9996C80.0217 74.9996 81.8419 75.4511 83.5 76.0039M126 76.0039C124.342 75.4511 122.522 74.9996 121 74.9996C119.478 74.9996 117.658 75.4511 116 76.0039" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesforhead-2" d="M114 71C114 71 105.437 74 99.75 74C94.063 74 85.5 71 85.5 71M92.5 77.9961C94.9042 78.5489 97.5436 79.0004 99.75 79.0004C101.956 79.0004 104.596 78.5489 107 77.9961M73.5 76.0039C75.1581 75.4511 76.9783 74.9996 78.5 74.9996C80.0217 74.9996 81.8419 75.4511 83.5 76.0039M126 76.0039C124.342 75.4511 122.522 74.9996 121 74.9996C119.478 74.9996 117.658 75.4511 116 76.0039" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinklesforhead-1" d="M114 71C114 71 105.437 74 99.75 74C94.063 74 85.5 71 85.5 71M92.5 77.9961C94.9042 78.5489 97.5436 79.0004 99.75 79.0004C101.956 79.0004 104.596 78.5489 107 77.9961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
       <path id="hairstyle-34" d="M100 39.5C100 39.5 89.8191 36.8091 88.5002 31.4996C86.8574 24.8858 93.1868 18.5188 100 18.3746C106.944 18.2276 113.665 24.7571 112 31.4996C110.65 36.9677 100 39.5 100 39.5ZM100 39.5C74.0806 40.0184 67.1269 60.5822 68.1081 79.0029L70.1084 89.0004M100 39.5C123.173 39.5 133.272 51.581 132.108 79.0029L130.108 89.0004" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="hairstyle-33" d="M130 89.0001L132 79.0026C132 79.0026 130 29 100 29C70.0002 29 68 79.0026 68 79.0026L70.0004 89.0001" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="hairstyle-32" d="M130 89.0001L132 79.0026C132 79.0026 141 35 99.9999 35C58.9995 35 67.9999 79.0026 67.9999 79.0026L70.0003 89.0001" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

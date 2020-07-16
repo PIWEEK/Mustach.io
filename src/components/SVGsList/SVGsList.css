@@ -84,3 +84,10 @@ svg.smile,
 svg.lower {
   transform: scale(6) translateY(-17px);
 }
+
+svg.head {
+  transform: scale(3) translateY(20px);
+}
+svg.mouth {
+  transform: scale(4) translateY(20px, -10px);
+}

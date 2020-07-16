@@ -24,9 +24,18 @@ function App() {
       typeSelected: '',
       colorSelected: ''
     },
+    wrinkles: {
+      id: 'wrinkles',
+      colorSelected: '',
+      childSelected: 'mouth',
+      children: {
+        "mouth": {id:'wrinklesmouth', name: 'Mouth', nTypes: 15, typeSelected: ''},
+        "head": {id:'wrinklesforhead', name: 'Head', nTypes: 7, typeSelected: ''}
+      },
+    },
     hairstyle: {
       id: 'hairstyle',
-      nTypes: 12,
+      nTypes: 34,
       typeSelected: '',
       colorSelected: ''
     },
@@ -159,7 +168,14 @@ function App() {
       case 'SET_TYPE_EYES_WIDE':
         return {...state, eyes:{...state.eyes, children:{...state.eyes.children, narrow: {...state.eyes.children.narrow,typeSelected:''}, normal: {...state.eyes.children.normal,typeSelected:''}, wide: {...state.eyes.children.wide,typeSelected:action.payload}}}}
             
-      
+      case 'SET_COLOR_WRINKLES':
+        return {...state, wrinkles:{...state.wrinkles,colorSelected: action.payload}}
+      case 'SET_CHILD_WRINKLES':
+        return {...state, wrinkles:{...state.wrinkles,childSelected:action.payload}}
+      case 'SET_TYPE_WRINKLES_MOUTH':
+        return {...state, wrinkles:{...state.wrinkles, children:{...state.wrinkles.children, mouth: {...state.wrinkles.children.mouth,typeSelected:action.payload}}}}
+      case 'SET_TYPE_WRINKLES_HEAD':
+        return {...state, wrinkles:{...state.wrinkles, children:{...state.wrinkles.children, head: {...state.wrinkles.children.head,typeSelected:action.payload}}}}      
       default:
         return state
     }
