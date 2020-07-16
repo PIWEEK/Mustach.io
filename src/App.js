@@ -57,10 +57,11 @@ function App() {
     mouth: {
       id: 'mouth',
       colorSelected: '',
+      childSelected: 'upper',
       children: {
-        "upper": {id:'upper-lip', name: 'Upper Lip', nTypes: 42, typeSelected: ''},
+        "upper": {id:'upperlip', name: 'Upper Lip', nTypes: 42, typeSelected: ''},
         "smile": {id:'smile', name: 'Smile', nTypes: 15, typeSelected: ''},
-        "lower": {id:'lower-lip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
+        "lower": {id:'lowerlip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
       },
     },
     neck: {
@@ -101,6 +102,18 @@ function App() {
         return {...state, eyebrows:{...state.eyebrows,colorSelected: action.payload}}
       case 'SET_TYPE_EYEBROWS':
         return {...state, eyebrows:{...state.eyebrows,typeSelected:action.payload}}
+      case 'SET_COLOR_MOUTH':
+        return {...state, mouth:{...state.mouth,colorSelected: action.payload}}
+      case 'SET_CHILD_MOUTH':
+        return {...state, mouth:{...state.mouth,childSelected:action.payload}}
+      
+      
+      case 'SET_TYPE_MOUTH_UPPER':
+        return {...state, mouth:{...state.mouth, children:{...state.mouth.children, upper: {...state.mouth.children.upper,typeSelected:action.payload}}}}
+      case 'SET_TYPE_MOUTH_SMILE':
+        return {...state, mouth:{...state.mouth, children:{...state.mouth.children, smile: {...state.mouth.children.smile,typeSelected:action.payload}}}}
+      case 'SET_TYPE_MOUTH_LOWER':
+        return {...state, mouth:{...state.mouth, children:{...state.mouth.children, lower: {...state.mouth.children.lower,typeSelected:action.payload}}}}
       default:
         return state
     }

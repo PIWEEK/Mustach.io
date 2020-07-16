@@ -3,6 +3,25 @@
   flex-wrap: wrap;
   overflow-y: scroll;
 }
+.children-menu {
+  display: flex;
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 0 0 2rem;
+  width: 100%;
+}
+.child-item {
+  color: #b4bedb;
+  padding: 5px 14px;
+}
+.child-item:hover {
+  background-color: rgba(230, 234, 243, 0.4);
+  border-radius: 10px;
+}
+.child-item.selected {
+  color: #000;
+}
 .item {
   height: 180px;
   width: 180px;
@@ -15,7 +34,7 @@
   width: 180px;
 }
 
-.selected,
+.item.selected,
 .item:hover {
   border-radius: 1.25rem;
   background-color: rgba(230, 234, 243, 0.4);
