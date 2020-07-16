@@ -24,7 +24,7 @@ const SVGsList = ({feature, changetypeSelected}) => {
         </li>
         {
           svgIds.map(x=><li key={x} className={`item ${x===feature.typeSelected?'selected':''}`} onClick={()=>changetypeSelected(x)}>
-            <svg xmlns='http://www.w3.org/2000/svg' style={{stroke: "#b4bedb"}}>
+            <svg xmlns='http://www.w3.org/2000/svg' style={{stroke: "#b4bedb"}}  width="100%" height="100%" viewBox="0 0 200 200">
               <use xlinkHref={`#${x}`} />
             </svg>
           </li>)

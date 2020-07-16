@@ -10,7 +10,7 @@ function App() {
   const initialState = {
     face: {
       id: 'face',
-      nTypes: 24,
+      nTypes: 31,
       typeSelected: '',
       colorSelected: ''
     },
@@ -23,6 +23,12 @@ function App() {
     fringe: {
       id: 'fringe',
       nTypes: 29,
+      typeSelected: '',
+      colorSelected: ''
+    },
+    ears: {
+      id: 'ears',
+      nTypes: 8,
       typeSelected: '',
       colorSelected: ''
     },
@@ -48,7 +54,7 @@ function App() {
       id: 'mouth',
       colorSelected: '',
       children: {
-        "upper": {id:'upper-lip', name: 'Upper Lip', nTypes: 28, typeSelected: ''},
+        "upper": {id:'upper-lip', name: 'Upper Lip', nTypes: 42, typeSelected: ''},
         "smile": {id:'smile', name: 'Smile', nTypes: 15, typeSelected: ''},
         "lower": {id:'lower-lip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
       },
@@ -81,6 +87,10 @@ function App() {
         return {...state, fringe:{...state.fringe,colorSelected: action.payload}}
       case 'SET_TYPE_FRINGE':
         return {...state, fringe:{...state.fringe,typeSelected:action.payload}}
+      case 'SET_COLOR_EARS':
+        return {...state, ears:{...state.ears,colorSelected: action.payload}}
+      case 'SET_TYPE_EARS':
+        return {...state, ears:{...state.ears,typeSelected:action.payload}}
       default:
         return state
     }

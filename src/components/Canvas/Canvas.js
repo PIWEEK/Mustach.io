@@ -15,6 +15,12 @@ const Canvas = ({state}) =>
         {
           state.fringe.typeSelected && <use xlinkHref={`#${state.fringe.typeSelected}`} style={{fill:"none", stroke:`${state.fringe.colorSelected?state.fringe.colorSelected:'#000000'}`}} />
         }
+        {
+          state.ears.typeSelected && <use xlinkHref={`#${state.ears.typeSelected}`} style={{fill:"none", stroke:`${state.ears.colorSelected?state.ears.colorSelected:'#000000'}`}} />
+        }
+        {
+          state.ears.typeSelected && <use xlinkHref={`#${state.ears.typeSelected}`} style={{fill:"none", stroke:`${state.ears.colorSelected?state.ears.colorSelected:'#000000'}`, transformOrigin: "top center", transform:"scale(-1)"}} />
+        }
       </svg>
     </div>
   </div>

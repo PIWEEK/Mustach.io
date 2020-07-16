@@ -22,7 +22,7 @@ const ColorSelector = ({colorSelected, changeColor}) => {
       <input id="picker" type="color" value={colorPickerValue} onChange={(e)=>onChangeHandler(e)}></input>
       <span className="separator"></span>
       {
-        colors.map((x, index) => <li key={index} className='color-item' style={{backgroundColor: x}} onClick={()=>changeColorSelected(x)}></li>)
+        colors.map((x, index) => <li key={index} className={`color-item ${colorSelected===x?'selected':''}`} style={{backgroundColor: x}} onClick={()=>changeColorSelected(x)}></li>)
       }
     </ul>
   )

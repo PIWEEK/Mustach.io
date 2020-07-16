@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   overflow-y: scroll;
 }
+.item {
+  height: 180px;
+  width: 180px;
+}
 
 .item svg {
   border-radius: 1.25rem;
