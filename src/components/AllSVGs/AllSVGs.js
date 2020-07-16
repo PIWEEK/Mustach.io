@@ -174,6 +174,28 @@ const AllSVGs = () =>(
       <path id="ears-2" d="M69.9996 103.666C67.5319 103.75 61.7997 90 68.405 90C69.9996 90 69.9996 98.6551 69.9996 103.666V103.666Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="ears-1" d="M65.0156 90.6921C67.2085 89.2347 69.9997 89.958 69.9997 94.0234C69.9997 100.269 69.9997 95.8969 69.9997 101.102C69.9997 105.168 66.0125 103.809 65.2149 101.102C64.0697 97.2158 61.7308 92.8751 65.0156 90.6921Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
+      <path id="eyebrows-22" d="M88.4271 80.5817C88.4271 80.5817 84.205 78.3496 80.7409 79.2995" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-21" d="M89.4267 81.5814C89.4267 81.5814 85.2047 78.3493 81.7405 79.2992" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-20" d="M90.4269 82.5813C90.4269 82.5813 86.2049 78.3492 82.7407 79.2991" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-19" d="M91.4263 83.5818C91.4263 83.5818 87.2043 78.3498 83.7402 79.2997" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-18" d="M88.4268 79.5815C88.4268 79.5815 84.2047 77.3495 80.7406 78.2994C77.2776 79.249 74.8836 81.7059 74.8836 81.7059" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-17" d="M88.4266 81.5811C88.4266 81.5811 84.2045 77.3491 80.7404 78.299C77.2774 79.2487 74.8835 81.7055 74.8835 81.7055" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-16" d="M88.427 82.5817C88.427 82.5817 84.205 77.3496 80.7408 78.2995C77.2778 79.2492 74.8839 81.7061 74.8839 81.7061" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-15" d="M92.4271 80.5819C92.4271 80.5819 82.2051 79.3498 78.7409 80.2997C75.2779 81.2494 74.884 81.7063 74.884 81.7063" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-14" d="M92.4193 81.3936C89.3279 83.0341 82.3539 79.2264 78.8171 79.8536C75.2814 80.4808 74.8471 80.8995 74.8471 80.8995" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-13" d="M92 86C92 86 93.6667 81.1667 91 80C88.3333 78.8333 83.1 78.5 79.5 78.5C75.9 78.5 73 82.8333 72 85C72.3333 84.6667 74.1 83.8 78.5 83C82.9 82.2 89.3333 84.6667 92 86Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-12" d="M93.2981 85.1082C93.2981 85.1082 94.5234 82.1446 91.7626 81.2225C89.0018 80.3003 83.7597 80.4389 80.1743 80.7626C76.5889 81.0864 74.0903 83.6629 73.2892 85.9107C73.5912 85.5488 74.2728 84.5268 78.583 83.3343C82.8932 82.1419 90.5223 84.0201 93.2981 85.1082Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-11" d="M93.082 86.0034C93.082 86.0034 94.4789 84.1579 91.8123 82.9912C89.1456 81.8246 78.4103 80.3154 78.4103 80.3154C78.4103 80.3154 74.082 82.8367 73.082 85.0034C73.4154 84.67 78.5861 82.9135 78.5861 82.9135C78.5861 82.9135 90.4154 84.67 93.082 86.0034Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-10" d="M93.2249 84.2749L91.7408 81.3623L78.2528 80.659L73.2049 84.7223L93.2249 84.2749Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-9" d="M90 84.5893C90 84.5893 89.2165 83.3987 87.0909 82.9464C85.2767 82.5603 79.4108 81.6739 76.7273 82.1249C74.1449 82.559 72.7273 84.3155 72 85" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-8" d="M93 86C93 86 87.51 79.9999 79.5 80C75.5 80 74 85 74 85" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-7" d="M90 85C90 85 87.061 79.9999 80.3158 80C76.9474 80 74 86 74 86" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-6" d="M92.4268 81.5815C92.4268 81.5815 82.2047 79.3495 78.7406 80.2993C75.2776 81.249 74.8836 81.7059 74.8836 81.7059" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-5" d="M92.4269 82.5814C92.4269 82.5814 82.2049 79.3493 78.7407 80.2992C75.2777 81.2489 74.8838 81.7058 74.8838 81.7058" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-4" d="M92.4273 83.5809C92.4273 83.5809 82.2053 79.3489 78.7411 80.2988C75.2782 81.2485 74.8842 81.7053 74.8842 81.7053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-3" d="M92.4272 82.5816C92.4272 82.5816 86.2051 79.3495 82.741 80.2994C79.278 81.2491 76.884 81.706 76.884 81.706" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-2" d="M92.4265 83.5821C92.4265 83.5821 86.2044 79.3501 82.7403 80.2999C79.2773 81.2496 76.8833 81.7065 76.8833 81.7065" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyebrows-1" d="M92.4276 85.5808C92.4276 85.5808 86.2055 79.3487 82.7414 80.2986C79.2784 81.2483 76.8844 81.7052 76.8844 81.7052" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </defs>
   </svg>
 );

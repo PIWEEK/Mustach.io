@@ -21,6 +21,12 @@ const Canvas = ({state}) =>
             <use xlinkHref={`#${state.ears.typeSelected}`} style={{fill:"none", stroke:`${state.ears.colorSelected?state.ears.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />
           </g>
         }
+        {
+          state.eyebrows.typeSelected && <g>
+            <use xlinkHref={`#${state.eyebrows.typeSelected}`} style={{fill:"none", stroke:`${state.eyebrows.colorSelected?state.eyebrows.colorSelected:'#000000'}`}} />
+            <use xlinkHref={`#${state.eyebrows.typeSelected}`} style={{fill:"none", stroke:`${state.eyebrows.colorSelected?state.eyebrows.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />
+          </g>
+        }
       </svg>
     </div>
   </div>

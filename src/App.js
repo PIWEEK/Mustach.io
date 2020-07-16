@@ -38,9 +38,9 @@ function App() {
       typeSelected: '',
       colorSelected: ''
     },
-    eyeBrows: {
-      id: 'eye-brows',
-      nTypes: 9,
+    eyebrows: {
+      id: 'eyebrows',
+      nTypes: 22,
       typeSelected: '',
       colorSelected: ''
     },
@@ -91,6 +91,10 @@ function App() {
         return {...state, ears:{...state.ears,colorSelected: action.payload}}
       case 'SET_TYPE_EARS':
         return {...state, ears:{...state.ears,typeSelected:action.payload}}
+      case 'SET_COLOR_EYEBROWS':
+        return {...state, eyebrows:{...state.eyebrows,colorSelected: action.payload}}
+      case 'SET_TYPE_EYEBROWS':
+        return {...state, eyebrows:{...state.eyebrows,typeSelected:action.payload}}
       default:
         return state
     }
