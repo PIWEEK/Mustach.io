@@ -54,6 +54,15 @@ function App() {
       typeSelected: '',
       colorSelected: ''
     },
+    nose: {
+      id: 'nose',
+      colorSelected: '',
+      childSelected: 'nostril',
+      children: {
+        "nostril": {id:'nostril', name: 'Nostril', nTypes: 12, typeSelected: ''},
+        "septum": {id:'septum', name: 'Septum', nTypes: 9, typeSelected: ''}
+      },
+    },
     mouth: {
       id: 'mouth',
       colorSelected: '',
@@ -114,6 +123,15 @@ function App() {
         return {...state, mouth:{...state.mouth, children:{...state.mouth.children, smile: {...state.mouth.children.smile,typeSelected:action.payload}}}}
       case 'SET_TYPE_MOUTH_LOWER':
         return {...state, mouth:{...state.mouth, children:{...state.mouth.children, lower: {...state.mouth.children.lower,typeSelected:action.payload}}}}
+
+      case 'SET_COLOR_NOSE':
+        return {...state, nose:{...state.nose,colorSelected: action.payload}}
+      case 'SET_CHILD_NOSE':
+        return {...state, nose:{...state.nose,childSelected:action.payload}}
+      case 'SET_TYPE_NOSE_NOSTRIL':
+        return {...state, nose:{...state.nose, children:{...state.nose.children, nostril: {...state.nose.children.nostril,typeSelected:action.payload}}}}
+      case 'SET_TYPE_NOSE_SEPTUM':
+        return {...state, nose:{...state.nose, children:{...state.nose.children, septum: {...state.nose.children.septum,typeSelected:action.payload}}}}
       default:
         return state
     }

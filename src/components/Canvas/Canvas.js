@@ -27,6 +27,12 @@ const Canvas = ({state}) =>
           </g>
         }
         {
+          (state.nose.children.nostril.typeSelected || state.nose.children.septum.typeSelected) && <g>
+            {state.nose.children.nostril.typeSelected && <use xlinkHref={`#${state.nose.children.nostril.typeSelected}`} style={{fill:"none", stroke:`${state.nose.colorSelected?state.nose.colorSelected:'#000000'}`}} />}
+            {state.nose.children.septum.typeSelected && <use xlinkHref={`#${state.nose.children.septum.typeSelected}`} style={{fill:"none", stroke:`${state.nose.colorSelected?state.nose.colorSelected:'#000000'}`}} />}
+          </g>
+        }
+        {
           (state.mouth.children.upper.typeSelected || state.mouth.children.smile.typeSelected || state.mouth.children.lower.typeSelected) && <g>
             {state.mouth.children.upper.typeSelected && <use xlinkHref={`#${state.mouth.children.upper.typeSelected}`} style={{fill:"none", stroke:`${state.mouth.colorSelected?state.mouth.colorSelected:'#000000'}`}} />}
             {state.mouth.children.smile.typeSelected && <use xlinkHref={`#${state.mouth.children.smile.typeSelected}`} style={{fill:"none", stroke:`${state.mouth.colorSelected?state.mouth.colorSelected:'#000000'}`}} />}
