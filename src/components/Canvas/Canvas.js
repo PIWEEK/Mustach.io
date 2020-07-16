@@ -4,7 +4,7 @@ import Faces from '../Features/Faces/Faces';
 
 const Canvas = ({state}) => 
   <div className="container-canvas">
-    <div className="canvas" style={{backgroundColor: "#ebeef4"}}>
+    <div className="canvas" style={{backgroundColor: state.background.colorSelected?state.background.colorSelected:"#ebeef4"}}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 200 200">
         {
           state.face.typeSelected && <use xlinkHref={`#${state.face.typeSelected}`} style={{fill:"none", stroke:`${state.face.colorSelected?state.face.colorSelected:'#000000'}`}} />

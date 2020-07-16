@@ -8,6 +8,10 @@ import AllSVGs from './components/AllSVGs/AllSVGs.js';
 
 function App() {
   const initialState = {
+    background: {
+      id: 'background',
+      colorSelected: ''
+    },
     face: {
       id: 'face',
       nTypes: 31,
@@ -75,6 +79,8 @@ function App() {
 
   const reducer = (state, action) => {
     switch (action.type) {
+      case 'SET_COLOR_BACKGROUND':
+        return {...state, background:{...state.background,colorSelected: action.payload}}
       case 'SET_COLOR_FACE':
         return {...state, face:{...state.face,colorSelected: action.payload}}
       case 'SET_TYPE_FACE':

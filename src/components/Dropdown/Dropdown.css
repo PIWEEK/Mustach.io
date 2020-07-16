@@ -14,14 +14,14 @@ h2 {
   padding: 2rem;
 }
 .dropdown-container.visible {
-  height: 380px;
+  height: 420px;
 }
 .dropdown-container.visible .options-list {
-  top: 80px;
+  top: 90px;
 }
 .options-list {
   position: absolute;
-  top: -295px;
+  top: -330px;
   height: 0;
   margin: 0;
   padding: 0;
