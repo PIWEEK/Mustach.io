@@ -1,6 +1,5 @@
 import React from 'react';
 import './Canvas.css';
-import Faces from '../Features/Faces/Faces';
 
 const Canvas = ({state}) => 
   <div className="container-canvas">
