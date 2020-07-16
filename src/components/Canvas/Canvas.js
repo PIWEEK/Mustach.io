@@ -39,6 +39,12 @@ const Canvas = ({state}) =>
             {state.mouth.children.lower.typeSelected && <use xlinkHref={`#${state.mouth.children.lower.typeSelected}`} style={{fill:"none", stroke:`${state.mouth.colorSelected?state.mouth.colorSelected:'#000000'}`}} />}
           </g>
         }
+             {
+          state.glasses.typeSelected && <g>
+            <use xlinkHref={`#${state.glasses.typeSelected}`} style={{fill:"none", stroke:`${state.glasses.colorSelected?state.glasses.colorSelected:'#000000'}`}} />
+            <use xlinkHref={`#${state.glasses.typeSelected}`} style={{fill:"none", stroke:`${state.glasses.colorSelected?state.glasses.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />
+          </g>
+        }
       </svg>
     </div>
   </div>

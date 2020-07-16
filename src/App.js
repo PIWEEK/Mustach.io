@@ -48,9 +48,9 @@ function App() {
       typeSelected: '',
       colorSelected: ''
     },
-    glases: {
-      id: 'glases',
-      nTypes: 9,
+    glasses: {
+      id: 'glasses',
+      nTypes: 10,
       typeSelected: '',
       colorSelected: ''
     },
@@ -111,6 +111,10 @@ function App() {
         return {...state, eyebrows:{...state.eyebrows,colorSelected: action.payload}}
       case 'SET_TYPE_EYEBROWS':
         return {...state, eyebrows:{...state.eyebrows,typeSelected:action.payload}}
+      case 'SET_COLOR_GLASSES':
+        return {...state, glasses:{...state.glasses,colorSelected: action.payload}}
+      case 'SET_TYPE_GLASSES':
+        return {...state, glasses:{...state.glasses,typeSelected:action.payload}}
       case 'SET_COLOR_MOUTH':
         return {...state, mouth:{...state.mouth,colorSelected: action.payload}}
       case 'SET_CHILD_MOUTH':
