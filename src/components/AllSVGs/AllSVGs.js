@@ -231,6 +231,19 @@ const AllSVGs = () =>(
       <path id="septum-2" d="M96.6367 91.75C96.2617 95.0938 95.2656 99.2449 97.293 106" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="septum-1" d="M96.6367 91.75C96.6367 101.5 95.5 102.812 96.543 106" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
+      <path id="neck-12" d="M84.3114 110.631C83.7603 140.391 65.7114 159.312 56.7559 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-11" d="M79.4892 110.631C78.9381 140.391 65.7114 159.312 56.7559 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-10" d="M70.5336 110.631C69.9825 140.391 65.7114 159.312 56.7559 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-9" d="M75.3559 110.631C74.8047 140.391 65.7114 159.312 56.7559 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-8" d="M84.3109 110.631C83.7598 140.391 65.7109 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-7" d="M79.4887 110.631C78.9376 140.391 65.7109 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-6" d="M70.5334 110.631C69.9823 140.391 66.0557 165.053 66.0557 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-5" d="M70.5334 110.631C67.7779 145.42 66.0557 165.053 66.0557 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-4" d="M75.3557 110.631C74.8046 140.391 66.0557 165.053 66.0557 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-3" d="M84.3109 110.631C83.7598 140.391 82.2443 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-2" d="M79.4887 110.631C78.9376 140.391 74.6665 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="neck-1" d="M83.622 110.631C83.0709 140.391 74.6665 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
     </defs>
   </svg>
 );

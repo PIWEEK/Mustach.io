@@ -12,6 +12,12 @@ function App() {
       id: 'background',
       colorSelected: ''
     },
+    neck: {
+      id: 'neck',
+      nTypes: 12,
+      typeSelected: '',
+      colorSelected: ''
+    },
     face: {
       id: 'face',
       nTypes: 31,
@@ -73,12 +79,6 @@ function App() {
         "lower": {id:'lowerlip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
       },
     },
-    neck: {
-      id: 'neck',
-      nTypes: 9,
-      typeSelected: '',
-      colorSelected: ''
-    },
     accesories: {
       id: 'accesories',
       nTypes: 9,
@@ -95,6 +95,10 @@ function App() {
         return {...state, face:{...state.face,colorSelected: action.payload}}
       case 'SET_TYPE_FACE':
         return {...state, face:{...state.face,typeSelected:action.payload}}
+      case 'SET_COLOR_NECK':
+        return {...state, neck:{...state.neck,colorSelected: action.payload}}
+      case 'SET_TYPE_NECK':
+        return {...state, neck:{...state.neck,typeSelected:action.payload}}
       case 'SET_COLOR_HAIRSTYLE':
         return {...state, hairstyle:{...state.hairstyle,colorSelected: action.payload}}
       case 'SET_TYPE_HAIRSTYLE':

@@ -6,6 +6,12 @@ const Canvas = ({state}) =>
     <div className="canvas" style={{backgroundColor: state.background.colorSelected?state.background.colorSelected:"#ebeef4"}}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 200 200">
         {
+          state.neck.typeSelected && <g>
+            <use xlinkHref={`#${state.neck.typeSelected}`} style={{fill:"none", stroke:`${state.neck.colorSelected?state.neck.colorSelected:'#000000'}`}} />
+            <use xlinkHref={`#${state.neck.typeSelected}`} style={{fill:"none", stroke:`${state.neck.colorSelected?state.neck.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />
+          </g>
+        }
+        {
           state.face.typeSelected && <use xlinkHref={`#${state.face.typeSelected}`} style={{fill:state.background.colorSelected?state.background.colorSelected:"#ebeef4", stroke:`${state.face.colorSelected?state.face.colorSelected:'#000000'}`}} />
         }
         {
