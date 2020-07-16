@@ -44,9 +44,14 @@ function App() {
     },
     eyes: {
       id: 'eyes',
-      nTypes: 9,
-      typeSelected: '',
-      colorSelected: ''
+      colorSelected: '',
+      childSelected: 'pupil',
+      children: {
+        "pupil": {id:'pupil', name: 'Pupil', nTypes: 4, typeSelected: ''},
+        "narrow": {id:'eyesnarrow', name: 'Eyes Narrow', nTypes: 26, typeSelected: ''},
+        "normal": {id:'eyesnormal', name: 'Eyes Normal', nTypes: 26, typeSelected: ''},
+        "wide": {id:'eyeswide', name: 'Eyes Wide', nTypes: 26, typeSelected: ''}
+      },
     },
     eyebrows: {
       id: 'eyebrows',
@@ -140,6 +145,21 @@ function App() {
         return {...state, nose:{...state.nose, children:{...state.nose.children, nostril: {...state.nose.children.nostril,typeSelected:action.payload}}}}
       case 'SET_TYPE_NOSE_SEPTUM':
         return {...state, nose:{...state.nose, children:{...state.nose.children, septum: {...state.nose.children.septum,typeSelected:action.payload}}}}
+      
+      case 'SET_COLOR_EYES':
+        return {...state, eyes:{...state.eyes,colorSelected: action.payload}}
+      case 'SET_CHILD_EYES':
+        return {...state, eyes:{...state.eyes,childSelected:action.payload}}
+      case 'SET_TYPE_EYES_PUPIL':
+          return {...state, eyes:{...state.eyes, children:{...state.eyes.children, pupil: {...state.eyes.children.pupil,typeSelected:action.payload}}}}
+      case 'SET_TYPE_EYES_NARROW':
+        return {...state, eyes:{...state.eyes, children:{...state.eyes.children, narrow: {...state.eyes.children.narrow,typeSelected:action.payload}, normal: {...state.eyes.children.normal,typeSelected:''}, wide: {...state.eyes.children.wide,typeSelected:''}}}}
+      case 'SET_TYPE_EYES_NORMAL':
+        return {...state, eyes:{...state.eyes, children:{...state.eyes.children, narrow: {...state.eyes.children.narrow,typeSelected:''}, normal: {...state.eyes.children.normal,typeSelected:action.payload}, wide: {...state.eyes.children.wide,typeSelected:''}}}}
+      case 'SET_TYPE_EYES_WIDE':
+        return {...state, eyes:{...state.eyes, children:{...state.eyes.children, narrow: {...state.eyes.children.narrow,typeSelected:''}, normal: {...state.eyes.children.normal,typeSelected:''}, wide: {...state.eyes.children.wide,typeSelected:action.payload}}}}
+            
+      
       default:
         return state
     }

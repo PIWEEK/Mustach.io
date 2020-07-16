@@ -45,7 +45,19 @@ const Canvas = ({state}) =>
             {state.mouth.children.lower.typeSelected && <use xlinkHref={`#${state.mouth.children.lower.typeSelected}`} style={{fill:"none", stroke:`${state.mouth.colorSelected?state.mouth.colorSelected:'#000000'}`}} />}
           </g>
         }
-             {
+        {
+          (state.eyes.children.pupil.typeSelected || state.eyes.children.narrow.typeSelected || state.eyes.children.normal.typeSelected || state.eyes.children.wide.typeSelected) && <g>
+          {state.eyes.children.pupil.typeSelected && <use xlinkHref={`#${state.eyes.children.pupil.typeSelected}`} style={state.eyes.children.pupil.typeSelected==='pupil-2' || state.eyes.children.pupil.typeSelected==='pupil-3' ? {stroke:"none", fill:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`}:{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`}} />}
+          {state.eyes.children.pupil.typeSelected && <use xlinkHref={`#${state.eyes.children.pupil.typeSelected}`} style={state.eyes.children.pupil.typeSelected==='pupil-2' || state.eyes.children.pupil.typeSelected==='pupil-3' ? {stroke:"none", fill:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}:{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />}
+          {state.eyes.children.narrow.typeSelected && <use xlinkHref={`#${state.eyes.children.narrow.typeSelected}`} style={{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`}} />}
+          {state.eyes.children.narrow.typeSelected && <use xlinkHref={`#${state.eyes.children.narrow.typeSelected}`} style={{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />}
+          {state.eyes.children.normal.typeSelected && <use xlinkHref={`#${state.eyes.children.normal.typeSelected}`} style={{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`}} />}
+          {state.eyes.children.normal.typeSelected && <use xlinkHref={`#${state.eyes.children.normal.typeSelected}`} style={{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />}
+          {state.eyes.children.wide.typeSelected && <use xlinkHref={`#${state.eyes.children.wide.typeSelected}`} style={{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`}} />}
+          {state.eyes.children.wide.typeSelected && <use xlinkHref={`#${state.eyes.children.wide.typeSelected}`} style={{fill:"none", stroke:`${state.eyes.colorSelected?state.eyes.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />}
+        </g>
+        }
+        {
           state.glasses.typeSelected && <g>
             <use xlinkHref={`#${state.glasses.typeSelected}`} style={{fill:"none", stroke:`${state.glasses.colorSelected?state.glasses.colorSelected:'#000000'}`}} />
             <use xlinkHref={`#${state.glasses.typeSelected}`} style={{fill:"none", stroke:`${state.glasses.colorSelected?state.glasses.colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}} />

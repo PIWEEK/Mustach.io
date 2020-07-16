@@ -244,6 +244,96 @@ const AllSVGs = () =>(
       <path id="neck-2" d="M79.4887 110.631C78.9376 140.391 74.6665 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="neck-1" d="M83.622 110.631C83.0709 140.391 74.6665 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
+      <circle id="pupil-4" cx="80.9997" cy="90.9997" r="1.66667" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle id="pupil-3" cx="81.0003" cy="91.0003" r="0.333332" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="pupil-2" d="M80.9997 92.6663C81.9201 92.6663 82.6663 91.9201 82.6663 90.9997C82.6663 90.0792 81.9201 89.333 80.9997 89.333M80.9997 92.6663C80.0792 92.6663 79.333 91.9201 79.333 90.9997C79.333 90.0792 80.0792 89.333 80.9997 89.333M80.9997 92.6663V89.333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="pupil-1" d="M81 92.6663V89.333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+      <path id="eyesnarrow-26" d="M85.9886 92.5765C84.9352 89.2748 82.8491 88.0731 80.793 88.156C78.8375 88.2348 76.9093 89.4369 75.9224 92.5764" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-25" d="M85.9886 92.5304C84.9352 90.0976 82.849 89.2121 80.793 89.2731C78.8375 89.3312 76.9093 90.217 75.9224 92.5303" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-24" d="M85.9883 92.5777C85.9883 92.5777 82.9989 88.1199 80.7927 88.1572C78.6286 88.1937 75.9221 92.5775 75.9221 92.5775" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-23" d="M85.9883 92.5308C85.9883 92.5308 82.9989 89.2461 80.7927 89.2736C78.6286 89.3005 75.9221 92.5307 75.9221 92.5307" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-22" d="M85.9883 92.5765C85.9884 90.1072 83.3624 88.1028 80.7928 88.1561C78.3316 88.2072 75.9223 90.212 75.9221 92.5764" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-21" d="M85.9883 92.5305C85.9884 90.711 83.3624 89.2341 80.7928 89.2734C78.3316 89.311 75.9223 90.7882 75.9221 92.5304" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-20" d="M85.9891 92.5612C85.9892 89.1334 83.2265 87.9745 80.7936 88.1569C78.1986 88.3515 75.923 90.0829 75.9228 92.5774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-19" d="M85.9891 92.5192C85.9892 89.9934 83.2265 89.1395 80.7936 89.2739C78.1986 89.4173 75.923 90.6931 75.9228 92.5311" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-18" d="M75.9222 92.5774C75.9221 89.1629 78.3557 87.9583 80.7929 88.157C83.4121 88.3705 85.9882 90.0739 85.9884 92.5774" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-17" d="M75.9222 92.5307C75.9221 90.0147 78.3557 89.1272 80.7929 89.2736C83.4121 89.4309 85.9882 90.686 85.9884 92.5307" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-16" d="M85.9891 92.5767C84.8568 89.1146 82.4449 87.884 80.7937 88.1562C78.0177 88.6138 75.9228 92.5765 75.9228 92.5765" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-15" d="M85.9891 92.5316C84.8568 89.9805 82.4449 89.0738 80.7937 89.2744C78.0177 89.6115 75.9228 92.5314 75.9228 92.5314" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-14" d="M85.9887 92.5773C84.8563 89.1152 81.3962 87.8846 79.745 88.1568C76.969 88.6144 75.9223 92.5771 75.9223 92.5771" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-13" d="M85.9887 92.5308C84.8563 89.9797 81.3962 89.073 79.745 89.2736C76.969 89.6108 75.9223 92.5306 75.9223 92.5306" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-12" d="M85.9886 92.577C84.8562 89.1149 80.6099 87.8843 78.9587 88.1565C76.1827 88.6141 75.9222 92.5768 75.9222 92.5768" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-11" d="M85.9886 92.5307C84.8562 89.9797 80.6099 89.0729 78.9587 89.2735C76.1827 89.6107 75.9222 92.5306 75.9222 92.5306" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-10" d="M85.9887 92.5772C84.6897 88.1567 79.8238 87.8846 78.1726 88.1568C75.3966 88.6144 75.6405 88.1353 75.9223 92.5771" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-9" d="M85.9887 92.5312C84.6897 89.2739 79.8238 89.0734 78.1726 89.274C75.3966 89.6111 75.6405 89.2582 75.9223 92.531" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-8" d="M85.9887 92.5772C84.6897 88.1567 79.8238 87.8846 78.1726 88.1568C77.138 88.3273 76.5228 88.3678 76.1728 88.5813" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-7" d="M85.9887 92.5312C84.6897 89.2739 79.8238 89.0734 78.1726 89.274C77.138 89.3996 76.5228 89.4294 76.1728 89.5868" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-6" d="M85.9887 92.5771C86.0147 89.9005 82.9635 88.1561 80.7933 88.1567C78.6242 88.1573 75.9224 92.5769 75.9224 92.5769" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-5" d="M85.9887 92.5313C86.0147 90.5591 82.9635 89.2738 80.7933 89.2742C78.6242 89.2746 75.9224 92.5312 75.9224 92.5312" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-4" d="M85.9883 92.5762C85.9883 88.9731 83.3899 87.8181 80.7929 88.1559C78.2838 88.4823 75.9221 92.5763 75.9221 92.5763" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-3" d="M85.9883 92.5305C85.9883 89.8756 83.3899 89.0245 80.7929 89.2734C78.2838 89.5139 75.9221 92.5305 75.9221 92.5305" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-2" d="M75.922 92.5764C75.922 92.5764 77.7891 88.1559 80.7928 88.1561C83.7964 88.1563 85.9881 90.1139 85.9883 92.5764" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnarrow-1" d="M75.922 92.5304C75.922 92.5304 77.7891 89.2732 80.7928 89.2734C83.7964 89.2735 85.9881 90.716 85.9883 92.5305" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+      <path id="eyesnormal-26" d="M87.6528 92.7956C86.3276 89.1463 83.7031 87.8181 81.1164 87.9097C78.6563 87.9969 76.2304 89.3255 74.9888 92.7954" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-25" d="M87.6518 92.6978C86.312 90.0699 83.6584 89.1134 81.0431 89.1794C78.5558 89.2422 76.1031 90.1989 74.8478 92.6977" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-24" d="M87.6525 92.7962C87.6525 92.7962 83.8915 87.8692 81.1161 87.9104C78.3935 87.9508 74.9885 92.7961 74.9885 92.7961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-23" d="M87.6515 92.6979C87.6515 92.6979 83.849 89.1499 81.0428 89.1796C78.2901 89.2087 74.8474 92.6978 74.8474 92.6978" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-22" d="M87.6531 92.7963C87.6533 90.067 84.3495 87.8516 81.1169 87.9106C78.0205 87.967 74.9894 90.1828 74.9892 92.7962" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-21" d="M87.6511 92.6983C87.6513 90.7329 84.3109 89.1376 81.0426 89.1801C77.9119 89.2207 74.8473 90.8163 74.8471 92.6983" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-20" d="M87.6524 92.7778C87.6525 88.9892 84.1768 87.7083 81.1161 87.9099C77.8515 88.125 74.9885 90.0387 74.9883 92.7957" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-19" d="M87.6513 92.6852C87.6513 89.957 84.1373 89.0346 81.0427 89.1798C77.7419 89.3346 74.8473 90.7127 74.8471 92.6981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-18" d="M74.9886 92.796C74.9886 89.0221 78.0501 87.6907 81.1162 87.9103C84.4114 88.1464 87.6524 90.0291 87.6525 92.7961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-17" d="M74.8476 92.6981C74.8475 89.9804 77.9429 89.0216 81.0429 89.1798C84.3746 89.3497 87.6514 90.7055 87.6516 92.6981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-16" d="M87.6532 92.7959C86.2287 88.9693 83.1943 87.6092 81.117 87.9101C77.6246 88.4159 74.9891 92.7957 74.9891 92.7957" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-15" d="M87.6513 92.6985C86.211 89.943 83.143 88.9635 81.0427 89.1802C77.5117 89.5444 74.8471 92.6984 74.8471 92.6984" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-14" d="M87.6525 92.7957C86.2279 88.9691 81.8748 87.609 79.7975 87.9099C76.3051 88.4157 74.9884 92.7955 74.9884 92.7955" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-13" d="M87.6516 92.6985C86.2113 89.943 81.81 88.9635 79.7097 89.1802C76.1787 89.5444 74.8474 92.6984 74.8474 92.6984" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-12" d="M87.6526 92.7956C86.2281 88.969 80.8859 87.6089 78.8086 87.9097C75.3162 88.4155 74.9885 92.7953 74.9885 92.7953" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-11" d="M87.6518 92.6986C86.2115 89.943 80.8102 88.9636 78.7099 89.1802C75.1789 89.5444 74.8476 92.6984 74.8476 92.6984" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-10" d="M87.653 92.7963C86.0188 87.9104 79.8972 87.6096 77.8199 87.9105C74.3275 88.4162 74.6343 87.8868 74.9889 92.7961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-9" d="M87.6513 92.6984C85.999 89.18 79.8097 88.9634 77.7094 89.18C74.1784 89.5443 74.4886 89.163 74.8471 92.6983" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-8" d="M87.653 92.7963C86.0188 87.9104 79.8972 87.6096 77.8199 87.9105C76.5183 88.099 75.7444 88.1437 75.304 88.3797" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-7" d="M87.6513 92.6984C85.999 89.18 79.8097 88.9634 77.7094 89.18C76.3934 89.3158 75.6109 89.348 75.1657 89.518" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-6" d="M87.6529 92.796C87.6856 89.8377 83.847 87.9097 81.1167 87.9103C78.3878 87.911 74.9889 92.7958 74.9889 92.7958" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-5" d="M87.6518 92.6987C87.6849 90.5683 83.8039 89.1799 81.0433 89.1804C78.2842 89.1808 74.8477 92.6985 74.8477 92.6985" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-4" d="M87.6523 92.7962C87.6524 88.8139 84.3834 87.5372 81.1162 87.9106C77.9596 88.2714 74.9884 92.7963 74.9884 92.7963" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-3" d="M87.6512 92.6983C87.6512 89.8306 84.3461 88.9113 81.0427 89.1801C77.8513 89.4399 74.8472 92.6984 74.8472 92.6984" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-2" d="M74.9889 92.7961C74.9889 92.7961 77.3378 87.9103 81.1165 87.9106C84.8953 87.9108 87.6526 90.0744 87.6528 92.7962" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyesnormal-1" d="M74.8477 92.6982C74.8477 92.6982 77.2226 89.1799 81.0432 89.1801C84.8637 89.1802 87.6516 90.7383 87.6518 92.6983" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+
+      <path id="eyeswide-26" d="M88.3169 92.7956C86.8558 89.1463 83.9621 87.8181 81.1102 87.9097C78.3977 87.9969 75.723 89.3255 74.3541 92.7954" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-25" d="M88.3169 92.8064C86.8558 90.1998 83.9621 89.2511 81.1102 89.3165C78.3977 89.3788 75.723 90.3278 74.3541 92.8063" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-24" d="M88.3175 92.7962C88.3175 92.7962 84.1709 87.8692 81.1108 87.9104C78.1089 87.9508 74.3547 92.7961 74.3547 92.7961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-23" d="M88.3175 92.8076C88.3175 92.8076 84.1709 89.2883 81.1108 89.3177C78.1089 89.3465 74.3547 92.8075 74.3547 92.8075" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-22" d="M88.3176 92.7963C88.3177 90.067 84.6751 87.8516 81.1109 87.9106C77.697 87.967 74.355 90.1828 74.3548 92.7962" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-21" d="M88.3176 92.8069C88.3177 90.8574 84.6751 89.275 81.1109 89.3171C77.697 89.3575 74.355 90.9402 74.3548 92.8068" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-20" d="M88.3171 92.7778C88.3171 88.9892 84.485 87.7083 81.1104 87.9099C77.5109 88.125 74.3543 90.0387 74.3541 92.7957" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-19" d="M88.3171 92.794C88.3171 90.0878 84.485 89.1729 81.1104 89.3169C77.5109 89.4705 74.3543 90.8375 74.3541 92.8068" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-18" d="M74.3548 92.796C74.3548 89.0221 77.7303 87.6907 81.1109 87.9103C84.7441 88.1464 88.3174 90.0291 88.3176 92.7961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-17" d="M74.3548 92.807C74.3548 90.1114 77.7303 89.1604 81.1109 89.3172C84.7441 89.4858 88.3174 90.8306 88.3176 92.807" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-16" d="M88.3173 92.7959C86.7466 88.9693 83.4011 87.6092 81.1107 87.9101C77.2601 88.4159 74.3543 92.7957 74.3543 92.7957" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-15" d="M88.3173 92.8072C86.7466 90.0739 83.4011 89.1024 81.1107 89.3173C77.2601 89.6786 74.3543 92.807 74.3543 92.807" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-14" d="M88.3174 92.7957C86.7467 88.9691 81.9471 87.609 79.6567 87.9099C75.8062 88.4157 74.3544 92.7955 74.3544 92.7955" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-13" d="M88.3174 92.8065C86.7467 90.0732 81.9471 89.1017 79.6567 89.3166C75.8062 89.6779 74.3544 92.8063 74.3544 92.8063" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-12" d="M88.3172 92.7956C86.7465 88.969 80.8564 87.6089 78.566 87.9097C74.7154 88.4155 74.3542 92.7953 74.3542 92.7953" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-11" d="M88.3172 92.807C86.7465 90.0737 80.8564 89.1022 78.566 89.3171C74.7155 89.6784 74.3542 92.8068 74.3542 92.8068" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-10" d="M88.3172 92.7963C86.5154 87.9104 79.766 87.6096 77.4756 87.9105C73.625 88.4162 73.9633 87.8868 74.3542 92.7961" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-9" d="M88.3172 92.8072C86.5154 89.3173 79.766 89.1024 77.4756 89.3173C73.625 89.6786 73.9633 89.3004 74.3542 92.807" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-8" d="M88.3172 92.7963C86.5154 87.9104 79.766 87.6096 77.4756 87.9105C76.0405 88.099 75.1872 88.1437 74.7017 88.3797" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-7" d="M88.3172 92.8072C86.5154 89.3173 79.766 89.1024 77.4756 89.3173C76.0405 89.452 75.1872 89.4839 74.7017 89.6525" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-6" d="M88.318 92.796C88.3541 89.8377 84.1218 87.9097 81.1114 87.9103C78.1026 87.911 74.3551 92.7958 74.3551 92.7958" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-5" d="M88.318 92.8073C88.3541 90.6942 84.1218 89.317 81.1114 89.3175C78.1026 89.318 74.3551 92.8071 74.3551 92.8071" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-4" d="M88.3178 92.7962C88.3179 88.8139 84.7136 87.5372 81.1113 87.9106C77.631 88.2714 74.3551 92.7963 74.3551 92.7963" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-3" d="M88.3178 92.807C88.3179 89.9625 84.7136 89.0506 81.1113 89.3173C77.631 89.575 74.3551 92.8071 74.3551 92.8071" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-2" d="M74.3543 92.7961C74.3543 92.7961 76.9441 87.9103 81.1105 87.9106C85.2768 87.9108 88.3169 90.0744 88.3171 92.7962" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="eyeswide-1" d="M74.3543 92.8068C74.3543 92.8068 76.9442 89.317 81.1105 89.3171C85.2768 89.3173 88.3169 90.8627 88.3171 92.8068" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+
+
+
     </defs>
   </svg>
 );
