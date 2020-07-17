@@ -42,6 +42,15 @@ const Canvas = ({state}) =>
           </g>
         }
         {
+          state["facial hair"].children.beard.typeSelected && <use xlinkHref={`#${state["facial hair"].children.beard.typeSelected}`} style={{fill:"none", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`}} />
+        }
+        {
+          state["facial hair"].children.mustachio.typeSelected &&  <g>
+            <use xlinkHref={`#${state["facial hair"].children.mustachio.typeSelected}`} style={{fill:"none", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`}} />
+            <use xlinkHref={`#${state["facial hair"].children.mustachio.typeSelected}`} style={{fill:"none", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}}  />
+          </g>
+        }        
+        {
           (state.nose.children.nostril.typeSelected || state.nose.children.septum.typeSelected) && <g>
             {state.nose.children.nostril.typeSelected && <use xlinkHref={`#${state.nose.children.nostril.typeSelected}`} style={{fill:"none", stroke:`${state.nose.colorSelected?state.nose.colorSelected:'#000000'}`}} />}
             {state.nose.children.septum.typeSelected && <use xlinkHref={`#${state.nose.children.septum.typeSelected}`} style={{fill:"none", stroke:`${state.nose.colorSelected?state.nose.colorSelected:'#000000'}`}} />}

@@ -89,5 +89,11 @@ svg.head {
   transform: scale(3) translateY(20px);
 }
 svg.mouth {
-  transform: scale(4) translateY(20px, -10px);
+  transform: scale(4) translate(20px, -10px);
+}
+svg.mustachio {
+  transform: scale(2.2) translate(6px, -15px);
+}
+svg.beard {
+  transform: scale(2.2) translateY(-18px);
 }

@@ -12,44 +12,30 @@ function App() {
       id: 'background',
       colorSelected: ''
     },
-    neck: {
-      id: 'neck',
-      nTypes: 12,
-      typeSelected: '',
-      colorSelected: ''
-    },
     face: {
       id: 'face',
       nTypes: 31,
       typeSelected: '',
       colorSelected: ''
     },
-    wrinkles: {
-      id: 'wrinkles',
+    mouth: {
+      id: 'mouth',
       colorSelected: '',
-      childSelected: 'mouth',
+      childSelected: 'upper',
       children: {
-        "mouth": {id:'wrinklesmouth', name: 'Mouth', nTypes: 15, typeSelected: ''},
-        "head": {id:'wrinklesforhead', name: 'Head', nTypes: 7, typeSelected: ''}
+        "upper": {id:'upperlip', name: 'Upper Lip', nTypes: 42, typeSelected: ''},
+        "smile": {id:'smile', name: 'Smile', nTypes: 15, typeSelected: ''},
+        "lower": {id:'lowerlip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
       },
     },
-    hairstyle: {
-      id: 'hairstyle',
-      nTypes: 34,
-      typeSelected: '',
-      colorSelected: ''
-    },
-    fringe: {
-      id: 'fringe',
-      nTypes: 29,
-      typeSelected: '',
-      colorSelected: ''
-    },
-    ears: {
-      id: 'ears',
-      nTypes: 8,
-      typeSelected: '',
-      colorSelected: ''
+    nose: {
+      id: 'nose',
+      colorSelected: '',
+      childSelected: 'nostril',
+      children: {
+        "nostril": {id:'nostril', name: 'Nostril', nTypes: 12, typeSelected: ''},
+        "septum": {id:'septum', name: 'Septum', nTypes: 9, typeSelected: ''}
+      },
     },
     eyes: {
       id: 'eyes',
@@ -68,36 +54,53 @@ function App() {
       typeSelected: '',
       colorSelected: ''
     },
+    fringe: {
+      id: 'fringe',
+      nTypes: 29,
+      typeSelected: '',
+      colorSelected: ''
+    },
+    hairstyle: {
+      id: 'hairstyle',
+      nTypes: 34,
+      typeSelected: '',
+      colorSelected: ''
+    },
+    ears: {
+      id: 'ears',
+      nTypes: 8,
+      typeSelected: '',
+      colorSelected: ''
+    },
+    wrinkles: {
+      id: 'wrinkles',
+      colorSelected: '',
+      childSelected: 'mouth',
+      children: {
+        "mouth": {id:'wrinklesmouth', name: 'Mouth', nTypes: 15, typeSelected: ''},
+        "head": {id:'wrinklesforhead', name: 'Head', nTypes: 7, typeSelected: ''}
+      },
+    },
+    neck: {
+      id: 'neck',
+      nTypes: 12,
+      typeSelected: '',
+      colorSelected: ''
+    },
     glasses: {
       id: 'glasses',
       nTypes: 10,
       typeSelected: '',
       colorSelected: ''
     },
-    nose: {
-      id: 'nose',
+    "facial hair": {
+      id: 'facialhair',
       colorSelected: '',
-      childSelected: 'nostril',
+      childSelected: 'beard',
       children: {
-        "nostril": {id:'nostril', name: 'Nostril', nTypes: 12, typeSelected: ''},
-        "septum": {id:'septum', name: 'Septum', nTypes: 9, typeSelected: ''}
-      },
-    },
-    mouth: {
-      id: 'mouth',
-      colorSelected: '',
-      childSelected: 'upper',
-      children: {
-        "upper": {id:'upperlip', name: 'Upper Lip', nTypes: 42, typeSelected: ''},
-        "smile": {id:'smile', name: 'Smile', nTypes: 15, typeSelected: ''},
-        "lower": {id:'lowerlip', name: 'Lower Lip', nTypes: 27, typeSelected: ''}
-      },
-    },
-    accesories: {
-      id: 'accesories',
-      nTypes: 9,
-      typeSelected: '',
-      colorSelected: ''
+        "beard": {id:'beard', name: 'Beard', nTypes: 4, typeSelected: ''},
+        "mustachio": {id:'mustachio', name: 'Mustachio', nTypes: 18, typeSelected: ''}
+      }
     }
   }
 
@@ -175,7 +178,16 @@ function App() {
       case 'SET_TYPE_WRINKLES_MOUTH':
         return {...state, wrinkles:{...state.wrinkles, children:{...state.wrinkles.children, mouth: {...state.wrinkles.children.mouth,typeSelected:action.payload}}}}
       case 'SET_TYPE_WRINKLES_HEAD':
-        return {...state, wrinkles:{...state.wrinkles, children:{...state.wrinkles.children, head: {...state.wrinkles.children.head,typeSelected:action.payload}}}}      
+        return {...state, wrinkles:{...state.wrinkles, children:{...state.wrinkles.children, head: {...state.wrinkles.children.head,typeSelected:action.payload}}}}
+
+        case 'SET_COLOR_FACIAL HAIR':
+        return {...state, "facial hair":{...state["facial hair"],colorSelected: action.payload}}
+      case 'SET_CHILD_FACIAL HAIR':
+        return {...state, "facial hair":{...state["facial hair"],childSelected:action.payload}}
+      case 'SET_TYPE_FACIAL HAIR_BEARD':
+        return {...state, "facial hair":{...state["facial hair"], children:{...state["facial hair"].children, beard: {...state["facial hair"].children.beard,typeSelected:action.payload}}}}
+      case 'SET_TYPE_FACIAL HAIR_MUSTACHIO':
+        return {...state, "facial hair":{...state["facial hair"], children:{...state["facial hair"].children, mustachio: {...state["facial hair"].children.mustachio,typeSelected:action.payload}}}}  
       default:
         return state
     }
