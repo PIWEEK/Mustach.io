@@ -42,12 +42,12 @@ const Canvas = ({state}) =>
           </g>
         }
         {
-          state["facial hair"].children.beard.typeSelected && <use xlinkHref={`#${state["facial hair"].children.beard.typeSelected}`} style={{fill:"none", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`}} />
+          state["facial hair"].children.beard.typeSelected && <use xlinkHref={`#${state["facial hair"].children.beard.typeSelected}`} style={{fill:state.background.colorSelected?state.background.colorSelected:"#ebeef4", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`}} />
         }
         {
           state["facial hair"].children.mustachio.typeSelected &&  <g>
-            <use xlinkHref={`#${state["facial hair"].children.mustachio.typeSelected}`} style={{fill:"none", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`}} />
-            <use xlinkHref={`#${state["facial hair"].children.mustachio.typeSelected}`} style={{fill:"none", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}}  />
+            <use xlinkHref={`#${state["facial hair"].children.mustachio.typeSelected}`} style={{fill:state.background.colorSelected?state.background.colorSelected:"#ebeef4", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`}} />
+            <use xlinkHref={`#${state["facial hair"].children.mustachio.typeSelected}`} style={{fill:state.background.colorSelected?state.background.colorSelected:"#ebeef4", stroke:`${state["facial hair"].colorSelected?state["facial hair"].colorSelected:'#000000'}`, transformOrigin: "center center", transform:"scaleX(-1)"}}  />
           </g>
         }        
         {
