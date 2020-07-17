@@ -12,9 +12,9 @@ function App() {
       id: 'background',
       colorSelected: '',
       paletes: [
-        ["#2f31c2","#6c95c8","#8b83ce","#d38cf5","#f58ca9","#fff5eb"],
+        ["#2f31c2", "#6c95c8", "#8b83ce","#d38cf5","#f58ca9","#fff5eb"],
         ['#7676b1', '#8a9f86', '#72a0cd', '#f67a6d', '#e2b667', '#fbeae4'], 
-        ['#bdbc8d','#c3ae95','#e59c6e','#ff9c5c','#e4c053','#f5f1e7']
+        ['#bdbc8d', '#c3ae95', '#e59c6e','#ff9c5c','#e4c053','#f5f1e7']
       ],
       paleteIndexSelected: 0
     },
@@ -205,19 +205,19 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const randomGenerate = (palete)=> {
-    dispatch({type: 'SET_COLOR_BACKGROUND', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_FACE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_MOUTH', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_NOSE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_EYES', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_EYEBROWS', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_FRINGE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_HAIRSTYLE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_EARS', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_WRINKLES', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_NECK', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_GLASSES', payload: palete[Math.round(Math.random()*(palete.length-1))]})
-    dispatch({type: 'SET_COLOR_FACIAL HAIR', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_BACKGROUND', payload: palete[palete.length-1]})
+    dispatch({type: 'SET_COLOR_FACE', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_MOUTH', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_NOSE', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_EYES', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_EYEBROWS', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_FRINGE', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_HAIRSTYLE', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_EARS', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_WRINKLES', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_NECK', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_GLASSES', payload: palete[Math.round(Math.random()*(palete.length-2))]})
+    dispatch({type: 'SET_COLOR_FACIAL HAIR', payload: palete[Math.round(Math.random()*(palete.length-2))]})
     
     
     dispatch({type: 'SET_TYPE_FACE', payload: `${state.face.id}-${Math.round(Math.random()*(state.face.nTypes))}`})
@@ -234,12 +234,12 @@ function App() {
     dispatch({type: 'SET_TYPE_FRINGE', payload: `${state.fringe.id}-${Math.round(Math.random()*(state.fringe.nTypes))}`})
     dispatch({type: 'SET_TYPE_HAIRSTYLE', payload: `${state.hairstyle.id}-${Math.round(Math.random()*(state.hairstyle.nTypes))}`})
     dispatch({type: 'SET_TYPE_EARS', payload: `${state.ears.id}-${Math.round(Math.random()*(state.ears.nTypes))}`})
-    dispatch({type: 'SET_TYPE_WRINKLES_MOUTH', payload: `${state.wrinkles.children.mouth.id}-${Math.round(Math.random()*(state.wrinkles.children.mouth.nTypes))}`})
-    dispatch({type: 'SET_TYPE_WRINKLES_HEAD', payload: `${state.wrinkles.children.head.id}-${Math.round(Math.random()*(state.wrinkles.children.head.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_WRINKLES_MOUTH', payload: `${state.wrinkles.children.mouth.id}-${Math.round(Math.random()*(state.wrinkles.children.mouth.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_WRINKLES_HEAD', payload: `${state.wrinkles.children.head.id}-${Math.round(Math.random()*(state.wrinkles.children.head.nTypes))}`})
     dispatch({type: 'SET_TYPE_NECK', payload: `${state.neck.id}-${Math.round(Math.random()*(state.neck.nTypes))}`})
-    dispatch({type: 'SET_TYPE_GLASSES', payload: `${state.glasses.id}-${Math.round(Math.random()*(state.glasses.nTypes))}`})
-    dispatch({type: 'SET_TYPE_FACIAL HAIR_BEARD', payload: `${state['facial hair'].children.beard.id}-${Math.round(Math.random()*(state['facial hair'].children.beard.nTypes))}`})
-    dispatch({type: 'SET_TYPE_FACIAL HAIR_MUSTACHIO', payload: `${state['facial hair'].children.mustachio.id}-${Math.round(Math.random()*(state['facial hair'].children.mustachio.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_GLASSES', payload: `${state.glasses.id}-${Math.round(Math.random()*(state.glasses.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_FACIAL HAIR_BEARD', payload: `${state['facial hair'].children.beard.id}-${Math.round(Math.random()*(state['facial hair'].children.beard.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_FACIAL HAIR_MUSTACHIO', payload: `${state['facial hair'].children.mustachio.id}-${Math.round(Math.random()*(state['facial hair'].children.mustachio.nTypes))}`})
 
   }
 
