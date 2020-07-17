@@ -48,7 +48,7 @@ function App() {
       colorSelected: '',
       childSelected: 'pupil',
       children: {
-        "pupil": {id:'pupil', name: 'Pupil', nTypes: 4, typeSelected: ''},
+        "pupil": {id:'pupil', name: 'Pupil', nTypes: 3, typeSelected: ''},
         "narrow": {id:'eyesnarrow', name: 'Eyes Narrow', nTypes: 26, typeSelected: ''},
         "normal": {id:'eyesnormal', name: 'Eyes Normal', nTypes: 26, typeSelected: ''},
         "wide": {id:'eyeswide', name: 'Eyes Wide', nTypes: 26, typeSelected: ''}
@@ -222,7 +222,9 @@ function App() {
     
     const isGlasses = Math.round(Math.random())
     const isWrinkles = Math.round(Math.random())
-    dispatch({type: 'SET_TYPE_FACE', payload: `${state.face.id}-${Math.round(Math.random()*(state.face.nTypes))}`})
+    const isFace = Math.round(Math.random()*(state.face.nTypes))
+    const isHairstyle = Math.round(Math.random()*(state.hairstyle.nTypes))
+    dispatch({type: 'SET_TYPE_FACE', payload: `${state.face.id}-${isFace?isFace:1}`})
     dispatch({type: 'SET_TYPE_MOUTH_UPPER', payload: `${state.mouth.children.upper.id}-${Math.round(Math.random()*(state.mouth.children.upper.nTypes))}`})
     dispatch({type: 'SET_TYPE_MOUTH_SMILE', payload: `${state.mouth.children.smile.id}-${Math.round(Math.random()*(state.mouth.children.smile.nTypes))}`})
     dispatch({type: 'SET_TYPE_MOUTH_LOWER', payload: `${state.mouth.children.lower.id}-${Math.round(Math.random()*(state.mouth.children.lower.nTypes))}`})
@@ -230,7 +232,7 @@ function App() {
     dispatch({type: 'SET_TYPE_NOSE_SEPTUM', payload: `${state.nose.children.septum.id}-${Math.round(Math.random()*(state.nose.children.septum.nTypes))}`})
     dispatch({type: 'SET_TYPE_EYEBROWS', payload: `${state.eyebrows.id}-${Math.round(Math.random()*(state.eyebrows.nTypes))}`})
     dispatch({type: 'SET_TYPE_FRINGE', payload: `${state.fringe.id}-${Math.round(Math.random()*(state.fringe.nTypes))}`})
-    dispatch({type: 'SET_TYPE_HAIRSTYLE', payload: `${state.hairstyle.id}-${Math.round(Math.random()*(state.hairstyle.nTypes))}`})
+    dispatch({type: 'SET_TYPE_HAIRSTYLE', payload: `${state.hairstyle.id}-${isHairstyle?isHairstyle:1}`})
     dispatch({type: 'SET_TYPE_EARS', payload: `${state.ears.id}-${Math.round(Math.random()*(state.ears.nTypes))}`})
     isWrinkles && dispatch({type: 'SET_TYPE_WRINKLES_MOUTH', payload: `${state.wrinkles.children.mouth.id}-${Math.round(Math.random()*(state.wrinkles.children.mouth.nTypes))}`})
     Math.round(Math.random()) && dispatch({type: 'SET_TYPE_WRINKLES_HEAD', payload: `${state.wrinkles.children.head.id}-${Math.round(Math.random()*(state.wrinkles.children.head.nTypes))}`})
@@ -252,10 +254,24 @@ function App() {
     const paleteIndex = Math.round(Math.random()*(state.background.paletes.length-1))
     dispatch({type: 'SET_PALETE_INDEX', payload: paleteIndex})
     randomGenerate(state.background.paletes[paleteIndex])
+
+
+    window.addEventListener('keydown',(e)=>{
+      if(e.keyCode===66){
+        dispatch({type: 'SET_TYPE_HAIRSTYLE', payload: `${state.hairstyle.id}-32`})
+        dispatch({type: 'SET_TYPE_FRINGE', payload:'' })
+      }
+    });
+
+
   },[])
+  
+  const ayuda=(e)=>{
+    console.log(e.keyCode)
+  }
 
   return (
-    <div className="App">
+    <div className="App" onKeyPress={(e)=>ayuda(e)}>
       <AllSVGs />
       <Header />
       <div className="App-body">

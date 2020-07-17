@@ -290,8 +290,7 @@ const AllSVGs = () =>(
       <path id="neck-2" d="M79.4887 110.631C78.9376 140.391 74.6665 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="neck-1" d="M83.622 110.631C83.0709 140.391 74.6665 165.053 65.7109 165.053" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
-      <circle id="pupil-4" cx="80.9997" cy="90.9997" r="1.66667" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle id="pupil-3" cx="81.0003" cy="91.0003" r="0.333332" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle id="pupil-3" cx="80.9997" cy="90.9997" r="1.66667" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="pupil-2" d="M80.9997 92.6663C81.9201 92.6663 82.6663 91.9201 82.6663 90.9997C82.6663 90.0792 81.9201 89.333 80.9997 89.333M80.9997 92.6663C80.0792 92.6663 79.333 91.9201 79.333 90.9997C79.333 90.0792 80.0792 89.333 80.9997 89.333M80.9997 92.6663V89.333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="pupil-1" d="M81 92.6663V89.333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
