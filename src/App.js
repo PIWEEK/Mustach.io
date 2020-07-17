@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react';
+import React, {useReducer, useEffect} from 'react';
 // import logo from './logo.svg';
 import Header from "./components/Header/Header.js"
 import Canvas from "./components/Canvas/Canvas.js"
@@ -10,7 +10,13 @@ function App() {
   const initialState = {
     background: {
       id: 'background',
-      colorSelected: ''
+      colorSelected: '',
+      paletes: [
+        ["#2f31c2","#6c95c8","#8b83ce","#d38cf5","#f58ca9","#fff5eb"],
+        ['#7676b1', '#8a9f86', '#72a0cd', '#f67a6d', '#e2b667', '#fbeae4'], 
+        ['#bdbc8d','#c3ae95','#e59c6e','#ff9c5c','#e4c053','#f5f1e7']
+      ],
+      paleteIndexSelected: 0
     },
     face: {
       id: 'face',
@@ -187,13 +193,61 @@ function App() {
       case 'SET_TYPE_FACIAL HAIR_BEARD':
         return {...state, "facial hair":{...state["facial hair"], children:{...state["facial hair"].children, beard: {...state["facial hair"].children.beard,typeSelected:action.payload}}}}
       case 'SET_TYPE_FACIAL HAIR_MUSTACHIO':
-        return {...state, "facial hair":{...state["facial hair"], children:{...state["facial hair"].children, mustachio: {...state["facial hair"].children.mustachio,typeSelected:action.payload}}}}  
+        return {...state, "facial hair":{...state["facial hair"], children:{...state["facial hair"].children, mustachio: {...state["facial hair"].children.mustachio,typeSelected:action.payload}}}}
+
+      case 'SET_PALETE_INDEX':
+        return {...state, background:{...state.background, paleteIndexSelected: action.payload}}
       default:
         return state
     }
   }
 
   const [state, dispatch] = useReducer(reducer, initialState)
+
+  const randomGenerate = (palete)=> {
+    dispatch({type: 'SET_COLOR_BACKGROUND', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_FACE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_MOUTH', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_NOSE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_EYES', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_EYEBROWS', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_FRINGE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_HAIRSTYLE', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_EARS', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_WRINKLES', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_NECK', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_GLASSES', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    dispatch({type: 'SET_COLOR_FACIAL HAIR', payload: palete[Math.round(Math.random()*(palete.length-1))]})
+    
+    
+    dispatch({type: 'SET_TYPE_FACE', payload: `${state.face.id}-${Math.round(Math.random()*(state.face.nTypes))}`})
+    dispatch({type: 'SET_TYPE_MOUTH_UPPER', payload: `${state.mouth.children.upper.id}-${Math.round(Math.random()*(state.mouth.children.upper.nTypes))}`})
+    dispatch({type: 'SET_TYPE_MOUTH_SMILE', payload: `${state.mouth.children.smile.id}-${Math.round(Math.random()*(state.mouth.children.smile.nTypes))}`})
+    dispatch({type: 'SET_TYPE_MOUTH_LOWER', payload: `${state.mouth.children.lower.id}-${Math.round(Math.random()*(state.mouth.children.lower.nTypes))}`})
+    dispatch({type: 'SET_TYPE_NOSE_NOSTRIL', payload: `${state.nose.children.nostril.id}-${Math.round(Math.random()*(state.nose.children.nostril.nTypes))}`})
+    dispatch({type: 'SET_TYPE_NOSE_SEPTUM', payload: `${state.nose.children.septum.id}-${Math.round(Math.random()*(state.nose.children.septum.nTypes))}`})
+    dispatch({type: 'SET_TYPE_EYES_PUPIL', payload: `${state.eyes.children.pupil.id}-${Math.round(Math.random()*(state.eyes.children.pupil.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_EYES_NARROW', payload: `${state.eyes.children.narrow.id}-${Math.round(Math.random()*(state.eyes.children.narrow.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_EYES_NORMAL', payload: `${state.eyes.children.normal.id}-${Math.round(Math.random()*(state.eyes.children.normal.nTypes))}`})
+    Math.round(Math.random()) && dispatch({type: 'SET_TYPE_EYES_WIDE', payload: `${state.eyes.children.wide.id}-${Math.round(Math.random()*(state.eyes.children.wide.nTypes))}`})
+    dispatch({type: 'SET_TYPE_EYEBROWS', payload: `${state.eyebrows.id}-${Math.round(Math.random()*(state.eyebrows.nTypes))}`})
+    dispatch({type: 'SET_TYPE_FRINGE', payload: `${state.fringe.id}-${Math.round(Math.random()*(state.fringe.nTypes))}`})
+    dispatch({type: 'SET_TYPE_HAIRSTYLE', payload: `${state.hairstyle.id}-${Math.round(Math.random()*(state.hairstyle.nTypes))}`})
+    dispatch({type: 'SET_TYPE_EARS', payload: `${state.ears.id}-${Math.round(Math.random()*(state.ears.nTypes))}`})
+    dispatch({type: 'SET_TYPE_WRINKLES_MOUTH', payload: `${state.wrinkles.children.mouth.id}-${Math.round(Math.random()*(state.wrinkles.children.mouth.nTypes))}`})
+    dispatch({type: 'SET_TYPE_WRINKLES_HEAD', payload: `${state.wrinkles.children.head.id}-${Math.round(Math.random()*(state.wrinkles.children.head.nTypes))}`})
+    dispatch({type: 'SET_TYPE_NECK', payload: `${state.neck.id}-${Math.round(Math.random()*(state.neck.nTypes))}`})
+    dispatch({type: 'SET_TYPE_GLASSES', payload: `${state.glasses.id}-${Math.round(Math.random()*(state.glasses.nTypes))}`})
+    dispatch({type: 'SET_TYPE_FACIAL HAIR_BEARD', payload: `${state['facial hair'].children.beard.id}-${Math.round(Math.random()*(state['facial hair'].children.beard.nTypes))}`})
+    dispatch({type: 'SET_TYPE_FACIAL HAIR_MUSTACHIO', payload: `${state['facial hair'].children.mustachio.id}-${Math.round(Math.random()*(state['facial hair'].children.mustachio.nTypes))}`})
+
+  }
+
+  useEffect(()=>{
+    const paleteIndex = Math.round(Math.random()*(state.background.paletes.length-1))
+    dispatch({type: 'SET_PALETE_INDEX', payload: paleteIndex})
+    randomGenerate(state.background.paletes[paleteIndex])
+  },[])
 
   return (
     <div className="App">

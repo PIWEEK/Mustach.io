@@ -21,7 +21,7 @@ const ParametricMenu = ({state, dispatch}) => {
           option={option}
           setOption={setOption}
         />
-        <ColorSelector colorSelected={state[option].colorSelected} changeColor={changeColor} />
+        <ColorSelector colorSelected={state[option].colorSelected} changeColor={changeColor} colors = {state.background.paletes[state.background.paleteIndexSelected]}/>
         {option!=='background' && <SVGsList feature={state[option]} changetypeSelected={changetypeSelected} changeChildSelected={changeChildSelected} changeChildTypeSelected={changeChildTypeSelected}/>}
       </div>
     </div>
