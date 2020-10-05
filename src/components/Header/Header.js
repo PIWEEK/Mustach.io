@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () =>
   <header className="App-header">
-    <h1>Mustach.io</h1>
+    <h1>Mustachio</h1>
   </header>
 
 export default Header;
