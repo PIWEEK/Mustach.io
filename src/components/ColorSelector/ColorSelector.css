@@ -1,27 +1,30 @@
 .color-selector-container {
   display: flex;
   overflow: hidden;
-  padding: 2rem;
-  position: relative;
+  padding: 1.5rem;
+  justify-content: space-around;
+  max-width: 30rem;
 }
 
 .color-item {
   border-radius: 50%;
-  height: 42px;
-  width: 42px;
-  margin-right: .8rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .color-item.selected,
 .color-item:hover {
-  border: 3px solid rgba(0, 0, 0, 0.1);
+  border: .2rem solid rgba(0, 0, 0, 0.1);
+}
+
+.color-picker {
+  border-right: .1rem solid #e6eaf3;
 }
 
 .separator {
-  background-color: #e6eaf3;
-  height: 42px;
-  margin-right: 1rem;
-  width: 2px;
+  background-color: #B4BEDB;
+  height: 2rem;
+  width: .1rem;
 }
 
 .color-item.default {
@@ -34,6 +37,6 @@
 
 #picker {
   position: absolute;
-  top: 70px;
+  top: 5rem;
   visibility: hidden;
 }

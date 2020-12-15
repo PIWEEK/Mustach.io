@@ -1,19 +1,19 @@
 .vectors-list {
   display: flex;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  justify-content: space-around;
 }
 .children-menu {
   display: flex;
-  font-family: 'PT Serif', serif;
-  font-size: 24px;
+  font-size: 0.75rem;
   font-weight: bold;
-  padding: 1.2rem;
+  padding: 0 0 0 1.5rem;
   width: 100%;
+  text-transform: uppercase;
 }
 .child-item {
   color: #b4bedb;
-  padding: 5px 14px;
+  padding: 0 2rem 0 0;
 }
 .child-item:hover {
   background-color: rgba(230, 234, 243, 0.4);
@@ -24,16 +24,14 @@
 }
 .item {
   overflow: hidden;
-  height: 180px;
-  width: 180px;
+  margin: 0 1rem 1rem;
 }
 
 .item svg {
   border-radius: 1.25rem;
   fill: none;
-  height: 180px;
   transform-origin: center center;
-  width: 180px;
+  width: 6.5rem;
 }
 
 .item.selected,
@@ -43,8 +41,6 @@
 }
 .item.empty {
   border-radius: 1.25rem;
-  height: 180px;
-  width: 180px;  
 }
 
 svg.face {
@@ -96,4 +92,16 @@ svg.mustachio {
 }
 svg.beard {
   transform: scale(2.2) translateY(-18px);
+}
+
+@media (max-width: 50rem) {
+  .vectors-list {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  .item {
+    overflow: visible;
+  }
 }
