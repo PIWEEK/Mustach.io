@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
-import './Header.css';
+import React from 'react';
+import './Download.css';
 
-const Header = () => {
-  const [visible, setVisible] = useState(false);
+const Download = () => {
   const selectDownload = (opcion)=> {
     console.log('selectDownload', opcion);
-    setVisible(!visible);
   }
-
-  return <header className="App-header">
-    <h1>Mustachio</h1>
-    <div onClick={()=>setVisible(!visible)} className={`download-button ${visible?'visible':''}`}>
+  return <div className="download-wrapper">
+    <h2>Mustachio</h2>
+    <div className="download-button">
       <svg className="download-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 62"><defs/><path fill="#000" d="M20 .3L21.7 54l18-15.6L20 61.4.3 38.4l18 15.7L20 .3z"/></svg>
       <span className="download-text">Download</span>
       <ul className="download-list">
@@ -19,7 +16,7 @@ const Header = () => {
         <li onClick={()=>selectDownload('SVG')}>SVG</li>
       </ul>
     </div>
-  </header>
+    <p className="legal">This is a project by @samuel_mad, @reversotenebros and @estdubois made during the piweek</p>
+  </div>
 }
-
-export default Header;
+export default Download;

@@ -12,10 +12,10 @@ const ParametricMenu = ({state, dispatch}) => {
   const changetypeSelected = (newType) => dispatch({type: `SET_TYPE_${option.toUpperCase()}`, payload: newType})
   const changeChildSelected = (newChild) => dispatch({type: `SET_CHILD_${option.toUpperCase()}`, payload: newChild})
   const changeChildTypeSelected = (newType) => dispatch({type: `SET_TYPE_${option.toUpperCase()}_${state[option].childSelected.toUpperCase()}`, payload: newType})
-  
-  return ( 
-    <div className="parametric-menu-container">
-      <div>
+
+  return (
+    <div className="parametric-container">
+      <div className="parametric-menu">
         <Dropdown
           optiosMenu={optiosMenu}
           option={option}
@@ -24,6 +24,7 @@ const ParametricMenu = ({state, dispatch}) => {
         <ColorSelector colorSelected={state[option].colorSelected} changeColor={changeColor} colors = {state.background.paletes[state.background.paleteIndexSelected]}/>
         {option!=='background' && <SVGsList feature={state[option]} changetypeSelected={changetypeSelected} changeChildSelected={changeChildSelected} changeChildTypeSelected={changeChildTypeSelected}/>}
       </div>
+      <p className="legal">This is a project by @samuel_mad, @reversotenebros and @estdubois made during the piweek</p>
     </div>
   )
 }

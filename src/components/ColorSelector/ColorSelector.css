@@ -1,15 +1,13 @@
 .color-selector-container {
   display: flex;
-  overflow: hidden;
-  padding: 1.5rem;
-  justify-content: space-around;
-  max-width: 30rem;
+  padding: 1.5rem 0 0 1.5rem;
 }
 
 .color-item {
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  max-width: 2rem;
+  width: 100%;
+  margin: 0 .5rem;
 }
 
 .color-item.selected,
@@ -25,6 +23,7 @@
   background-color: #B4BEDB;
   height: 2rem;
   width: .1rem;
+  margin: 0 .5rem;
 }
 
 .color-item.default {

@@ -2,12 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-content: flex-start;
+  overflow: hidden auto;
+  margin: 2rem 0;
+  max-height: calc(100vh - 200px);
+  height: auto;
 }
 .children-menu {
   display: flex;
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 0 0 0 1.5rem;
+  padding: 1.5rem;
   width: 100%;
   text-transform: uppercase;
 }
@@ -23,8 +28,8 @@
   color: #000;
 }
 .item {
-  overflow: hidden;
   margin: 0 1rem 1rem;
+  overflow: hidden;
 }
 
 .item svg {
@@ -97,8 +102,10 @@ svg.beard {
 @media (max-width: 50rem) {
   .vectors-list {
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow: auto hidden;
     justify-content: flex-start;
+    max-height: 100%;
+    flex-direction: row;
   }
 
   .item {

@@ -2,8 +2,9 @@
   background-color: #fff;
   display: flex;
   flex-grow: 1;
-  width: 100vh;
   max-height: 100vh;
+  min-width: 60%;
+  max-width: 100vw;
 }
 
 .canvas {
@@ -14,5 +15,6 @@
   .container-canvas {
     width: 100vw;
     padding: 0;
+    position: relative;
   }
 }

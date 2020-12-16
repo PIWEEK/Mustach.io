@@ -1,10 +1,10 @@
 import React, {useReducer, useEffect} from 'react';
 // import logo from './logo.svg';
-import Header from "./components/Header/Header.js"
 import Canvas from "./components/Canvas/Canvas.js"
 import './App.css';
 import ParametricMenu from './components/ParametricMenu/ParametricMenu.js';
 import AllSVGs from './components/AllSVGs/AllSVGs.js';
+import Download from './components/Download/Download.js'
 
 function App() {
   const initialState = {
@@ -13,7 +13,7 @@ function App() {
       colorSelected: '',
       paletes: [
         ["#2f31c2", "#6c95c8", "#8b83ce","#d38cf5","#f58ca9","#fff5eb"],
-        ['#7676b1', '#8a9f86', '#72a0cd', '#f67a6d', '#e2b667', '#fbeae4'], 
+        ['#7676b1', '#8a9f86', '#72a0cd', '#f67a6d', '#e2b667', '#fbeae4'],
         ['#bdbc8d', '#c3ae95', '#e59c6e','#ff9c5c','#e4c053','#f5f1e7']
       ],
       paleteIndexSelected: 0
@@ -146,8 +146,8 @@ function App() {
         return {...state, mouth:{...state.mouth,colorSelected: action.payload}}
       case 'SET_CHILD_MOUTH':
         return {...state, mouth:{...state.mouth,childSelected:action.payload}}
-      
-      
+
+
       case 'SET_TYPE_MOUTH_UPPER':
         return {...state, mouth:{...state.mouth, children:{...state.mouth.children, upper: {...state.mouth.children.upper,typeSelected:action.payload}}}}
       case 'SET_TYPE_MOUTH_SMILE':
@@ -163,7 +163,7 @@ function App() {
         return {...state, nose:{...state.nose, children:{...state.nose.children, nostril: {...state.nose.children.nostril,typeSelected:action.payload}}}}
       case 'SET_TYPE_NOSE_SEPTUM':
         return {...state, nose:{...state.nose, children:{...state.nose.children, septum: {...state.nose.children.septum,typeSelected:action.payload}}}}
-      
+
       case 'SET_COLOR_EYES':
         return {...state, eyes:{...state.eyes,colorSelected: action.payload}}
       case 'SET_CHILD_EYES':
@@ -176,7 +176,7 @@ function App() {
         return {...state, eyes:{...state.eyes, children:{...state.eyes.children, narrow: {...state.eyes.children.narrow,typeSelected:''}, normal: {...state.eyes.children.normal,typeSelected:action.payload}, wide: {...state.eyes.children.wide,typeSelected:''}}}}
       case 'SET_TYPE_EYES_WIDE':
         return {...state, eyes:{...state.eyes, children:{...state.eyes.children, narrow: {...state.eyes.children.narrow,typeSelected:''}, normal: {...state.eyes.children.normal,typeSelected:''}, wide: {...state.eyes.children.wide,typeSelected:action.payload}}}}
-            
+
       case 'SET_COLOR_WRINKLES':
         return {...state, wrinkles:{...state.wrinkles,colorSelected: action.payload}}
       case 'SET_CHILD_WRINKLES':
@@ -218,8 +218,8 @@ function App() {
     dispatch({type: 'SET_COLOR_NECK', payload: palete[Math.round(Math.random()*(palete.length-2))]})
     dispatch({type: 'SET_COLOR_GLASSES', payload: palete[Math.round(Math.random()*(palete.length-2))]})
     dispatch({type: 'SET_COLOR_FACIAL HAIR', payload: palete[Math.round(Math.random()*(palete.length-2))]})
-    
-    
+
+
     const isGlasses = Math.round(Math.random())
     const isWrinkles = Math.round(Math.random())
     const isFace = Math.round(Math.random()*(state.face.nTypes))
@@ -265,7 +265,7 @@ function App() {
 
 
   },[])
-  
+
   const ayuda=(e)=>{
     console.log(e.keyCode)
   }
@@ -273,9 +273,12 @@ function App() {
   return (
     <div className="App" onKeyPress={(e)=>ayuda(e)}>
       <AllSVGs />
-      <Header />
+      {
+        (false == true) &&
+          <Download />
+      }
       <div className="App-body">
-        <Canvas state={state}/>
+        <Canvas state={state} />
         <ParametricMenu state={state} dispatch={dispatch}/>
       </div>
     </div>
