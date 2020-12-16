@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AllSVGs = () =>(
-  <svg style={{display:'none'}} xmlns='http://www.w3.org/2000/svg' version='1.1'>
+  <svg style={{display:'none'}} xmlns='http://www.w3.org/2000/svg' version='1.1' xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>
       {/* HAIR STYLE */}
       <path id="hairstyle-1" d="M179.774 5C179.774 5 40.1272 32.852 103.613 206.943C110.101 224.735 124.329 251.033 147.772 260.092C171.606 269.303 187.943 269.303 211.777 260.092C235.22 251.033 249.447 224.735 255.936 206.943C319.422 32.852 179.774 5 179.774 5Z"/>
@@ -371,7 +371,7 @@ const AllSVGs = () =>(
       <path id="eyelashes-10" d="M116.282 179.213C116.282 179.213 119.746 172.932 132.655 172.25C145.564 171.568 156.296 179.501 156.296 179.501" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="eyelashes-11" d="M116.282 181.213C116.282 181.213 119.746 171.932 132.655 171.25C145.564 170.568 156.296 181.501 156.296 181.501" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="eyelashes-12" d="M116.282 183.213C116.282 183.213 119.746 170.932 132.655 170.25C145.564 169.568 156.296 183.501 156.296 183.501" strokeLinecap="round" strokeLinejoin="round"/>
-      
+
       {/* EYEBROWS */}
       <path id="eyebrows-1" d="M130.456 145.324C137.756 143.252 157.218 155.879 162.562 161.267C161.375 165.875 146.75 145.324 130.456 145.324ZM130.456 145.324C123.156 147.396 110 161.267 103.965 164.78"  strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="eyebrows-2" d="M129.456 145.324C136.756 143.252 158.75 155 162.562 161.267C158.25 164.78 145.75 145.324 129.456 145.324ZM129.456 145.324C122.156 147.396 110 161.267 103.965 164.78"  strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>

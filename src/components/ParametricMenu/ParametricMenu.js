@@ -38,7 +38,7 @@ const ParametricMenu = ({setSectionSelected}) => {
           setOption={setOption}
           setSectionSelected={setSectionSelected}
         />
-        <ColorSelector 
+        <ColorSelector
           colorSelected={!option.subSection?state[option.section].color:state[option.section][`${option.subSection}Color`]}
           changeColor={changeColor}
           colors = {state.background.paletteSelected}/>

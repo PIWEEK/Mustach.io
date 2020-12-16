@@ -3,7 +3,7 @@ import './ColorSelector.css';
 
 const ColorSelector = ({colorSelected, changeColor, colors}) => {
   // const [colorSelected, setColorSelected] = useState('')
-  const [colorPickerValue, setColorPickerValue] = useState('')
+  const [colorPickerValue, setColorPickerValue] = useState('#ffffff')
   const changeColorSelected = (newColor) => {
     changeColor(newColor);
   }

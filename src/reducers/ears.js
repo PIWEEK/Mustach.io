@@ -9,11 +9,12 @@ const initialState = {
 }
 
 export default (state = initialState, action) => {
+  console.log('reducer', action, state);
   switch (action.type) {
     case 'SET_EARS':
       return {...state, ...action.payload};
     case 'SET_COLOR_EARS':
-      return {...state, color: action.payload}; 
+      return {...state, color: action.payload};
     case 'SET_TYPE_EARS':
       return {...state, type: action.payload};
     case 'SET_POSITION_EARS':

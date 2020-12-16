@@ -33,14 +33,14 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_HAIRSTYLE', 
+      type: 'SET_HAIRSTYLE',
       payload: {
         color: palette[5],
         type: randomize(state.hairstyle.nTypes, 'ceil')
       }
     });
     dispatch({
-      type: 'SET_EARS', 
+      type: 'SET_EARS',
       payload: {
         color: palette[2],
         type: randomize(state.ears.nTypes, 'ceil')
@@ -48,7 +48,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_FRINGE', 
+      type: 'SET_FRINGE',
       payload: {
         color: palette[1],
         type: randomize(state.fringe.nTypes, 'ceil')
@@ -56,7 +56,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_JAWLINE', 
+      type: 'SET_JAWLINE',
       payload: {
         color: palette[1],
         type: randomize(state.jawline.nTypes, 'ceil'),
@@ -64,7 +64,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_MOUTH', 
+      type: 'SET_MOUTH',
       payload: {
         upperlipColor:palette[4],
         upperlipType: randomize(state.mouth.nTypesUpperLip, 'ceil'),
@@ -76,7 +76,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_WRINKLES', 
+      type: 'SET_WRINKLES',
       payload: {
         wrinklesforeheadType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
         wrinklesforeheadColor: palette[2],
@@ -92,7 +92,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_MUSTACHIO', 
+      type: 'SET_MUSTACHIO',
       payload: {
         color: palette[5],
         type:  !!Math.round(Math.random()-0.2) ? randomize(state.mustachio.nTypes, 'ceil') : '',
@@ -100,7 +100,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_NOSE', 
+      type: 'SET_NOSE',
       payload: {
         nostrilsColor:palette[3],
         nostrilsType: randomize(state.nose.nTypesNostrils, 'ceil'),
@@ -110,7 +110,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_EYES', 
+      type: 'SET_EYES',
       payload: {
         pupilColor: '#000000',
         eyelidColor: palette[3],
@@ -125,7 +125,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_EYEBROWS', 
+      type: 'SET_EYEBROWS',
       payload: {
         color: palette[4],
         type: randomize(state.eyebrows.nTypes, 'ceil')
@@ -133,7 +133,7 @@ function App() {
     });
 
     dispatch({
-      type: 'SET_GLASSES', 
+      type: 'SET_GLASSES',
       payload: {
         color: palette[5],
         type:  !!Math.round(Math.random()-0.2) ? randomize(state.glasses.nTypes, 'ceil') : ''
@@ -148,7 +148,7 @@ function App() {
     setRandomTimer(timer);
     clearInterval();
   },[])
-  
+
   return (
     <div className="App" onClick={()=>clearInterval(randomTimer)}>
       <AllSVGs />
