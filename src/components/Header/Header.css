@@ -1,3 +1,17 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  overflow: hidden;
+  height: 100%;
+  padding: 0 .5rem;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+}
+
 h1 {
   color: #000000;
   font-family: 'buffon', serif;
@@ -11,9 +25,35 @@ h1 {
   text-transform: lowercase;
 }
 
+.download-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-arrow {
+  width: 2.5rem;
+}
+
+.download-text{
+  margin: 1rem 0;
+}
+.download-list {
+  margin-bottom: -6rem;
+  transition: margin-bottom 1s ease;
+}
+.download-button.visible .download-list {
+  margin-bottom: 0rem;
+}
+.download-list li {
+  margin: .5rem 0;
+}
+
 @media (max-width: 50rem) {
   .App-header {
     position: absolute;
+    padding: 0.5rem;
+    z-index: 10;
   }
   h1 {
     display:block;
@@ -21,8 +61,16 @@ h1 {
     transform: none;
     writing-mode: initial;
     padding: 0 .5rem;
+    font-size: 2.5rem;
   }
   h1::first-letter {
     visibility: visible;
+  }
+  .download-text, .download-list{
+    display: none;
+  }
+  .download-button {
+    align-self: flex-start;
+    margin: 0 .5rem;
   }
 }
