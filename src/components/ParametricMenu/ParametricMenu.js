@@ -40,7 +40,7 @@ const ParametricMenu = () => {
         <ColorSelector 
           colorSelected={!option.subSection?state[option.section].color:state[option.section][`${option.subSection}Color`]}
           changeColor={changeColor}
-          colors = {state.palette.selected}/>
+          colors = {state.background.paletteSelected}/>
         {option!=='background' && <SVGsList feature={state[option.section]} changeTypeSelected={changeTypeSelected} changeSubsectionsSelected={changeSubsectionsSelected} />}
       </div>
       <p className="legal">This is a project by @samuel_mad, @reversotenebros and @estdubois made during the piweek</p>

@@ -1,7 +1,7 @@
 const palettes = [
-  ["#2f31c2", "#6c95c8", "#8b83ce","#d38cf5","#f58ca9","#fff5eb"],
-  ['#7676b1', '#8a9f86', '#72a0cd', '#f67a6d', '#e2b667', '#fbeae4'], 
-  ['#bdbc8d', '#c3ae95', '#e59c6e','#ff9c5c','#e4c053','#f5f1e7']
+  ['#B9B9B9', 'A3A3A3', '#8D8D8D', '#6F6F6F', '#5E5E5E','#000000'],
+  ['#738576', '#FFCFBA', '#FFBC9F', '#F68585', '#E05849','#FFA06B'],
+  ['#5C899C', '#7F4841', '#613731', '#64322B', '#301A17', '#000000']
 ];
 const randomPalette = (palettes)=>palettes[Math.round(Math.random(palettes.length-1))]
 const initialState = {
