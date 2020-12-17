@@ -12,11 +12,11 @@ export default (state = initialState, action) => {
       return {...state, ...action.payload};
     case 'SET_COLOR_GLASSES':
       return {...state, color: action.payload}; 
-    case 'SET_GLASSES_TYPE':
+    case 'SET_TYPE_GLASSES':
       return {...state, type: action.payload};
-    case 'SET_GLASSES_POSITION':
+    case 'SET_POSITION_GLASSES':
       return {...state, position: action.payload};
-    case 'SET_GLASSES_SCALE':
+    case 'SET_SCALE_GLASSES':
       return {...state, scale: action.payload};
     default:
       return state;

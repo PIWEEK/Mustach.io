@@ -8,17 +8,16 @@ const initialState = {
 }
 
 export default (state = initialState, action) => {
-  console.log(action)
   switch (action.type) {
     case 'SET_FRINGE':
       return {...state, ...action.payload};
     case 'SET_COLOR_FRINGE':
       return {...state, color: action.payload}; 
-    case 'SET_FRINGE_TYPE':
+    case 'SET_TYPE_FRINGE':
       return {...state, type: action.payload};
-    case 'SET_FRINGE_POSITION':
+    case 'SET_POSITION_FRINGE':
       return {...state, position: action.payload};
-    case 'SET_FRINGE_SCALE':
+    case 'SET_SCALE_FRINGE':
       return {...state, scale: action.payload};
     default:
       return state;

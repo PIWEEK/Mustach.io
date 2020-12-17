@@ -13,11 +13,11 @@ export default (state = initialState, action) => {
       return {...state, ...action.payload};
     case 'SET_COLOR_JAWLINE':
       return {...state, color: action.payload}; 
-    case 'SET_JAWLINE_TYPE':
+    case 'SET_TYPE_JAWLINE':
       return {...state, type: action.payload};
-    case 'SET_JAWLINE_POSITION':
+    case 'SET_POSITION_JAWLINE':
       return {...state, position: action.payload};
-    case 'SET_JAWLINE_SCALE':
+    case 'SET_SCALE_JAWLINE':
       return {...state, scale: action.payload};
     default:
       return state;

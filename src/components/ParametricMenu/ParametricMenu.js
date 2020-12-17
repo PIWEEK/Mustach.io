@@ -13,12 +13,21 @@ const ParametricMenu = () => {
   const optiosMenu = Object.entries(state).map(x=>x[0])
 
   const changeColor = (newColor) => dispatch({
-    type: `SET_COLOR_${(!option.subSection?option.section : option.subSection).toUpperCase()}`,
+    type: `SET_COLOR_${(!state[option.section].subsectionSelected?option.section : state[option.section].subsectionSelected.split(' ').join('_')).toUpperCase()}`,
     payload: newColor
   })
-  const changetypeSelected = (newType) => dispatch({type: `SET_TYPE_${option.toUpperCase()}`, payload: newType})
-  const changeChildSelected = (newChild) => dispatch({type: `SET_CHILD_${option.toUpperCase()}`, payload: newChild})
-  const changeChildTypeSelected = (newType) => dispatch({type: `SET_TYPE_${option.toUpperCase()}_${state[option].childSelected.toUpperCase()}`, payload: newType})
+
+  const changeTypeSelected = (newType) =>{
+    dispatch({
+      type: `SET_TYPE_${(!state[option.section].subsectionSelected?option.section : state[option.section].subsectionSelected.split(' ').join('_')).toUpperCase()}`,
+      payload: newType
+    })
+  }
+
+  const changeSubsectionsSelected = (newSubsection) =>{
+    setOption({...option, subSection: newSubsection})
+    dispatch({type: `SET_SUBSECTION_SELECTED_${option.section.toUpperCase()}`, payload: newSubsection})
+  }
 
   return (
     <div className="parametric-container">
@@ -32,7 +41,7 @@ const ParametricMenu = () => {
           colorSelected={!option.subSection?state[option.section].color:state[option.section][`${option.subSection}Color`]}
           changeColor={changeColor}
           colors = {state.palette.selected}/>
-        {/* {option!=='background' && <SVGsList feature={state[option]} changetypeSelected={changetypeSelected} changeChildSelected={changeChildSelected} changeChildTypeSelected={changeChildTypeSelected}/>} */}
+        {option!=='background' && <SVGsList feature={state[option.section]} changeTypeSelected={changeTypeSelected} changeSubsectionsSelected={changeSubsectionsSelected} />}
       </div>
       <p className="legal">This is a project by @samuel_mad, @reversotenebros and @estdubois made during the piweek</p>
     </div>

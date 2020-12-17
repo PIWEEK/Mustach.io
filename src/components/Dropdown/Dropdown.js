@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import './Dropdown.css';
+import { useSelector } from 'react-redux';
 
 const Dropdown = ({optiosMenu, option, setOption}) => {
 
   const [visible, setVisible] = useState(false);
+  const state = useSelector(state => state);
   const selectOption = (opcion)=> {
-    console.log(option)
-    setOption({...option, section:opcion});
+    if(state[opcion].subsections){
+      setOption({...option, section:opcion, subSection: state.subsectionSelected});
+    } else {
+      setOption({...option, section:opcion});
+    }
+
     setVisible(!visible);
   }
-  console.log(optiosMenu)
 
   return <div className={`dropdown-container ${visible?'visible':''}`}>
     <h2 onClick={()=>setVisible(!visible)}>{option.section}

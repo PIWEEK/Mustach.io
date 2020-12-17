@@ -14,11 +14,11 @@ export default (state = initialState, action) => {
       return {...state, ...action.payload};
     case 'SET_COLOR_EARS':
       return {...state, color: action.payload}; 
-    case 'SET_EARS_TYPE':
+    case 'SET_TYPE_EARS':
       return {...state, type: action.payload};
-    case 'SET_EARS_POSITION':
+    case 'SET_POSITION_EARS':
       return {...state, position: action.payload};
-    case 'SET_EARS_SCALE':
+    case 'SET_SCALE_EARS':
       return {...state, scale: action.payload};
     default:
       return state;

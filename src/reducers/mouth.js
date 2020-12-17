@@ -2,16 +2,18 @@
 const initialState = {
   position: 0,
   scale: 0,
+  subsections: ['Upper Lip','Lower Lip','Smile'],
+  subsectionSelected:'Upper Lip',
   nTypesUpperLip: 36,
   nTypesSmile: 13,
   nTypesLowerLip: 21,
-  upperLipColor:'',
-  upperLipType:'',
+  upperlipColor:'',
+  upperlipType:'',
   smileColor:'',
   smileWidth: 3,
   smileType:'',
-  lowerLipColor:'',
-  lowerLipType:''
+  lowerlipColor:'',
+  lowerlipType:''
 }
 
 export default (state = initialState, action) => {
@@ -23,17 +25,19 @@ export default (state = initialState, action) => {
     case 'SET_MOUTH_SCALE':
       return {...state, scale: action.payload};
     case 'SET_UPPER_LIP_COLOR':
-      return {...state, upperLipColor: action.payload}; 
+      return {...state, upperlipColor: action.payload}; 
     case 'SET_UPPER_LIP_TYPE':
-      return {...state, upperLipType: action.payload};
+      return {...state, upperlipType: action.payload};
     case 'SET_SMILE_COLOR':
       return {...state, eyelashesColor: action.payload}; 
     case 'SET_SMILE_TYPE':
       return {...state, eyelashesType: action.payload};
     case 'SET_LOWER_LIP_COLOR':
-      return {...state, lowerLipColor: action.payload}; 
+      return {...state, lowerlipColor: action.payload}; 
     case 'SET_LOWER_LIP_TYPE':
-      return {...state, lowerLipType: action.payload};
+      return {...state, lowerlipType: action.payload};
+    case 'SET_SUBSECTION_SELECTED_MOUTH':
+      return {...state, subsectionSelected: action.payload};
     default:
       return state;
   }

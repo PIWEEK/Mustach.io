@@ -2,6 +2,8 @@
 const initialState = {
   position: 0,
   scale: 0,
+  subsections: ['Nostrils','Septum'],
+  subsectionSelected:'Nostrils',
   nTypesNostrils: 22,
   nostrilsColor:'',
   nostrilsWidth:3,
@@ -22,12 +24,14 @@ export default (state = initialState, action) => {
       return {...state, scale: action.payload};
     case 'SET_COLOR_NOSTRILS':
       return {...state, nostrilsColor: action.payload}; 
-    case 'SET_NOSTRILS_TYPE':
+    case 'SET_TYPE_NOSTRILS':
       return {...state, nostrilsType: action.payload};
     case 'SET_COLOR_SEPTUM':
       return {...state, septumColor: action.payload}; 
-    case 'SET_SEPTUM_TYPE':
+    case 'SET_TYPE_SEPTUM':
       return {...state, septumType: action.payload};
+    case 'SET_SUBSECTION_SELECTED_NOSE':
+      return {...state, subsectionSelected: action.payload};
     default:
       return state;
   }

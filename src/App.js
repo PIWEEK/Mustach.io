@@ -50,12 +50,12 @@ function App() {
     dispatch({
       type: 'SET_MOUTH', 
       payload: {
-        upperLipColor:palette[randomize(palette.length-2)],
-        upperLipType: randomize(state.mouth.nTypesUpperLip, 'ceil'),
+        upperlipColor:palette[randomize(palette.length-2)],
+        upperlipType: randomize(state.mouth.nTypesUpperLip, 'ceil'),
         smileColor: palette[randomize(palette.length-2)],
         smileType: randomize(state.mouth.nTypesSmile, 'ceil'),
-        lowerLipColor: palette[randomize(palette.length-2)],
-        lowerLipType: randomize(state.mouth.nTypesLowerLip, 'ceil')
+        lowerlipColor: palette[randomize(palette.length-2)],
+        lowerlipType: randomize(state.mouth.nTypesLowerLip, 'ceil')
       }
     });
 

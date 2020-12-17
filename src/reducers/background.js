@@ -1,5 +1,6 @@
 
 const initialState = {
+  id:"background",
   color: ''
 }
 

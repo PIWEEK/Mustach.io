@@ -11,11 +11,11 @@ export default (state = initialState, action) => {
       return {...state, ...action.payload};
     case 'SET_COLOR_HAIRSTYLE':
       return {...state, color: action.payload}; 
-    case 'SET_HAIRSTYLE_TYPE':
+    case 'SET_TYPE_HAIRSTYLE':
       return {...state, type: action.payload};
-    case 'SET_HAIRSTYLE_POSITION':
+    case 'SET_POSITION_HAIRSTYLE':
       return {...state, position: action.payload};
-    case 'SET_HAIRSTYLE_SCALE':
+    case 'SET_SCALE_HAIRSTYLE':
       return {...state, scale: action.payload};
     default:
       return state;
