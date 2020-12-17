@@ -4,8 +4,8 @@ const initialState = {
   color:'',
   nTypes: 2,
   type:'',
-  position: 0,
-  scale: 0
+  position: {x:0,y:0},
+  scale: 1
 }
 
 export default (state = initialState, action) => {

@@ -1,8 +1,8 @@
 
 const initialState = {
   id: 'eyes',
-  position: 0,
-  scale: 0,
+  position: {x:0,y:0},
+  scale: 1,
   subsections: ['Eyelid','White','Iris','Pupil','Eyelashes'],
   subsectionSelected:'Eyelid',
   nTypesPupil: 5,

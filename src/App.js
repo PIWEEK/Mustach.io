@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Canvas from "./components/Canvas/Canvas.js"
 import './App.css';
 import ParametricMenu from './components/ParametricMenu/ParametricMenu.js';
@@ -7,6 +7,7 @@ import Download from './components/Download/Download.js'
 import {useSelector, useDispatch} from 'react-redux'
 
 function App() {
+  const [sectionSelected, setSectionSelected] = useState('background')
   const state = useSelector(state=>state)
   const dispatch = useDispatch()
   const randomize = (param, round = 'normal') =>{
@@ -20,6 +21,13 @@ function App() {
   }
   const randomColors = (palette) => {
     dispatch({type: 'SET_COLOR_BACKGROUND', payload: palette[0]});
+    dispatch({
+      type: 'SET_HAIRSTYLE', 
+      payload: {
+        color: palette[5],
+        type: randomize(state.hairstyle.nTypes, 'ceil')
+      }
+    });
     dispatch({
       type: 'SET_EARS', 
       payload: {
@@ -113,8 +121,8 @@ function App() {
           <Download />
       }
       <div className="App-body">
-        <Canvas />
-        <ParametricMenu/>
+        <Canvas sectionSelected={sectionSelected}/>
+        <ParametricMenu setSectionSelected={setSectionSelected}/>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_JAWLINE':
       return {...state, type: action.payload};
     case 'SET_POSITION_JAWLINE':
-      return {...state, position: action.payload};
+      return {...state, position: action.payload.y};
     case 'SET_SCALE_JAWLINE':
       return {...state, scale: action.payload};
     default:

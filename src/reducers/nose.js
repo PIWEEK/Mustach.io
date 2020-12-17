@@ -19,8 +19,8 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'SET_NOSE':
       return {...state, ...action.payload};
-    case 'SET_NOSE_POSITION':
-      return {...state, position: action.payload};
+    case 'SET_POSITION_NOSE':
+      return {...state, position: action.payload.y};
     case 'SET_NOSE_SCALE':
       return {...state, scale: action.payload};
     case 'SET_COLOR_NOSTRILS':

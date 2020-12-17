@@ -21,9 +21,9 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'SET_MOUTH':
       return {...state, ...action.payload};
-    case 'SET_MOUTH_POSITION':
-      return {...state, position: action.payload};
-    case 'SET_MOUTH_SCALE':
+    case 'SET_POSITION_MOUTH':
+      return {...state, position: action.payload.y};
+    case 'SET_SCALE_MOUTH':
       return {...state, scale: action.payload};
     case 'SET_UPPER_LIP_COLOR':
       return {...state, upperlipColor: action.payload}; 

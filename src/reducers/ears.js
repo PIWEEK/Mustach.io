@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_EARS':
       return {...state, type: action.payload};
     case 'SET_POSITION_EARS':
-      return {...state, position: action.payload};
+      return {...state, position: action.payload.y};
     case 'SET_SCALE_EARS':
       return {...state, scale: action.payload};
     default:

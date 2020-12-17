@@ -2,6 +2,7 @@
 const initialState = {
   id: 'hairstyle',
   color:'',
+  nTypes: 71,
   type:'',
   position: 0
 }
@@ -15,7 +16,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_HAIRSTYLE':
       return {...state, type: action.payload};
     case 'SET_POSITION_HAIRSTYLE':
-      return {...state, position: action.payload};
+      return {...state, position: action.payload.y};
     case 'SET_SCALE_HAIRSTYLE':
       return {...state, scale: action.payload};
     default:

@@ -6,7 +6,7 @@ import SVGsList from '../SVGsList/SVGsList';
 import {useSelector, useDispatch} from 'react-redux'
 
 
-const ParametricMenu = () => {
+const ParametricMenu = ({setSectionSelected}) => {
   const dispatch = useDispatch();
   const state = useSelector(state=>state)
   const [option, setOption] = useState({section:'background', subSection:''});
@@ -36,12 +36,13 @@ const ParametricMenu = () => {
           optiosMenu={optiosMenu}
           option={option}
           setOption={setOption}
+          setSectionSelected={setSectionSelected}
         />
         <ColorSelector 
           colorSelected={!option.subSection?state[option.section].color:state[option.section][`${option.subSection}Color`]}
           changeColor={changeColor}
           colors = {state.background.paletteSelected}/>
-        {option!=='background' && <SVGsList feature={state[option.section]} changeTypeSelected={changeTypeSelected} changeSubsectionsSelected={changeSubsectionsSelected} />}
+        {option.section!=='background' && <SVGsList feature={state[option.section]} changeTypeSelected={changeTypeSelected} changeSubsectionsSelected={changeSubsectionsSelected} />}
       </div>
       <p className="legal">This is a project by @samuel_mad, @reversotenebros and @estdubois made during the piweek</p>
     </div>

@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_MUSTACHIO':
       return {...state, type: action.payload};
     case 'SET_POSITION_MUSTACHIO':
-      return {...state, position: action.payload};
+      return {...state, position: action.payload.y};
     case 'SET_SCALE_MUSTACHIO':
       return {...state, scale: action.payload};
     default:

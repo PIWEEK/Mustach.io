@@ -8,7 +8,12 @@ const palettes = [
   ['#CBBAF7', '#F6CCF4', '#F1A1DD', '#EE7DC3', '#EA1B6B', '#2184F9'],
   ['#D581FC', '#CDBCFF', '#CEB2FF', '#D581FC', '#537AFF', '#537AFF'],
   ['#E076A3', '#F99EA4', '#FB96A9', '#EC8094', '#DA5C81', '#FFCFDD'],
-  ['#EF4C42', '#DA8D80', '#DA8070', '#D25D5F', '#471B1B', '#FFFFFF']
+  ['#EF4C42', '#DA8D80', '#DA8070', '#D25D5F', '#471B1B', '#FFFFFF'],
+  ['#FF7E7E', '#A85A51', '#9B483E', '#68342F', '#000000', '#000000'],
+  ['#FDA491', '#FEBEB0', '#FFAB99', '#FDA08C', '#FF7355', '#FEE1E1'],
+  ['#EEB58C', '#C9744F', '#BE6B47', '#AD5B37', '#9A4824', '#520F0F'],
+  ['#CFD276', '#FEE0D5', '#FED1C0', '#FDB1B2', '#F78888', '#BC4C4C'],
+  ['#8B8426', '#FFB3B3', '#F8A8A8', '#EC8080', '#DA5C5C', '#B73B3B']
 ];
 const randomPalette = (palettes)=>palettes[Math.round(Math.random()*(palettes.length-1))]
 
