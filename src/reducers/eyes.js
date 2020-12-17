@@ -1,6 +1,6 @@
 
 const initialState = {
-  id: 'eyes'
+  id: 'eyes',
   position: 0,
   scale: 0,
   subsections: ['Eyelid','White','Iris','Pupil','Eyelashes'],

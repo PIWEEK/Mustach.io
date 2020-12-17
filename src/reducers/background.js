@@ -1,4 +1,3 @@
-import palette from "./palette";
 
 const palettes = [
   ['#B9B9B9', '#A3A3A3', '#8D8D8D', '#6F6F6F', '#5E5E5E','#000000'],
