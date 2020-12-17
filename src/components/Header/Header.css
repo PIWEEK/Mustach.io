@@ -18,7 +18,7 @@ h1 {
   font-size: 3.8rem;
   font-weight: 300;
   margin: 0;
-  padding: .5rem 0;
+  padding: 1.5rem 0;
   text-orientation: mixed;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
@@ -36,17 +36,17 @@ h1 {
 }
 
 .download-text{
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .download-list {
-  margin-bottom: -6rem;
+  margin-bottom: -7.5rem;
   transition: margin-bottom 1s ease;
 }
 .download-button.visible .download-list {
-  margin-bottom: 0rem;
+  margin-bottom: 2rem;
 }
 .download-list li {
-  margin: .5rem 0;
+  margin: 1rem 0;
 }
 
 @media (max-width: 50rem) {
@@ -61,7 +61,7 @@ h1 {
     transform: none;
     writing-mode: initial;
     padding: 0 .5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   h1::first-letter {
     visibility: visible;
@@ -71,6 +71,6 @@ h1 {
   }
   .download-button {
     align-self: flex-start;
-    margin: 0 .5rem;
+    margin: .8rem .5rem;
   }
 }

@@ -10,15 +10,16 @@
 }
 .children-menu {
   display: flex;
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  padding: 1.5rem 0;
+  margin-left: -.8rem;
   width: 100%;
   text-transform: uppercase;
 }
 .child-item {
   color: #b4bedb;
-  padding: 0 2rem 0 0;
+  padding: .8rem 1rem;
 }
 .child-item:hover {
   background-color: rgba(230, 234, 243, 0.4);
