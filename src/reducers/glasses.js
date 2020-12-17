@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'glases'
   color:'',
   type:'',
   position: 0,

@@ -23,6 +23,5 @@ export default combineReducers({
   jawline,
   mouth,
   mustachio,
-  nose,
-  palette
+  nose
 });

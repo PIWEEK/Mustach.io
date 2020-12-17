@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'mustachio',
   color:'',
   nTypes: 11,
   type:'',

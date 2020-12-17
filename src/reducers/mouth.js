@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'mouth',
   position: 0,
   scale: 0,
   subsections: ['Upper Lip','Lower Lip','Smile'],

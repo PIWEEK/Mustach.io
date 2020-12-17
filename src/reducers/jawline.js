@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'jawline',
   color:'',
   nTypes: 16,
   type:'',

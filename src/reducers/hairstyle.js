@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'hairstyle',
   color:'',
   type:'',
   position: 0

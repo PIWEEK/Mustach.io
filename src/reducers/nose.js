@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'nose',
   position: 0,
   scale: 0,
   subsections: ['Nostrils','Septum'],

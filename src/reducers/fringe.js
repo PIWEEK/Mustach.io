@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'fringe',
   color:'',
   nTypes: '33',
   type:'',

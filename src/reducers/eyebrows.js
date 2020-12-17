@@ -1,5 +1,6 @@
 
 const initialState = {
+  id: 'eyebrows',
   color:'',
   nTypes: 2,
   type:'',
