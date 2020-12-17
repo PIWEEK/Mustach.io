@@ -5,7 +5,7 @@ const palettes = [
   ['#738576', '#FFCFBA', '#FFBC9F', '#F68585', '#E05849','#FFA06B'],
   ['#5C899C', '#7F4841', '#613731', '#64322B', '#301A17', '#000000']
 ];
-const randomPalette = (palettes)=>palettes[Math.round(Math.random(palettes.length-1))]
+const randomPalette = (palettes)=>palettes[Math.round(Math.random()*(palettes.length-1))]
 
 const initialState = {
   id:"background",

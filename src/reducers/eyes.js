@@ -19,7 +19,7 @@ const initialState = {
   whiteType: '',
   irisType: '',
   eyelashesType: '',
-  eyelashesWidth: 3
+  eyelashesWidth: 5
 }
 
 export default (state = initialState, action) => {
