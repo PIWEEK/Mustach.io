@@ -163,17 +163,17 @@ const AllSVGs = () =>(
       <path id="wrinklesmouth-10" d="M128.035 253.34C137.669 245.6 132.022 221.554 149.953 215.256"  strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 
       {/* WRINKLES CHIN */}
-      <path id="wrinkleschin-1" d="M180.012 300.519C174.699 296.957 174.343 285.999 179.968 285.999" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-2" d="M179.761 300.516C175.053 300.516 172.053 289.758 180.15 289.758" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-3" d="M179.869 301.431C156.619 301.431 153.655 279.742 153.655 279.742" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-4" d="M153.941 280.109C153.941 280.109 155.941 304.359 180.191 301.109C180.191 301.109 172.191 291.609 180.191 291.609" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-5" d="M179.869 300.748C162.143 307.516 153.655 279.381 153.655 279.381" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-6" d="M153.655 279.742C153.655 279.742 156.655 304.609 179.905 301.109C179.905 301.109 173.208 292.085 179.905 291.242" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-7" d="M179.905 301.992C169.53 301.992 163.28 297.242 160.405 289.367" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-8" d="M179.905 301.992C165.155 300.742 167.155 290.367 158.405 290.367" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-9" d="M180.155 274.742C180.155 274.742 165.655 274.742 165.655 289.242" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-10" d="M179.905 272.742C174.605 272.742 166.655 274.742 163.046 278.803" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="wrinkleschin-11" d="M179.905 270.742C170.405 270.742 159.046 274.803 159.046 274.803" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-1" d="M180.012 300.519C174.699 296.957 174.343 285.999 179.968 285.999" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-2" d="M179.761 300.516C175.053 300.516 172.053 289.758 180.15 289.758" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-3" d="M179.869 301.431C156.619 301.431 153.655 279.742 153.655 279.742" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-4" d="M153.941 280.109C153.941 280.109 155.941 304.359 180.191 301.109C180.191 301.109 172.191 291.609 180.191 291.609" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-5" d="M179.869 300.748C162.143 307.516 153.655 279.381 153.655 279.381" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-6" d="M153.655 279.742C153.655 279.742 156.655 304.609 179.905 301.109C179.905 301.109 173.208 292.085 179.905 291.242" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-7" d="M179.905 301.992C169.53 301.992 163.28 297.242 160.405 289.367" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-8" d="M179.905 301.992C165.155 300.742 167.155 290.367 158.405 290.367" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-9" d="M180.155 274.742C180.155 274.742 165.655 274.742 165.655 289.242" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-10" d="M179.905 272.742C174.605 272.742 166.655 274.742 163.046 278.803" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="wrinkleschin-11" d="M179.905 270.742C170.405 270.742 159.046 274.803 159.046 274.803" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 
       {/* WRINKLES EYES */}
       <path id="wrinkleseyes-1" d="M130.875 197.771C139.367 199.523 145.53 196.423 145.53 196.423" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
