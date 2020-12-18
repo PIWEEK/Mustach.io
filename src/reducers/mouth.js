@@ -18,6 +18,7 @@ const initialState = {
 }
 
 export default (state = initialState, action) => {
+  console.log(action)
   switch (action.type) {
     case 'SET_MOUTH':
       return {...state, ...action.payload};
@@ -25,17 +26,17 @@ export default (state = initialState, action) => {
       return {...state, position: action.payload.y};
     case 'SET_SCALE_MOUTH':
       return {...state, scale: action.payload};
-    case 'SET_UPPER_LIP_COLOR':
+    case 'SET_COLOR_UPPER_LIP':
       return {...state, upperlipColor: action.payload}; 
-    case 'SET_UPPER_LIP_TYPE':
+    case 'SET_TYPE_UPPER_LIP':
       return {...state, upperlipType: action.payload};
-    case 'SET_SMILE_COLOR':
-      return {...state, eyelashesColor: action.payload}; 
-    case 'SET_SMILE_TYPE':
-      return {...state, eyelashesType: action.payload};
-    case 'SET_LOWER_LIP_COLOR':
+    case 'SET_COLOR_SMILE':
+      return {...state, smileColor: action.payload}; 
+    case 'SET_TYPE_SMILE':
+      return {...state, smileType: action.payload};
+    case 'SET_COLOR_LOWER_LIP':
       return {...state, lowerlipColor: action.payload}; 
-    case 'SET_LOWER_LIP_TYPE':
+    case 'SET_TYPE_LOWER_LIP':
       return {...state, lowerlipType: action.payload};
     case 'SET_SUBSECTION_SELECTED_MOUTH':
       return {...state, subsectionSelected: action.payload};

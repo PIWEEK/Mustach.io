@@ -40,8 +40,7 @@ function App() {
       type: 'SET_FRINGE', 
       payload: {
         color: palette[1],
-        type: randomize(state.fringe.nTypes, 'ceil'),
-        position: randomize(5)
+        type: randomize(state.fringe.nTypes, 'ceil')
       }
     });
 
@@ -50,7 +49,6 @@ function App() {
       payload: {
         color: palette[1],
         type: randomize(state.jawline.nTypes, 'ceil'),
-        position: randomize(5)
       }
     });
 

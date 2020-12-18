@@ -44,7 +44,15 @@ export default (state = initialState, action) => {
     case 'SET_COLOR_EYELID':
       return {...state, eyelidColor: action.payload}; 
     case 'SET_TYPE_EYELID':
-      return {...state, eyelidType: action.payload, eyewhiteType: action.payload};
+      return {...state, eyelidType: action.payload};
+    case 'SET_COLOR_WHITE':
+      return {...state, whiteColor: action.payload}
+    case 'SET_TYPE_WHITE':
+      return {...state, whiteType: action.payload};
+      case 'SET_COLOR_IRIS':
+        return {...state, irisColor: action.payload}
+      case 'SET_TYPE_IRIS':
+        return {...state, irisType: action.payload};
     case 'SET_SUBSECTION_SELECTED_EYES':
       return {...state, subsectionSelected: action.payload};
     default:

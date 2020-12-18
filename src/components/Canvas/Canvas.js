@@ -29,8 +29,8 @@ const Canvas = ({sectionSelected}) => {
 
               </g>
               <g  style={{transform:`translateY(${state.mouth.position}px)`}}>
-                state.mouth.lowerlipType && <use xlinkHref={`#lower-lip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />
-                state.mouth.upperlipType && <use xlinkHref={`#upper-lip-${state.mouth.upperlipType}`} style={{fill:state.mouth.upperlipColor, stroke:"none"}} />
+                state.mouth.lowerlipType && <use xlinkHref={`#lowerlip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />
+                state.mouth.upperlipType && <use xlinkHref={`#upperlip-${state.mouth.upperlipType}`} style={{fill:state.mouth.upperlipColor, stroke:"none"}} />
                 state.mouth.smileType && <use xlinkHref={`#smile-${state.mouth.smileType}`} style={{stroke:state.mouth.smileColor, "strokeWidth": state.mouth.smileWidth, fill:"none"}} />
               </g>
               <g  style={{transform:`translateY(${state.mustachio.position}px)`}}>
