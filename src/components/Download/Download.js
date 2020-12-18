@@ -3,7 +3,6 @@ import './Download.css';
 
 const Download = () => {
   const selectDownload = (opcion)=> {
-    console.log('selectDownload', opcion);
   }
   return <div className="download-wrapper">
     <h2>Mustachio</h2>

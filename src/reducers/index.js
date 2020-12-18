@@ -10,6 +10,7 @@ import jawline from './jawline';
 import mouth from './mouth';
 import mustachio from './mustachio';
 import nose from './nose';
+import wrinkles from './wrinkles'
 
 export default combineReducers({
   background,
@@ -22,5 +23,6 @@ export default combineReducers({
   jawline,
   mouth,
   mustachio,
-  nose
+  nose,
+  wrinkles
 });

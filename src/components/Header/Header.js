@@ -4,7 +4,6 @@ import './Header.css';
 const Header = () => {
   const [visible, setVisible] = useState(false);
   const selectDownload = (opcion)=> {
-    console.log('selectDownload', opcion);
     setVisible(!visible);
   }
 

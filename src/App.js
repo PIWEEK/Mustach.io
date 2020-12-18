@@ -65,10 +65,26 @@ function App() {
     });
 
     dispatch({
+      type: 'SET_WRINKLES', 
+      payload: {
+        wrinklesforeheadType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
+        wrinklesforeheadColor: palette[4],
+        wrinklescheekbonesType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesCheekbones, 'ceil') : '',
+        wrinklescheekbonesColor: palette[4],
+        wrinklesmouthType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesMouth, 'ceil') : '',
+        wrinklesmouthColor: palette[4],
+        wrinkleschinType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesChin, 'ceil') : '',
+        wrinkleschinColor: palette[4],
+        wrinkleseyesType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesEyes, 'ceil') : '',
+        wrinkleseyesColor: palette[4]
+      }
+    });
+
+    dispatch({
       type: 'SET_MUSTACHIO', 
       payload: {
         color: palette[5],
-        type: randomize(state.mustachio.nTypes, 'ceil')
+        type:  !!Math.round(Math.random()-0.2) ? randomize(state.mustachio.nTypes, 'ceil') : '',
       }
     });
 
@@ -109,11 +125,10 @@ function App() {
       type: 'SET_GLASSES', 
       payload: {
         color: palette[5],
-        type: randomize(state.glasses.nTypes, 'ceil')
+        type:  !!Math.round(Math.random()-0.2) ? randomize(state.glasses.nTypes, 'ceil') : ''
       }
     });
   }
-
 
   useEffect(()=>{
     randomColors(state.background.paletteSelected)

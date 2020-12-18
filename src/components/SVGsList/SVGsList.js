@@ -34,7 +34,6 @@ const SVGsList = ({feature, changeTypeSelected, changeSubsectionsSelected}) => {
     )
   } else {
     const svgIds = Array.from(Array(feature.nTypes).keys()).map(x => `${feature.id}-${++x}`)
-    console.log(svgIds)
     return (
       <div>
         <ul className='vectors-list'>
