@@ -5,9 +5,11 @@ import ParametricMenu from './components/ParametricMenu/ParametricMenu.js';
 import AllSVGs from './components/AllSVGs/AllSVGs.js';
 import Download from './components/Download/Download.js'
 import {useSelector, useDispatch} from 'react-redux'
+import {palettes, randomPalette} from './reducers/background.js'
 
 function App() {
   const [sectionSelected, setSectionSelected] = useState('background')
+  const [randomTimer, setRandomTimer] = useState(null);
   const state = useSelector(state=>state)
   const dispatch = useDispatch()
   const randomize = (param, round = 'normal') =>{
@@ -19,8 +21,17 @@ function App() {
       return Math.floor(Math.random()*param);
     }
   }
-  const randomColors = (palette) => {
-    dispatch({type: 'SET_COLOR_BACKGROUND', payload: palette[0]});
+  const randomColors = () => {
+    const palette = randomPalette(palettes)
+    dispatch({
+      type: 'SET_PALETTE',
+      payload: palette
+    });
+    dispatch({
+      type: 'SET_COLOR_BACKGROUND',
+      payload: palette[0]
+    });
+
     dispatch({
       type: 'SET_HAIRSTYLE', 
       payload: {
@@ -131,11 +142,15 @@ function App() {
   }
 
   useEffect(()=>{
-    randomColors(state.background.paletteSelected)
+    const timer = setInterval(()=>{
+      randomColors()
+    },150);
+    setRandomTimer(timer);
+    clearInterval();
   },[])
   
   return (
-    <div className="App">
+    <div className="App" onClick={()=>clearInterval(randomTimer)}>
       <AllSVGs />
       {
         (false == true) &&

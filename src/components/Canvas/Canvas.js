@@ -34,11 +34,11 @@ const Canvas = ({sectionSelected}) => {
                 state.wrinkles.wrinklescheekbonesType && <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none", transformOrigin:"center center", transform:"scaleX(-1)"}} />
               </g>
               <g  style={{transform:`translateY(${state.mouth.position}px)`}}>
+                state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
+                state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none"}} />
                 state.mouth.lowerlipType && <use xlinkHref={`#lowerlip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />
                 state.mouth.upperlipType && <use xlinkHref={`#upperlip-${state.mouth.upperlipType}`} style={{fill:state.mouth.upperlipColor, stroke:"none"}} />
                 state.mouth.smileType && <use xlinkHref={`#smile-${state.mouth.smileType}`} style={{stroke:state.mouth.smileColor, "strokeWidth": state.mouth.smileWidth, fill:"none"}} />
-                state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none"}} />
-                state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
               </g>
               <g  style={{transform:`translateY(${state.mustachio.position}px)`}}>
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none"}} />
@@ -49,20 +49,20 @@ const Canvas = ({sectionSelected}) => {
                 state.nose.septumType && <use xlinkHref={`#septum-${state.nose.septumType}`} style={{stroke:state.nose.septumColor, "strokeWidth": state.nose.septumWidth, fill:"none"}} />
               </g>
               <g style={{transformOrigin: "center center", transform:`scaleX(${state.eyes.scale}) translate(${-1*state.eyes.position.x}px, ${state.eyes.position.y}px)`}}>
+                state.wrinkles.wrinkleseyesType && <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, fill:"none"}} />
                 state.eyes.eyelidType && <use xlinkHref={`#eyelid-${state.eyes.eyelidType}`} style={{fill:state.eyes.eyelidColor, stroke:"none"}} />
                 state.eyes.whiteType && <use xlinkHref={`#white-${state.eyes.whiteType}`} style={{fill:state.eyes.whiteColor, stroke:"none"}} />
                 state.eyes.irisType && <use xlinkHref={`#iris-${state.eyes.irisType}`} style={{fill:state.eyes.irisColor, stroke:"none"}} />
                 state.eyes.pupilType && <use xlinkHref={`#pupil-${state.eyes.pupilType}`} style={{fill:state.eyes.pupilColor, stroke:"none"}} />
                 state.eyes.eyelashesType && <use xlinkHref={`#eyelashes-${state.eyes.eyelashesType}`} style={{stroke:state.eyes.eyelashesColor, "strokeWidth": state.eyes.eyelashesWidth, fill:"none"}} />
-                state.wrinkles.wrinkleseyesType && <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, fill:"none"}} />
               </g>
               <g style={{transformOrigin: "center center", transform:`scaleX(-${state.eyes.scale}) translate(${-1*state.eyes.position.x}px, ${state.eyes.position.y}px)`}}>
+                state.wrinkles.wrinkleseyesType && <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, fill:"none"}} />
                 state.eyes.eyelidType && <use xlinkHref={`#eyelid-${state.eyes.eyelidType}`} style={{fill:state.eyes.eyelidColor, stroke:"none"}} />
                 state.eyes.whiteType && <use xlinkHref={`#white-${state.eyes.whiteType}`} style={{fill:state.eyes.whiteColor, stroke:"none"}} />
                 state.eyes.irisType && <use xlinkHref={`#iris-${state.eyes.irisType}`} style={{fill:state.eyes.irisColor, stroke:"none"}} />
                 state.eyes.pupilType && <use xlinkHref={`#pupil-${state.eyes.pupilType}`} style={{fill:state.eyes.pupilColor, stroke:"none"}} />
                 state.eyes.eyelashesType && <use xlinkHref={`#eyelashes-${state.eyes.eyelashesType}`} style={{stroke:state.eyes.eyelashesColor, "strokeWidth": state.eyes.eyelashesWidth, fill:"none"}} />
-                state.wrinkles.wrinkleseyesType && <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, fill:"none"}} />
               </g>
               <g>
                 state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{stroke:state.eyebrows.color, fill:"none", transformOrigin: "center center", transform:`scaleX(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
