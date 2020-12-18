@@ -104,6 +104,14 @@ function App() {
         type: randomize(state.eyebrows.nTypes, 'ceil')
       }
     });
+
+    dispatch({
+      type: 'SET_GLASSES', 
+      payload: {
+        color: palette[5],
+        type: randomize(state.glasses.nTypes, 'ceil')
+      }
+    });
   }
 
 
