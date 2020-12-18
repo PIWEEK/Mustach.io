@@ -68,15 +68,15 @@ function App() {
       type: 'SET_WRINKLES', 
       payload: {
         wrinklesforeheadType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
-        wrinklesforeheadColor: palette[4],
+        wrinklesforeheadColor: palette[2],
         wrinklescheekbonesType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesCheekbones, 'ceil') : '',
-        wrinklescheekbonesColor: palette[4],
+        wrinklescheekbonesColor: palette[2],
         wrinklesmouthType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesMouth, 'ceil') : '',
-        wrinklesmouthColor: palette[4],
+        wrinklesmouthColor: palette[2],
         wrinkleschinType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesChin, 'ceil') : '',
-        wrinkleschinColor: palette[4],
+        wrinkleschinColor: palette[2],
         wrinkleseyesType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesEyes, 'ceil') : '',
-        wrinkleseyesColor: palette[4]
+        wrinkleseyesColor: palette[2]
       }
     });
 
