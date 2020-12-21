@@ -5,7 +5,7 @@ const initialState = {
   color:'',
   type:'',
   position: 0,
-  scale: 0
+  scale: 1
 }
 
 export default (state = initialState, action) => {

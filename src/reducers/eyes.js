@@ -20,7 +20,8 @@ const initialState = {
   whiteType: '',
   irisType: '',
   eyelashesType: '',
-  eyelashesWidth: 5
+  eyelashesWidth: 5,
+  rotate: 0
 }
 
 export default (state = initialState, action) => {
@@ -31,6 +32,8 @@ export default (state = initialState, action) => {
       return {...state, shape: action.payload};
     case 'SET_POSITION_EYES':
       return {...state, position: action.payload};
+    case 'SET_ROTATE_EYES':
+      return {...state, rotate: action.payload};
     case 'SET_SCALE_EYES':
       return {...state, scale: action.payload};
     case 'SET_COLOR_PUPIL':

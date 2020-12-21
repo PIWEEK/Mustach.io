@@ -2,7 +2,7 @@
 const initialState = {
   id: 'nose',
   position: 0,
-  scale: 0,
+  scale: 1,
   subsections: ['Nostrils','Septum'],
   subsectionSelected:'Nostrils',
   nTypesNostrils: 22,
@@ -21,7 +21,7 @@ export default (state = initialState, action) => {
       return {...state, ...action.payload};
     case 'SET_POSITION_NOSE':
       return {...state, position: action.payload.y};
-    case 'SET_NOSE_SCALE':
+    case 'SET_SCALE_NOSE':
       return {...state, scale: action.payload};
     case 'SET_COLOR_NOSTRILS':
       return {...state, nostrilsColor: action.payload}; 
