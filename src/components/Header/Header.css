@@ -39,7 +39,7 @@ h1 {
   margin: 1.5rem 0;
 }
 .download-list {
-  margin-bottom: -7.5rem;
+  margin-bottom: -6.5rem;
   transition: margin-bottom 1s ease;
 }
 .download-button.visible .download-list {

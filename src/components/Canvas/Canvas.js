@@ -44,7 +44,7 @@ const Canvas = ({sectionSelected}) => {
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none"}} />
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
               </g>
-              <g style={{transformOrigin: "center center", transform:`scale(${state.nose.scale}) translateY(${state.nose.position}px)`}}>
+              <g style={{transform:`scale(${state.nose.scale}) translate(${state.nose.position.x}px, ${state.nose.position.y}px)`}}>
                 state.nose.nostrilsType && <use xlinkHref={`#nostrils-${state.nose.nostrilsType}`} style={{stroke:state.nose.nostrilsColor, "strokeWidth": state.nose.nostrilsWidth, fill:"none"}} />
                 state.nose.septumType && <use xlinkHref={`#septum-${state.nose.septumType}`} style={{stroke:state.nose.septumColor, "strokeWidth": state.nose.septumWidth, fill:"none"}} />
               </g>
@@ -73,7 +73,8 @@ const Canvas = ({sectionSelected}) => {
                 state.glasses.type && <use xlinkHref={`#glasses-${state.glasses.type}`} style={{fill:state.glasses.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.glasses.scale}) translateY(${state.glasses.position}px)`}} />
               </g>
             </>}
-          </svg> 
+          </svg>
+          <div id="img-container" onClick={(e)=>e.target.innerHTML=''}></div>
         </div>
         </div>
       </div>
