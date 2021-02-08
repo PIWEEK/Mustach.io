@@ -1,4 +1,4 @@
-const exportSVG = (state) => {
+const exportSVG = (state, type) => {
   const svgExport = document.createElementNS("http://www.w3.org/2000/svg", "svg")
   svgExport.setAttributeNS(null, "viewBox", "0 0 360 360")
   const canvas = document.createElement('canvas')
@@ -197,37 +197,59 @@ const exportSVG = (state) => {
     glasses2.setAttributeNS(null, "style", "transform-origin: center center; transform: scaleX(-1)");
     svgExport.append(glasses2);
   }
-
-//   // get svg data
-// var xml = new XMLSerializer().serializeToString(svgExport);
-
-// // make it base64
-// var svg64 = btoa(xml);
-// var b64Start = 'data:image/svg+xml;base64,';
-
-// // prepend a "header"
-// var image64 = b64Start + svg64;
-
-// // set it as the source of the img element
-// imagen.src = image64;
-
-// // draw the image onto the canvas
-// canvas.getContext('2d').drawImage(imagen, 0, 0);
+ 
+  function triggerDownload (imgURI, fileName) {
+    const evt = new MouseEvent("click", {
+      view: window,
+      bubbles: false,
+      cancelable: true
+    });
+    const a = document.createElement("a");
+    a.setAttribute("download", fileName);
+    a.setAttribute("href", imgURI);
+    a.setAttribute("target", '_blank');
+    a.dispatchEvent(evt);
+  }
 
 
-var svgString = new XMLSerializer().serializeToString(svgExport);
+
+const svgString = new XMLSerializer().serializeToString(svgExport);
+const ctx = canvas.getContext("2d");
+const img = new Image();
+const svg = new Blob([svgString], {type: "image/svg+xml;charset=utf-8"});
+let url = URL.createObjectURL(svg);
 
 
-var ctx = canvas.getContext("2d");
-var img = new Image();
-var svg = new Blob([svgString], {type: "image/svg+xml;charset=utf-8"});
-var url = URL.createObjectURL(svg);
-img.onload = function() {
+
+if(type==="PNG") {
+  // url = URL.createObjectURL(svg);
+  img.onload = function() {
+      ctx.drawImage(img, 0, 0);
+      const png = canvas.toDataURL("image/png");
+      triggerDownload(png, "avatar.png")
+      URL.revokeObjectURL(png);
+  };
+}
+if(type==="JPG") {
+  img.onload = function() {
     ctx.drawImage(img, 0, 0);
-    var png = canvas.toDataURL("image/png");
-    document.querySelector('#img-container').innerHTML = '<img src="'+png+'"/>';
-    URL.revokeObjectURL(png);
-};
+    const jpg = canvas.toDataURL("image/jpg");
+    triggerDownload(jpg, "avatar.jpg")
+    URL.revokeObjectURL(jpg);
+  }
+}
+if(type==="SVG") {
+  img.onload = function() {
+    ctx.drawImage(img, 0, 0);
+    const svgURL = canvas.toDataURL("image/svg");
+    triggerDownload(svgURL, "avatar.svg")
+    URL.revokeObjectURL(svgURL);
+  }
+}
+
+
+
+
 img.src = url;
 }
 

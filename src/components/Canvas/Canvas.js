@@ -74,7 +74,6 @@ const Canvas = ({sectionSelected}) => {
               </g>
             </>}
           </svg>
-          <div id="img-container" onClick={(e)=>e.target.innerHTML=''}></div>
         </div>
         </div>
       </div>
