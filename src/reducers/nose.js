@@ -1,15 +1,16 @@
 
 const initialState = {
   id: 'nose',
-  position: 0,
+  position: {x:150, y:180},
+  rotate: 0,
   scale: 1,
   subsections: ['Nostrils','Septum'],
   subsectionSelected:'Nostrils',
-  nTypesNostrils: 22,
+  nTypesNostrils: 14,
   nostrilsColor:'',
   nostrilsWidth:3,
   nostrilsType:'',
-  nTypesSeptum: 19,
+  nTypesSeptum: 11,
   septumColor:'',
   septumWidth: 3,
   septumType:''
@@ -20,7 +21,9 @@ export default (state = initialState, action) => {
     case 'SET_NOSE':
       return {...state, ...action.payload};
     case 'SET_POSITION_NOSE':
-      return {...state, position: action.payload.y};
+      return {...state, position: action.payload};
+    case 'SET_ROTATE_NOSE':
+      return {...state, rotate: action.payload};
     case 'SET_SCALE_NOSE':
       return {...state, scale: action.payload};
     case 'SET_COLOR_NOSTRILS':

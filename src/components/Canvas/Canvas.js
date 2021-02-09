@@ -44,7 +44,8 @@ const Canvas = ({sectionSelected}) => {
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none"}} />
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
               </g>
-              <g style={{transform:`scale(${state.nose.scale}) translate(${state.nose.position.x}px, ${state.nose.position.y}px)`}}>
+
+              <g style={{transformOrigin:`${state.nose.position.x+30}px ${state.nose.position.y}px`, transform:`scale(${state.nose.scale}) translate(${state.nose.position.x}px, ${state.nose.position.y}px)`}}>
                 state.nose.nostrilsType && <use xlinkHref={`#nostrils-${state.nose.nostrilsType}`} style={{stroke:state.nose.nostrilsColor, "strokeWidth": state.nose.nostrilsWidth, fill:"none"}} />
                 state.nose.septumType && <use xlinkHref={`#septum-${state.nose.septumType}`} style={{stroke:state.nose.septumColor, "strokeWidth": state.nose.septumWidth, fill:"none"}} />
               </g>

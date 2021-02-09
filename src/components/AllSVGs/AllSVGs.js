@@ -273,6 +273,19 @@ const AllSVGs = () =>(
       <path id="mustachio-11" d="M141.882 262.676C139.682 263.817 137.338 265.143 134.835 266.706C131.169 268.992 125.504 271.417 126.65 270.152C138.095 257.532 141.959 244.537 147.804 237.308C160 224.5 180.583 238.5 180.583 238.5V239.379C180.583 248.022 177.393 252.877 163.528 258.483C149.663 264.09 153.007 263.717 157.019 258.134C154.402 259.431 151.889 261.451 148.492 262.913C135.466 268.517 139.724 266.793 141.882 262.676Z"/>
 
       {/* NOSE SEPTUM */}
+      <path id="septum-1" d="M30 17V34" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-2" d="M22 3C22 3 17 34.5 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-3" d="M25 3C19.8826 16.3339 17.0152 31.3886 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-4" d="M25 3C25.4774 13.6443 18.5678 20.7115 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-5" d="M25 3C26.0559 24 20.3389 25.1939 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-6" d="M22 3C25 12 25 21 23 25C21 29 17.6094 34 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-7" d="M20.9618 3C24.1041 21.2353 18.8161 26.7059 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-8" d="M22 3C23.4721 9.86374 19.1842 14.933 19 23C18.8268 30.5817 20.4619 34.444 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-9" d="M22 3C25.0239 12.2167 18.2217 14.933 18 23C17.7916 30.5817 20.5558 34.444 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-10" d="M25 3C28.0239 12.2167 19.2217 14.933 19 23C18.8788 27.4086 20 42 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-11" d="M27 3C18 19.5 22.5 21 20 42" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+
+{/* 
       <path id="septum-1" d="M166.25 172.069C172.038 181.626 174.87 186.314 169.969 227.763" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="septum-2" d="M171.969 186.068C171.969 186.068 170.041 216.242 170.329 219.862" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="septum-3" d="M170.661 204.792L170.661 220.327" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
@@ -291,10 +304,30 @@ const AllSVGs = () =>(
       <path id="septum-16" d="M170 190.814C170 190.814 175.625 204.704 173.486 214.278C172.301 219.577 170 220.612 170.011 227.776" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="septum-17" d="M180 171.636C180 171.636 176.625 196.035 174.485 205.609C173.301 210.909 170 218.612 170.011 227.776" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="septum-18" d="M175.992 180.217C175.992 180.217 176.153 193.452 175.211 205.357" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="septum-19" d="M167.612 183.303C166.262 193.738 165.75 209.343 169.975 227.772" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="septum-19" d="M167.612 183.303C166.262 193.738 165.75 209.343 169.975 227.772" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/> */}
 
       {/* NOSE NOSTRILS */}
-      <path id="nostrils-1" d="M166.55 231.65C166.55 234.35 161.15 234.35 161.15 230.3C161.15 228.95 162.5 226.25 165.2 226.25C169.25 226.25 173.25 234.3 180 234.3C186.75 234.3 190.75 226.25 194.8 226.25C197.5 226.25 198.85 228.95 198.85 230.3C198.85 234.35 193.45 234.35 193.45 231.65" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+
+      <path id="nostrils-1" d="M46 45.3384C45.0037 42.8636 43.5438 41.4807 41.0893 42.182C38.6348 42.8833 38.0212 44.8 36.1803 47.7923C34.3394 50.7846 32.296 52 30 52C27.704 52 25.6606 50.7846 23.8197 47.7923C21.9788 44.8 21.3652 42.8833 18.9107 42.182C16.4562 41.4807 14.8973 42.9145 14 45.3384" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-2" d="M12 40.4999C12.5945 38.5554 14.3948 38 15.595 38C16.7952 38 18.5955 38.5554 19.7956 41.3325C20.9958 44.1096 24.3705 47.8816 30 47.9975C35.6295 48.1135 39.0042 44.1096 40.2044 41.3325C41.4045 38.5554 43.2048 38 44.405 38C45.6052 38 47.4055 38.5554 48 40.4999" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-3" d="M48.4333 43.5C51.9584 42.3048 48.4333 36 48.4333 36M45.0598 41.75C37.373 41.75 36.1691 48.0002 29.9994 48C23.8298 47.9998 22.627 41.75 14.9403 41.75M11.5667 43.5C8.04161 42.3048 11.5667 36 11.5667 36" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-4" d="M11.5667 43C8.04161 41.7251 11.5667 35 11.5667 35M14.7113 40C21.3981 40 21.2791 48 30.0006 48C38.722 48 38.6019 40 45.2887 40M48.4333 43C51.9584 41.7251 48.4333 35 48.4333 35" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-5" d="M46.8466 35C49.5451 35 51.3419 39.7932 48.7189 41.8265C46.0959 43.8598 42.7401 41.3448 39.2363 42.6864C35.1601 44.2473 33.3957 47 30 47C26.6043 47 24.8399 44.2473 20.7637 42.6864C17.2599 41.3448 13.9041 43.8598 11.2811 41.8265C8.65807 39.7932 10.4549 35 13.1533 35" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-6" d="M46.8466 33C49.5451 33 51.3419 37.7932 48.7189 39.8265C46.0959 41.8598 44.9623 40.3448 41.4585 41.6864C37.3823 43.2473 36.729 46 30 46C23.271 46 22.6177 43.2473 18.5415 41.6864C15.0377 40.3448 13.9041 41.8598 11.2811 39.8265C8.65807 37.7932 10.4549 33 13.1534 33" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-7" d="M46.7725 33C46.7725 33 50.0767 37.9161 48.6365 40.0015C46.7101 42.791 42.8553 40.7382 39.3669 42.1143C35.3086 43.7151 33.3807 49 30 49C26.6193 49 24.6914 43.7151 20.6331 42.1143C17.1447 40.7382 13.2899 42.791 11.3635 40.0015C9.92332 37.9161 13.2275 33 13.2275 33" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-8" d="M47.7725 32C47.7725 32 50.8016 36.7509 49.6365 39.0015C48.7101 40.791 48.0907 40.6719 44.3669 41.1143C39.3086 41.7151 35.3807 49 30 49C24.6193 49 20.6914 41.7151 15.6331 41.1143C11.9093 40.6719 11.2899 40.791 10.3635 39.0015C9.19835 36.7509 12.2275 32 12.2275 32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-9" d="M10 39C10 39 16.739 39 21.1765 43.2302C25.614 47.4603 26.7932 48.9756 30 48.9999C33.2068 48.9756 34.386 47.4604 38.8235 43.2302C43.261 39.0001 50 39.0001 50 39.0001" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-10" d="M10 36C10 36 13.2096 36 17.6471 40.2302C22.0846 44.4604 26.7932 45.9756 30 46C33.2068 45.9756 37.9154 44.4604 42.3529 40.2302C46.7904 36 50 36.8991 50 36.8991" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-11" d="M10.2001 36C8.40009 44.7789 19.2726 39.9531 21.5778 43.5789C23.883 47.2048 24.6856 48 30 48C35.3144 48 36.117 47.2048 38.4222 43.5789C40.7274 39.9531 51.5999 44.7789 49.7999 36" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-12" d="M10.3257 32C8.53706 39.5789 14.5932 35.9531 16.8838 39.5789C19.1744 43.2048 21.3826 44 30 44C38.6174 44 40.8256 43.2048 43.1162 39.5789C45.4068 35.9531 51.4629 39.5789 49.6743 32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-13" d="M10.539 33C7.90918 40.3661 14.5245 38.9134 18.9613 41.9291C23.398 44.9447 24.4458 51 30 51C35.5542 51 36.602 44.9447 41.0387 41.929C45.4755 38.9134 52.0908 40.3661 49.461 33" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-14" d="M10.818 29C8.22592 35.7403 11.2407 35.5874 15.6138 38.3469C19.9869 41.1063 22.1978 49 30 49C37.8022 49 40.0131 41.1062 44.3862 38.3468C48.7593 35.5874 51.7741 35.7402 49.182 29" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+
+
+
+
+
+      {/* <path id="nostrils-1" d="M166.55 231.65C166.55 234.35 161.15 234.35 161.15 230.3C161.15 228.95 162.5 226.25 165.2 226.25C169.25 226.25 173.25 234.3 180 234.3C186.75 234.3 190.75 226.25 194.8 226.25C197.5 226.25 198.85 228.95 198.85 230.3C198.85 234.35 193.45 234.35 193.45 231.65" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="nostrils-2" d="M194.401 233.2C195.841 233.2 198 231.43 198 229.6C198 227.77 196.2 226 194.76 226C188.202 226 189 233.2 180 233.2C171 233.2 171.798 226 165.24 226C163.8 226 162 227.77 162 229.6C162 231.43 164.159 233.2 165.599 233.2" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="nostrils-3" d="M193.5 235.299C194.85 235.299 196.874 233.308 196.874 231.25C196.874 229.191 194.85 227.2 192.15 227.2C186.002 227.2 185.702 235.299 180 235.299C174.297 235.299 173.998 227.2 167.85 227.2C165.149 227.2 163.125 229.191 163.125 231.25C163.125 233.308 165.149 235.299 166.5 235.299" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="nostrils-4" d="M166.501 233.3C162.45 233.3 160.426 233.95 160.426 231.25C160.426 228.551 162.451 227.2 166.501 227.2C172.649 227.2 173.251 235.3 180.001 235.3C186.75 235.3 187.353 227.2 193.501 227.2C197.55 227.2 199.575 228.551 199.575 231.25C199.575 233.95 197.552 233.3 193.501 233.3" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
@@ -315,7 +348,7 @@ const AllSVGs = () =>(
       <path id="nostrils-19" d="M164.125 211.438C158.925 209.438 155.687 216.187 159.75 219.505C163.813 222.822 167.956 223.24 171.665 231.551C173.509 235.681 176.753 237.77 180.001 237.8C183.248 237.77 186.492 235.681 188.336 231.551C192.046 223.24 196.189 222.822 200.251 219.505C204.314 216.187 201.076 209.438 195.876 211.438" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="nostrils-20" d="M164.125 209.438C158.925 207.438 152 212.635 159.75 217.505C167.5 222.375 166.585 225.311 171.665 229.551C173.274 230.893 176.595 231.876 180.001 231.966C183.407 231.876 186.728 230.893 188.336 229.551C193.416 225.311 192.502 222.375 200.252 217.505C208.002 212.635 201.077 207.438 195.877 209.438" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path id="nostrils-21" d="M168.275 220.91C168.275 220.91 156.169 217.91 156.181 222.889C156.193 227.869 169.993 227.832 169.993 227.832C169.993 233.334 175.062 236.453 179.995 236.725C184.928 236.453 189.997 233.334 189.997 227.832C189.997 227.832 203.797 227.869 203.808 222.889C203.82 217.91 191.715 220.91 191.715 220.91" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <path id="nostrils-22" d="M163.857 216.5C153.962 216.499 158.136 222.047 165.899 226.35C169.463 228.587 172.435 234.05 179.999 234.05C187.563 234.05 190.535 228.586 194.099 226.35C201.861 222.047 206.036 216.499 196.141 216.5" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path id="nostrils-22" d="M163.857 216.5C153.962 216.499 158.136 222.047 165.899 226.35C169.463 228.587 172.435 234.05 179.999 234.05C187.563 234.05 190.535 228.586 194.099 226.35C201.861 222.047 206.036 216.499 196.141 216.5" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/> */}
 
       {/* EYES EYELID */}
       <path id="eyelid-1" d="M115.32 181.107H156.335C156.335 181.107 152.682 166.544 142.87 165.99C132.478 165.404 115.32 170.25 115.32 181.107Z"/>

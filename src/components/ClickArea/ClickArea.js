@@ -7,30 +7,42 @@ const ClickArea = ({sectionSelected})=>{
   const dispatch = useDispatch();
   const [mousePress, setMousePress] = useState(false)
   const [position, setPosition] = useState({x:0,y:0})
+  const [initialPosition, setInitialPosition] = useState({x:0,y:0,r:0, s:1})
   const stateValue = useSelector((state => state[sectionSelected]))
+
 
   const onMouseDownHandler = (e) => {
     setMousePress(true)
-    console.log(e.clientX, e.clientY)
+    console.log("Hago click", e.clientX, e.clientY)
     setPosition({x:e.clientX, y:e.clientY})
+    setInitialPosition({
+      x:stateValue.position.x, 
+      y: stateValue.position.y, 
+      r: stateValue.rotate, 
+      s:stateValue.scale})
   }
   const onMouseUpHandler = (e) => {
     setMousePress(false)
   }
   const onMouseMoveHandler = (e) => {
-    const isPositionXY = typeof(stateValue.position) === 'object';
-    console.log(typeof(stateValue.position))
+
+
+    //console.log(typeof(stateValue.position))
     if(e.altKey && !e.ctrlKey){
+      console.log('ENTRO', {
+        type:`SET_SCALE_${sectionSelected.toUpperCase()}`,
+        payload: initialPosition.s +((e.clientX-position.x)/1000) 
+      })
       dispatch({
         type:`SET_SCALE_${sectionSelected.toUpperCase()}`,
-        payload: stateValue.scale +((e.clientX-position.x)/1000) 
+        payload: initialPosition.s +((e.clientX-position.x)/1000) 
       });
     } else {
       dispatch({
         type:`SET_POSITION_${sectionSelected.toUpperCase()}`,
         payload: {
-          x: ((isPositionXY?stateValue.position.x:stateValue.position) + (e.clientX-position.x))/5,
-          y: ((isPositionXY?stateValue.position.y:stateValue.position) + (e.clientY-position.y))/5
+          x: initialPosition.x + Math.floor((e.clientX-position.x)/3),
+          y: initialPosition.y + Math.floor((e.clientY-position.y)/3)
         }  
       })
     }
