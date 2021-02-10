@@ -13,7 +13,7 @@ const ClickArea = ({sectionSelected})=>{
 
   const onMouseDownHandler = (e) => {
     setMousePress(true)
-    console.log("Hago click", e.clientX, e.clientY)
+    console.log("Hago click", sectionSelected)
     setPosition({x:e.clientX, y:e.clientY})
     setInitialPosition({
       x:stateValue.position.x, 
@@ -25,19 +25,17 @@ const ClickArea = ({sectionSelected})=>{
     setMousePress(false)
   }
   const onMouseMoveHandler = (e) => {
-
-
-    //console.log(typeof(stateValue.position))
     if(e.altKey && !e.ctrlKey){
-      console.log('ENTRO', {
-        type:`SET_SCALE_${sectionSelected.toUpperCase()}`,
-        payload: initialPosition.s +((e.clientX-position.x)/1000) 
-      })
       dispatch({
         type:`SET_SCALE_${sectionSelected.toUpperCase()}`,
         payload: initialPosition.s +((e.clientX-position.x)/1000) 
       });
-    } else {
+    } else if(!e.altKey && e.ctrlKey){
+      dispatch({
+        type:`SET_ROTATE_${sectionSelected.toUpperCase()}`,
+        payload: initialPosition.s +((e.clientX-position.x)/5) 
+      });
+    }else {
       dispatch({
         type:`SET_POSITION_${sectionSelected.toUpperCase()}`,
         payload: {

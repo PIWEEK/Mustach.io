@@ -157,7 +157,7 @@ function App() {
           <Download />
       }
       <div className="App-body">
-        <Canvas sectionSelected={sectionSelected}/>
+        <Canvas sectionSelected={sectionSelected} setSectionSelected={setSectionSelected}/>
         <ParametricMenu setSectionSelected={setSectionSelected}/>
       </div>
     </div>
