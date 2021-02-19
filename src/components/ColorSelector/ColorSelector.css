@@ -1,13 +1,13 @@
 .color-selector-container {
   display: flex;
-  padding-top: 1.5rem;
+  margin: 1rem;
 }
 
 .color-item {
   border-radius: 50%;
   max-width: 2rem;
   width: 100%;
-  margin: 0 .8rem 0 0;
+  margin: 0 .6rem 0 0;
   border: .1rem solid rgba(0, 0, 0, 0.1);
 }
 
@@ -24,7 +24,7 @@
   background-color: #B4BEDB;
   height: 2rem;
   width: .1rem;
-  margin: 0 .8rem 0 0;
+  margin: 0 .6rem 0 0;
 }
 
 .color-item.default {

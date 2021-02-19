@@ -17,14 +17,14 @@ h2 {
 .dropdown-container {
   position: relative;
   overflow: hidden;
-  margin: 0;
-  transition: height .3s ease;
+  margin: 1rem;
+  transition: height .1s ease;
 }
 .dropdown-container.visible {
   height: 26rem;
 }
 .dropdown-container.visible .options-list {
-  top: 4rem;
+  top: 3rem;
 }
 .options-list {
   position: absolute;
@@ -40,7 +40,7 @@ h2 {
   color: #b4bedb;
   margin: 0;
   font-size: 1.06rem;
-  line-height: 1.7rem;
+  line-height: 1.4rem;
   text-transform: uppercase;
 }
 
