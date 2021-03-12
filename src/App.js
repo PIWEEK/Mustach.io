@@ -95,7 +95,7 @@ function App() {
       type: 'SET_MUSTACHIO', 
       payload: {
         color: palette[5],
-        type:  !!Math.round(Math.random()-0.2) ? randomize(state.mustachio.nTypes, 'ceil') : '',
+        type:  !!Math.round(Math.random()-0.1) ? randomize(state.mustachio.nTypes, 'ceil') : '',
       }
     });
 

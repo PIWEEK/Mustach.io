@@ -1,12 +1,12 @@
 
 const initialState = {
   id: 'nose',
-  position: {x:150, y:180},
+  position: {x:156, y:180},
   rotate: 0,
   scale: 1,
   subsections: ['Nostrils','Septum'],
   subsectionSelected:'Nostrils',
-  nTypesNostrils: 14,
+  nTypesNostrils: 21,
   nostrilsColor:'',
   nostrilsWidth:3,
   nostrilsType:'',

@@ -1,7 +1,7 @@
 
 const initialState = {
   id: 'glasses',
-  position: 0,
+  position: {x:108,y:165},
   color:'',
   nTypes: 6,
   type:'',

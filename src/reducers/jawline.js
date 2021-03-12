@@ -2,7 +2,7 @@
 const initialState = {
   id: 'jawline',
   color:'',
-  nTypes: 16,
+  nTypes: 18,
   type:'',
   position: 0,
   scale: 0

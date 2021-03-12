@@ -1,14 +1,14 @@
 
 const initialState = {
   id: 'eyes',
-  position: {x:0,y:0},
+  position: {x:-108,y:165},
   scale: 1,
   subsections: ['Eyelid','White','Iris','Pupil','Eyelashes'],
   subsectionSelected:'Eyelid',
-  nTypesPupil: 5,
-  nTypesEyelid: 15,
-  nTypesWhite: 12,
-  nTypesIris: 1,
+  nTypesPupil: 2,
+  nTypesEyelid: 9,
+  nTypesWhite: 10,
+  nTypesIris: 3,
   nTypesEyelashes: 12,
   pupilColor: '',
   eyelidColor: '',
@@ -20,7 +20,7 @@ const initialState = {
   whiteType: '',
   irisType: '',
   eyelashesType: '',
-  eyelashesWidth: 5,
+  eyelashesWidth: 10,
   rotate: 0
 }
 
