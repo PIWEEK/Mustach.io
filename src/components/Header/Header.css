@@ -6,7 +6,7 @@
   padding: 1rem 0;
   overflow: hidden;
   height: 100%;
-  padding: 0 .5rem;
+  padding: 0 .6rem;
   position: fixed;
   z-index: 10;
   left: 0; 
@@ -33,6 +33,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .download-arrow {
@@ -40,13 +41,16 @@ h1 {
 }
 
 .download-text{
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
 .download-list {
   margin-bottom: -7.5rem;
-  transition: margin-bottom 1s ease;
+  transition: margin-bottom .5s ease;
 }
-.download-button.visible .download-list {
+.download-button:hover .download-list {
   margin-bottom: 2rem;
 }
 .download-list li {
@@ -56,7 +60,7 @@ h1 {
 @media (max-width: 50rem) {
   .App-header {
     position: absolute;
-    padding: 0.5rem;
+    padding: 0.8rem;
     z-index: 10;
   }
   h1 {

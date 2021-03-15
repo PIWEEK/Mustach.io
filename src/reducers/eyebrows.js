@@ -4,7 +4,7 @@ const initialState = {
   color:'',
   nTypes: 15,
   type:'',
-  position: {x:-95, y:145},
+  position: {x:-92, y:140},
   scale: 1
 }
 

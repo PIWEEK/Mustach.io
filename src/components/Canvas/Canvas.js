@@ -34,13 +34,14 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
                 state.wrinkles.wrinklescheekbonesType && <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none", transformOrigin:"center center", transform:"scaleX(-1)"}} />
               </g>
 
-              <g  style={{transformOrigin: "center center", transform:`scale(${state.mouth.scale})  translateY(${state.mouth.position}px)`}}>
+              <g style={{transformOrigin:`${state.mouth.position.x+30}px ${state.mouth.position.y+30}px`, transform:`rotate(${state.mouth.rotate}deg) scale(${state.mouth.scale}) translate(${state.mouth.position.x}px, ${state.mouth.position.y}px)`}}>
                 state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
                 state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none"}} />
                 state.mouth.lowerlipType && <use xlinkHref={`#lowerlip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />
                 state.mouth.upperlipType && <use xlinkHref={`#upperlip-${state.mouth.upperlipType}`} style={{fill:state.mouth.upperlipColor, stroke:"none"}} />
                 state.mouth.smileType && <use xlinkHref={`#smile-${state.mouth.smileType}`} style={{stroke:state.mouth.smileColor, "strokeWidth": state.mouth.smileWidth, fill:"none"}} />
               </g>
+
               <g style={{transformOrigin: "center center", transform:`scale(${state.mustachio.scale}) translateY(${state.mustachio.position}px)`}}>
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none"}} />
                 state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
@@ -68,8 +69,8 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
                 state.eyes.eyelashesType && <use xlinkHref={`#eyelashes-${state.eyes.eyelashesType}`} style={{stroke:state.eyes.eyelashesColor, "strokeWidth": state.eyes.eyelashesWidth, fill:"none"}} />
               </g>
               <g>
-                state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{stroke:state.eyebrows.color, stroke:"none", transformOrigin: "center center", transform:`scale(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
-                state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{stroke:state.eyebrows.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.eyebrows.scale}) scaleY(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
+                state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{fill:state.eyebrows.color, stroke:"none", transformOrigin: "center center", transform:`scale(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
+                state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{fill:state.eyebrows.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.eyebrows.scale}) scaleY(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
               </g>
               <g>
                 state.glasses.type && <use xlinkHref={`#glasses-${state.glasses.type}`} style={{fill:state.glasses.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(${state.glasses.scale})  translateY(${state.glasses.position}px)`}} />

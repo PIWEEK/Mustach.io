@@ -115,6 +115,7 @@ const exportSVG = (state, type) => {
     mustachio2.setAttributeNS(null, "style", "transform-origin: center center; transform: scaleX(-1)");
     svgExport.append(mustachio2);
   }
+
   //Add Nose
   if(state.nose.nostrilsType){
     const nostrils = document.getElementById(`nostrils-${state.nose.nostrilsType}`).cloneNode(true);
@@ -177,8 +178,7 @@ const exportSVG = (state, type) => {
   if(state.eyebrows.type){
     const eyebrows = document.getElementById(`eyebrows-${state.eyebrows.type}`).cloneNode(true);
     eyebrows.removeAttributeNS(null, "id");
-    eyebrows.setAttributeNS(null, "fill", "none");
-    eyebrows.setAttributeNS(null, "stroke", state.eyebrows.color);
+    eyebrows.setAttributeNS(null, "fill", state.eyebrows.color);
     svgExport.append(eyebrows);
     const eyebrows2 = eyebrows.cloneNode(true);
     eyebrows2.removeAttributeNS(null,'id');
