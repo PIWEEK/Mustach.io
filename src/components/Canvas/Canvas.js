@@ -17,9 +17,9 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
               <g style={{transform:`translateY(${state.hairstyle.position}px)`}}>
                 state.hairstyle.type && <use xlinkHref={`#hairstyle-${state.hairstyle.type}`} style={{fill:state.hairstyle.color, stroke:"none", transform:`traslateY(-${state.hairstyle.position})px`}} />
               </g>
-              <g style={{transformOrigin: "center center", transform:`translateY(${state.ears.position}px)`}}>
-                state.ears.type && <use xlinkHref={`#ears-${state.ears.type}`} style={{fill:state.ears.color, stroke:"none"}} />
-                state.ears.type && <use xlinkHref={`#ears-${state.ears.type}`} style={{fill:state.ears.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.ears.scale})`}} />
+              <g>
+                state.ears.type && <use xlinkHref={`#ears-${state.ears.type}`} style={{fill:state.ears.color, stroke:"none", transformOrigin: "center center", transform:`scale(${state.ears.scale}) translate(${-1*state.ears.position.x}px, ${state.ears.position.y}px)`}} />
+                state.ears.type && <use xlinkHref={`#ears-${state.ears.type}`} style={{fill:state.ears.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.ears.scale}) scaleY(${state.ears.scale}) translate(${-1*state.ears.position.x}px, ${state.ears.position.y}px)`}} />
               </g>
               <g style={{transform:`translateY(${state.fringe.position}px)`}}>
                 state.fringe.type && <use xlinkHref={`#fringe-${state.fringe.type}`} style={{fill:state.fringe.color, stroke:"none"}} />
@@ -29,22 +29,21 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
               <g style={{transform:`translateY(${state.jawline.position}px)`}}>
                 state.jawline.type && <use xlinkHref={`#jawline-${state.jawline.type}`} style={{fill:state.jawline.color, stroke:"none"}} />
                 state.wrinkles.wrinkleschinType && <use xlinkHref={`#wrinkleschin-${state.wrinkles.wrinkleschinType}`} style={{stroke:state.wrinkles.wrinkleschinColor, fill:"none"}} />
-                state.wrinkles.wrinklescheekbonesType && <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none"}} />
                 state.wrinkles.wrinkleschinType && <use xlinkHref={`#wrinkleschin-${state.wrinkles.wrinkleschinType}`} style={{stroke:state.wrinkles.wrinkleschinColor, fill:"none", transformOrigin:"center center", transform:"scaleX(-1)"}} />
+                state.wrinkles.wrinklescheekbonesType && <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none"}} />
                 state.wrinkles.wrinklescheekbonesType && <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none", transformOrigin:"center center", transform:"scaleX(-1)"}} />
               </g>
 
-              <g style={{transformOrigin:`${state.mouth.position.x+30}px ${state.mouth.position.y+30}px`, transform:`rotate(${state.mouth.rotate}deg) scale(${state.mouth.scale}) translate(${state.mouth.position.x}px, ${state.mouth.position.y}px)`}}>
-                state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
+              <g style={{transformOrigin: "center center", transform:`scale(-${state.mouth.scale}, ${state.mouth.scale}) translate(${-1*state.mouth.position.x}px, ${state.mouth.position.y}px)`}}>
                 state.wrinkles.wrinklesmouthType && <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none"}} />
-                state.mouth.lowerlipType && <use xlinkHref={`#lowerlip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />
+                state.mouth.lowerlipType && <use xlinkHref={`#lowerlip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />                
                 state.mouth.upperlipType && <use xlinkHref={`#upperlip-${state.mouth.upperlipType}`} style={{fill:state.mouth.upperlipColor, stroke:"none"}} />
                 state.mouth.smileType && <use xlinkHref={`#smile-${state.mouth.smileType}`} style={{stroke:state.mouth.smileColor, "strokeWidth": state.mouth.smileWidth, fill:"none"}} />
               </g>
 
-              <g style={{transformOrigin: "center center", transform:`scale(${state.mustachio.scale}) translateY(${state.mustachio.position}px)`}}>
-                state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none"}} />
-                state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none",transformOrigin: "center center", transform:"scaleX(-1)"}} />
+              <g>
+                state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none", transformOrigin: "center center", transform:`scale(${state.mustachio.scale}) translate(${-1*state.mustachio.position.x}px, ${state.mustachio.position.y}px)`}} />
+                state.mustachio.type && <use xlinkHref={`#mustachio-${state.mustachio.type}`} style={{fill:state.mustachio.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.mustachio.scale}) scaleY(${state.mustachio.scale}) translate(${-1*state.mustachio.position.x}px, ${state.mustachio.position.y}px)`}} />
               </g>
 
               <g style={{transformOrigin:`${state.nose.position.x+30}px ${state.nose.position.y+30}px`, transform:`rotate(${state.nose.rotate}deg) scale(${state.nose.scale}) translate(${state.nose.position.x}px, ${state.nose.position.y}px)`}}>
@@ -72,9 +71,10 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
                 state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{fill:state.eyebrows.color, stroke:"none", transformOrigin: "center center", transform:`scale(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
                 state.eyebrows.type && <use xlinkHref={`#eyebrows-${state.eyebrows.type}`} style={{fill:state.eyebrows.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.eyebrows.scale}) scaleY(${state.eyebrows.scale}) translate(${-1*state.eyebrows.position.x}px, ${state.eyebrows.position.y}px)`}} />
               </g>
+
               <g>
-                state.glasses.type && <use xlinkHref={`#glasses-${state.glasses.type}`} style={{fill:state.glasses.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(${state.glasses.scale})  translateY(${state.glasses.position}px)`}} />
-                state.glasses.type && <use xlinkHref={`#glasses-${state.glasses.type}`} style={{fill:state.glasses.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.glasses.scale}) translateY(${state.glasses.position}px)`}} />
+                state.glasses.type && <use xlinkHref={`#glasses-${state.glasses.type}`} style={{fill:state.glasses.color, stroke:"none", transformOrigin: "center center", transform:`scale(${state.glasses.scale}) translate(${-1*state.glasses.position.x}px, ${state.glasses.position.y}px)`}} />
+                state.glasses.type && <use xlinkHref={`#glasses-${state.glasses.type}`} style={{fill:state.glasses.color, stroke:"none", transformOrigin: "center center", transform:`scaleX(-${state.glasses.scale}) scaleY(${state.glasses.scale}) translate(${-1*state.glasses.position.x}px, ${state.glasses.position.y}px)`}} />
               </g>
             </>}
           </svg>

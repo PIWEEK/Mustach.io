@@ -1,7 +1,7 @@
 
 const initialState = {
   id: 'mouth',
-  position: {x:-142,y:229},
+  position: {x:-142,y:233},
   scale: 1,
   subsections: ['Lower Lip','Upper Lip','Smile'],
   subsectionSelected:'Upper Lip',
@@ -21,8 +21,12 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'SET_MOUTH':
       return {...state, ...action.payload};
+    case 'SET_SHAPE_MOUTH':
+      return {...state, shape: action.payload};
     case 'SET_POSITION_MOUTH':
-      return {...state, position: action.payload.y};
+      return {...state, position: action.payload};
+    case 'SET_ROTATE_MOUTH':
+      return {...state, rotate: action.payload};
     case 'SET_SCALE_MOUTH':
       return {...state, scale: action.payload};
     case 'SET_COLOR_UPPER_LIP':

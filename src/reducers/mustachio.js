@@ -2,9 +2,9 @@
 const initialState = {
   id: 'mustachio',
   color:'',
-  nTypes: 11,
+  nTypes: 12,
   type:'',
-  position: {x:-15,y:160},
+  position: {x:-118, y:214},
   scale: 1
 }
 
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_MUSTACHIO':
       return {...state, type: action.payload};
     case 'SET_POSITION_MUSTACHIO':
-      return {...state, position: action.payload.y};
+      return {...state, position: action.payload};
     case 'SET_SCALE_MUSTACHIO':
       return {...state, scale: action.payload};
     default:

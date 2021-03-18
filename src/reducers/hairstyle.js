@@ -2,7 +2,7 @@
 const initialState = {
   id: 'hairstyle',
   color:'',
-  nTypes: 71,
+  nTypes: 42,
   type:'',
   position: 0
 }

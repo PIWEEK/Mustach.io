@@ -1,10 +1,9 @@
-
 const initialState = {
   id: 'glasses',
-  position: {x:108,y:165},
   color:'',
   nTypes: 6,
   type:'',
+  position: {x:-76, y:145},
   scale: 1
 }
 
@@ -17,7 +16,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_GLASSES':
       return {...state, type: action.payload};
     case 'SET_POSITION_GLASSES':
-      return {...state, position: action.payload.y};
+      return {...state, position: action.payload};
     case 'SET_SCALE_GLASSES':
       return {...state, scale: action.payload};
     default:

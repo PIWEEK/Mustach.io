@@ -1,10 +1,10 @@
 
 const initialState = {
   id: 'ears',
-  nTypes: 1,
   color:'',
+  nTypes: 4,
   type:'',
-  position: 0,
+  position: {x:-70, y:150},
   scale: 1
 }
 
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case 'SET_TYPE_EARS':
       return {...state, type: action.payload};
     case 'SET_POSITION_EARS':
-      return {...state, position: action.payload.y};
+      return {...state, position: action.payload};
     case 'SET_SCALE_EARS':
       return {...state, scale: action.payload};
     default:
