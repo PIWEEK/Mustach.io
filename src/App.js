@@ -68,14 +68,14 @@ function App() {
       payload: {
         upperlipColor:palette[4],
         upperlipType: randomize(state.mouth.nTypesUpperLip, 'ceil'),
-        smileColor: palette[4],
+        smileColor: palette[4], 
         smileType: randomize(state.mouth.nTypesSmile, 'ceil'),
         lowerlipColor: palette[3],
         lowerlipType: randomize(state.mouth.nTypesLowerLip, 'ceil')
       }
     });
 
-    dispatch({
+    /*dispatch({
       type: 'SET_WRINKLES', 
       payload: {
         wrinklesforeheadType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
@@ -89,13 +89,16 @@ function App() {
         wrinkleseyesType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesEyes, 'ceil') : '',
         wrinkleseyesColor: palette[2]
       }
-    });
+    }); */
+
 
     dispatch({
-      type: 'SET_MUSTACHIO', 
+      type: 'SET_FACIALHAIR', 
       payload: {
-        color: palette[5],
-        type:  !!Math.round(Math.random()-0.1) ? randomize(state.mustachio.nTypes, 'ceil') : '',
+        MustachioColor: palette[2],
+        BeardType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesMustachio, 'ceil') : '',
+        BeardColor: palette[2],
+        BeardType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesBeard, 'ceil') : '',
       }
     });
 

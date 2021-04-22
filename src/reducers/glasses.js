@@ -3,7 +3,7 @@ const initialState = {
   color:'',
   nTypes: 6,
   type:'',
-  position: {x:-76, y:145},
+  position: {x:-79, y:148},
   scale: 1
 }
 

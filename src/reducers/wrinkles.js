@@ -1,7 +1,7 @@
 
 const initialState = {
   id: 'wrinkles',
-  position: {x:-108,y:165},
+  wrinklescheekbonesPosition: {x:-200,y:305},
   scale: 0,
   subsections: ['Wrinkles Forehead', 'Wrinkles Cheekbones', 'Wrinkles Mouth', 'Wrinkles Chin', 'Wrinkles Eyes'],
   subsectionSelected:'Wrinkles Forehead',

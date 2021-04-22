@@ -7,7 +7,7 @@ const initialState = {
   subsectionSelected:'Eyelid',
   nTypesPupil: 2,
   nTypesEyelid: 9,
-  nTypesWhite: 10,
+  nTypesWhite: 12,
   nTypesIris: 3,
   nTypesEyelashes: 12,
   pupilColor: '',

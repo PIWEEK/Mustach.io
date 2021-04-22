@@ -104,16 +104,18 @@ const exportSVG = (state, type) => {
     svgExport.append(smile);
   }
 
-  //Add Mustachio
-  if(state.mustachio.type){
-    const mustachio = document.getElementById(`mustachio-${state.mustachio.type}`).cloneNode(true);
+  //Add Facial hair
+  if(state.facialhair.mustachioType){
+    const mustachio = document.getElementById(`mustachio-${state.facialhair.mustachioType}`).cloneNode(true);
     mustachio.removeAttributeNS(null, "id");
-    mustachio.setAttributeNS(null, "fill", state.mustachio.color);
+    mustachio.setAttributeNS(null, "fill", state.facialhair.mustachioColor);
     svgExport.append(mustachio);
-    const mustachio2 = mustachio.cloneNode(true);
-    mustachio2.removeAttributeNS(null,'id');
-    mustachio2.setAttributeNS(null, "style", "transform-origin: center center; transform: scaleX(-1)");
-    svgExport.append(mustachio2);
+  }
+  if(state.facialhair.beardType){
+    const beard = document.getElementById(`beard-${state.facialhair.beardType}`).cloneNode(true);
+    beard.removeAttributeNS(null, "id");
+    beard.setAttributeNS(null, "fill", state.facialhair.beardColor);
+    svgExport.append(beard);
   }
 
   //Add Nose

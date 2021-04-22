@@ -17,8 +17,8 @@ const ClickArea = ({sectionSelected})=>{
     setPosition({x:e.clientX, y:e.clientY})
     setInitialPosition({
       x:stateValue.position.x, 
-      y: stateValue.position.y, 
-      r: stateValue.rotate, 
+      y:stateValue.position.y, 
+      r:stateValue.rotate, 
       s:stateValue.scale})
   }
   const onMouseUpHandler = (e) => {

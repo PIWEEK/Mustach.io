@@ -2,7 +2,7 @@
 const initialState = {
   id: 'fringe',
   color:'',
-  nTypes: 20,
+  nTypes: 27,
   type:'',
   position: 0,
   scale: 0

@@ -72,13 +72,16 @@ svg.eyebrows {
   transform: scale(5) translate(14px, 14px);
 }
 svg.glasses {
-  transform: scale(4) translate(14px, 5px);
+  transform: scale(4) translate(17px, 5px);
 }
 svg.nostril {
   transform: scale(7) translateY(-7px);
 }
 svg.septum {
   transform: scale(7) translate(7px, 2px);
+}
+svg.wrinklesmouth {
+  transform: scale(7) translate(70px, 20px);
 }
 svg.upper,
 svg.smile,
@@ -96,7 +99,7 @@ svg.mustachio {
   transform: scale(2.2) translate(6px, -15px);
 }
 svg.beard {
-  transform: scale(2.2) translateY(-18px);
+  transform: scale(2.2) translate(6px, -15px);
 }
 
 @media (max-width: 50rem) {

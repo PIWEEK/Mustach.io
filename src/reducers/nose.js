@@ -6,11 +6,11 @@ const initialState = {
   scale: 1,
   subsections: ['Nostrils','Septum'],
   subsectionSelected:'Nostrils',
-  nTypesNostrils: 21,
+  nTypesNostrils: 23,
   nostrilsColor:'',
   nostrilsWidth:3,
   nostrilsType:'',
-  nTypesSeptum: 11,
+  nTypesSeptum: 13,
   septumColor:'',
   septumWidth: 3,
   septumType:''

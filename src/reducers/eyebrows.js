@@ -2,7 +2,7 @@
 const initialState = {
   id: 'eyebrows',
   color:'',
-  nTypes: 15,
+  nTypes: 30,
   type:'',
   position: {x:-92, y:140},
   scale: 1
