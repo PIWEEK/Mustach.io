@@ -1,13 +1,13 @@
 
 const initialState = {
   id: 'mouth',
-  position: {x:-142,y:233},
+  position: {x:-142,y:229},
   scale: 1,
   subsections: ['Lower Lip','Upper Lip','Smile'],
   subsectionSelected:'Upper Lip',
   nTypesUpperLip: 27,
-  nTypesSmile: 10,
-  nTypesLowerLip: 27,
+  nTypesSmile: 11,
+  nTypesLowerLip: 18,
   upperlipColor:'',
   upperlipType:'',
   smileColor:'',
