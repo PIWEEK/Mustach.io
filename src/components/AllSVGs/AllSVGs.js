@@ -124,10 +124,10 @@ const AllSVGs = () =>(
 
 
       {/* WRINKLES FOREHEAD NEW */}
-      <path id="wrinklesforhead-1" d="M46 25C33.905 25 27 20.0001 27 20.0001" stroke-linecap="round" stroke-linejoin="round"/>
-      <path id="wrinklesforhead-2" d="M46 15.0001C20.7849 15.0001 6.38956 6.57628 6.38956 6.57628" stroke-linecap="round" stroke-linejoin="round"/>
-      <path id="wrinklesforhead-4" d="M33.9999 29C33.4949 20.3442 28.905 15.1938 28.905 15.1938" stroke-linecap="round" stroke-linejoin="round"/>
-      
+      <path id="wrinklesforehead-1" d="M46 25C33.905 25 27 20.0001 27 20.0001" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="wrinklesforehead-2" d="M46 15.0001C20.7849 15.0001 6.38956 6.57628 6.38956 6.57628" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="wrinklesforehead-3" d="M33.9999 29C33.4949 20.3442 28.905 15.1938 28.905 15.1938" stroke-linecap="round" stroke-linejoin="round"/>
+
       {/* WRINKLES CHEEKBONES NEW */}
       <path id="wrinklescheekbones-1" d="M32.9639 78.25C26.9639 72.25 28.0237 60 28.0237 55.4847C28.0237 50.9694 25.2994 43.25 25.2994 43.25" stroke-linecap="round" stroke-linejoin="round"/>
       <path id="wrinklescheekbones-2" d="M29.5 64C29.5 64 29.5 46.5 20.8624 35.2366" stroke-linecap="round" stroke-linejoin="round"/>
@@ -336,7 +336,7 @@ const AllSVGs = () =>(
 
       {/* EYES PUPIL NEW */}
       <circle id="pupil-1" r="4" transform="matrix(-1 5.18986e-09 5.18986e-09 1 27 22)" fill="black"/>
-      <circle id="pupil-2" r="2" transform="matrix(-1 0 0 1 27 22)" fill="black"/>    
+      <circle id="pupil-2" r="2" transform="matrix(-1 0 0 1 27 22)" fill="black"/>
       
       {/* EYES EYELID NEW */}
       <path id="eyelid-1" d="M26 17C13.3381 17.208 7 23 7 23C7 18 16 13 26 13C36 13 47 20 47 23C47 23 38.6619 17.208 26 17Z"/>

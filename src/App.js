@@ -95,10 +95,10 @@ function App() {
     dispatch({
       type: 'SET_FACIALHAIR', 
       payload: {
-        MustachioColor: palette[2],
-        BeardType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesMustachio, 'ceil') : '',
-        BeardColor: palette[2],
-        BeardType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesBeard, 'ceil') : '',
+        mustachioColor: palette[2],
+        mustachioType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesMustachio, 'ceil') : '',
+        beardColor: palette[2],
+        beardType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesBeard, 'ceil') : '',
       }
     });
 

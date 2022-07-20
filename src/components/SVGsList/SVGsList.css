@@ -35,6 +35,7 @@
 .item svg {
   border-radius: 1.25rem;
   fill: none;
+  height: 6.5rem;
   transform-origin: center center;
   width: 6.5rem;
 }
@@ -46,60 +47,6 @@
 }
 .item.empty {
   border-radius: 1.25rem;
-}
-
-svg.face {
-  transform: scale(2) translateY(-14px);
-}
-
-svg.hairstyle {
-  transform: scale(1.2) translateY(15px);
-}
-
-svg.fringe {
-  transform: scale(2) translateY(15px);
-}
-svg.ears {
-  transform: scale(7) translate(30px, 4px);
-}
-svg.pupil,
-svg.narrow,
-svg.normal,
-svg.wide {
-  transform: scale(7) translate(17px, 8px);
-}
-svg.eyebrows {
-  transform: scale(5) translate(14px, 14px);
-}
-svg.glasses {
-  transform: scale(4) translate(17px, 5px);
-}
-svg.nostril {
-  transform: scale(7) translateY(-7px);
-}
-svg.septum {
-  transform: scale(7) translate(7px, 2px);
-}
-svg.wrinklesmouth {
-  transform: scale(7) translate(70px, 20px);
-}
-svg.upper,
-svg.smile,
-svg.lower {
-  transform: scale(6) translateY(-17px);
-}
-
-svg.head {
-  transform: scale(3) translateY(20px);
-}
-svg.mouth {
-  transform: scale(4) translate(20px, -10px);
-}
-svg.mustachio {
-  transform: scale(2.2) translate(6px, -15px);
-}
-svg.beard {
-  transform: scale(2.2) translate(6px, -15px);
 }
 
 @media (max-width: 50rem) {

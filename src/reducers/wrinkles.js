@@ -5,7 +5,7 @@ const initialState = {
   scale: 0,
   subsections: ['Wrinkles Forehead', 'Wrinkles Cheekbones', 'Wrinkles Mouth', 'Wrinkles Chin', 'Wrinkles Eyes'],
   subsectionSelected:'Wrinkles Forehead',
-  nTypesWrinklesForehead: 4,
+  nTypesWrinklesForehead: 3,
   nTypesWrinklesCheekbones: 9,
   nTypesWrinklesMouth:12,
   nTypesWrinklesChin:8,
@@ -19,7 +19,11 @@ const initialState = {
   wrinkleschinType:'',
   wrinkleschinColor:'',
   wrinkleseyesType:'',
-  wrinkleseyesColor:'' 
+  wrinkleseyesColor:'',
+  wrinklesforeheadPosition: {x:100, y:100},
+  wrinklescheekbonesPosition: {x:100, y:200},
+  wrinklesmouthPosition: {x:120, y:240},
+  wrinkleschinPosition: {x:150, y:270}
 }
 
 export default (state = initialState, action) => {
