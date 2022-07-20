@@ -75,7 +75,7 @@ function App() {
       }
     });
 
-    /*dispatch({
+    dispatch({
       type: 'SET_WRINKLES', 
       payload: {
         wrinklesforeheadType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
@@ -89,8 +89,7 @@ function App() {
         wrinkleseyesType: !!Math.round(Math.random()-0.2) ? randomize(state.wrinkles.nTypesWrinklesEyes, 'ceil') : '',
         wrinkleseyesColor: palette[2]
       }
-    }); */
-
+    });
 
     dispatch({
       type: 'SET_FACIALHAIR', 
@@ -151,7 +150,7 @@ function App() {
     setRandomTimer(timer);
     clearInterval();
   },[])
-  
+
   return (
     <div className="App" onClick={()=>clearInterval(randomTimer)}>
       <AllSVGs />

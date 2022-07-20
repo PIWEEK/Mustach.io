@@ -11,8 +11,8 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
       <Header />
       <div className="container-canvas">
         {!(sectionSelected==="background") && <ClickArea sectionSelected={sectionSelected}/>}
-        <div className="canvas" style={{backgroundColor: state.background.color ? state.background.color:"#ebeef4"}}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 360 360">
+        <div className="canvas">
+          <svg id="svg-canvas" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 360 360" style={{backgroundColor: state.background.color ? state.background.color:"#ebeef4"}}>
             {<>
               <g style={{transform:`translateY(${state.hairstyle.position}px)`}}>
                 state.hairstyle.type && <use xlinkHref={`#hairstyle-${state.hairstyle.type}`} style={{fill:state.hairstyle.color, stroke:"none", transform:`traslateY(-${state.hairstyle.position})px`}} />
