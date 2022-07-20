@@ -1,7 +1,18 @@
 import React from 'react';
 import './SVGsList.css'
+import svgPathBbox from "svg-path-bbox";
 
 const SVGsList = ({feature, changeTypeSelected, changeSubsectionsSelected}) => {
+  const calculateViewBox = (elementId) => {
+    const el = document.getElementById(`${elementId}`);
+    const d = el.getAttribute('d');
+    if (d) {
+      const bbox = svgPathBbox(d)
+      console.log(elementId, d, bbox)
+      return `${bbox[0] - 10} ${bbox[1] - 10} ${bbox[2] + 10} ${bbox[3] + 10}`
+    }
+    return "0 0 360 360";
+  }
 
   const subsectionsMenu = () => {
     return (
@@ -24,8 +35,8 @@ const SVGsList = ({feature, changeTypeSelected, changeSubsectionsSelected}) => {
           </li>
           {
             svgIds.map((x, index)=><li key={x} className={`item ${x===feature[`${subsectionSelected.toLowerCase()}Type`] ? 'selected' : ''}`}  onClick={()=>changeTypeSelected(++index)}>
-              <svg xmlns='http://www.w3.org/2000/svg' className={feature.subSectionsSelected} style={{fill: "#b4bedb", stroke:"#b4bedb"}}  width="100%" height="100%" viewBox="0 0 360 360">
-                <use xlinkHref={`#${x}`} />
+              <svg width="100%" height="100%" xmlns='http://www.w3.org/2000/svg' className={feature.subSectionsSelected} style={{fill: "#b4bedb", stroke:"#b4bedb"}} viewBox={calculateViewBox(x)}>
+                <use id={`use-${x}`} xlinkHref={`#${x}`} />
               </svg>
             </li>)
           }
@@ -44,7 +55,7 @@ const SVGsList = ({feature, changeTypeSelected, changeSubsectionsSelected}) => {
           </li>
           {
             svgIds.map((x, index)=><li key={x} className={`item ${x===feature.typeSelected?'selected':''}`} onClick={()=>changeTypeSelected(++index)}>
-              <svg xmlns='http://www.w3.org/2000/svg' className={feature.id} style={{fill: "#b4bedb", stroke: "#b4bedb"}} width="100%" height="100%" viewBox="0 0 360 360">
+              <svg width="100%" height="100%" xmlns='http://www.w3.org/2000/svg' className={feature.id} style={{fill: "#b4bedb", stroke: "#b4bedb"}} viewBox={calculateViewBox(x)}>
                 <use xlinkHref={`#${x}`} />
               </svg>
             </li>)
