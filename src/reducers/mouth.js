@@ -1,7 +1,7 @@
 
 const initialState = {
   id: 'mouth',
-  position: {x:-142,y:230},
+  position: {x:-142,y:231},
   scale: 1,
   subsections: ['Lower Lip','Upper Lip','Smile'],
   subsectionSelected:'Upper Lip',

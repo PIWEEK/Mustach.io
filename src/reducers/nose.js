@@ -1,7 +1,7 @@
 
 const initialState = {
   id: 'nose',
-  position: {x:155, y:170},
+  position: {x:155, y:169},
   rotate: 0,
   scale: 1,
   subsections: ['Nostrils','Septum'],

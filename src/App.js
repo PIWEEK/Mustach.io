@@ -97,7 +97,7 @@ function App() {
         mustachioColor: palette[5],
         mustachioType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesMustachio, 'ceil') : '',
         beardColor: palette[5],
-        beardType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesBeard, 'ceil') : '',
+        beardType:  !!Math.round(Math.random()-0.5) ? randomize(state.facialhair.nTypesBeard, 'ceil') : '',
       }
     });
 
