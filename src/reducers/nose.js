@@ -13,7 +13,8 @@ const initialState = {
   nTypesSeptum: 13,
   septumColor:'',
   septumWidth: 3,
-  septumType:''
+  septumType:'',
+  fill: null
 }
 
 export default (state = initialState, action) => {

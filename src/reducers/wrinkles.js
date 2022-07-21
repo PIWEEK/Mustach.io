@@ -23,7 +23,8 @@ const initialState = {
   wrinklesforeheadPosition: {x:100, y:100},
   wrinklescheekbonesPosition: {x:100, y:200},
   wrinklesmouthPosition: {x:120, y:240},
-  wrinkleschinPosition: {x:150, y:270}
+  wrinkleschinPosition: {x:150, y:270},
+  fill: null
 }
 
 export default (state = initialState, action) => {

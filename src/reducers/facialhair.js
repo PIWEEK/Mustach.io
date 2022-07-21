@@ -14,7 +14,8 @@ const initialState = {
   nTypesBeard: 15,
   beardColor:'',
   beardWidth: 3,
-  beardType:''
+  beardType:'',
+  fill: "#b4bedb"
 }
 
 export default (state = initialState, action) => {

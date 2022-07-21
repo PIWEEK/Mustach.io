@@ -14,7 +14,8 @@ const initialState = {
   smileWidth: 3,
   smileType:'',
   lowerlipColor:'',
-  lowerlipType:''
+  lowerlipType:'',
+  fill: "#b4bedb"
 }
 
 export default (state = initialState, action) => {

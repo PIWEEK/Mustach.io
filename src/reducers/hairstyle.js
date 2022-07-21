@@ -4,7 +4,8 @@ const initialState = {
   color:'',
   nTypes: 42,
   type:'',
-  position: 0
+  position: 0,
+  fill: "#b4bedb"
 }
 
 export default (state = initialState, action) => {

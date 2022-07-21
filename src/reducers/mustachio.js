@@ -5,7 +5,8 @@ const initialState = {
   nTypes: 12,
   type:'',
   position: {x:-118, y:214},
-  scale: 1
+  scale: 1,
+  fill: "#b4bedb"
 }
 
 export default (state = initialState, action) => {

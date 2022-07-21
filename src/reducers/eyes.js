@@ -21,7 +21,8 @@ const initialState = {
   irisType: '',
   eyelashesType: '',
   eyelashesWidth: 3,
-  rotate: 0
+  rotate: 0,
+  fill: "#b4bedb"
 }
 
 export default (state = initialState, action) => {
