@@ -23,7 +23,9 @@ export default (state = initialState, action) => {
     case 'SET_FACIALHAIR':
       return {...state, ...action.payload};
     case 'SET_POSITION_FACIALHAIR':
-      return {...state, position: action.payload};
+      var pairPosition = action.payload;
+      pairPosition.x = state.pairPosition.x;
+      return {...state, pairPosition: pairPosition};
     case 'SET_ROTATE_FACIALHAIR':
       return {...state, rotate: action.payload};
     case 'SET_SCALE_FACIALHAIR':
