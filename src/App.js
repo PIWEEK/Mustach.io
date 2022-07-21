@@ -78,13 +78,13 @@ function App() {
     dispatch({
       type: 'SET_WRINKLES', 
       payload: {
-        wrinklesforeheadType: !!Math.round(Math.random()-0.3) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
+        wrinklesforeheadType: !!Math.round(Math.random()-0.4) ? randomize(state.wrinkles.nTypesWrinklesForehead, 'ceil') : '',
         wrinklesforeheadColor: palette[2],
         wrinklescheekbonesType: !!Math.round(Math.random()-0.3) ? randomize(state.wrinkles.nTypesWrinklesCheekbones, 'ceil') : '',
         wrinklescheekbonesColor: palette[2],
-        wrinklesmouthType: !!Math.round(Math.random()-0.3) ? randomize(state.wrinkles.nTypesWrinklesMouth, 'ceil') : '',
+        wrinklesmouthType: !!Math.round(Math.random()-0.4) ? randomize(state.wrinkles.nTypesWrinklesMouth, 'ceil') : '',
         wrinklesmouthColor: palette[2],
-        wrinkleschinType: !!Math.round(Math.random()-0.3) ? randomize(state.wrinkles.nTypesWrinklesChin, 'ceil') : '',
+        wrinkleschinType: !!Math.round(Math.random()-0.4) ? randomize(state.wrinkles.nTypesWrinklesChin, 'ceil') : '',
         wrinkleschinColor: palette[2],
         wrinkleseyesType: !!Math.round(Math.random()-0.3) ? randomize(state.wrinkles.nTypesWrinklesEyes, 'ceil') : '',
         wrinkleseyesColor: palette[2]
@@ -95,7 +95,7 @@ function App() {
       type: 'SET_FACIALHAIR', 
       payload: {
         mustachioColor: palette[5],
-        mustachioType:  !!Math.round(Math.random()-0.3) ? randomize(state.facialhair.nTypesMustachio, 'ceil') : '',
+        mustachioType:  !!Math.round(Math.random()-0.4) ? randomize(state.facialhair.nTypesMustachio, 'ceil') : '',
         beardColor: palette[5],
         beardType:  !!Math.round(Math.random()-0.5) ? randomize(state.facialhair.nTypesBeard, 'ceil') : '',
       }

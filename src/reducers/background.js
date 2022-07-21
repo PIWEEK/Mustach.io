@@ -12,7 +12,7 @@ export const palettes = [
   ['#738576', '#FFCFBA', '#FFBC9F', '#F19882', '#CB7B68', '#FFA06B'],
   ['#8CB9BE', '#FCCFC5', '#FCC6BB', '#FCA390', '#D57D75', '#9F5050'],
   ['#5372A0', '#FFC7B4', '#FFBCA6', '#F59A7F', '#EE8569', '#EC9192'],
-  ['#B9B9B9', '#A3A3A3', '#8D8D8D', '#6F6F6F', '#383838', '#000000']
+  ['#B9B9B9', '#A3A3A3', '#989898', '#6F6F6F', '#383838', '#000000']
 ];
 export const randomPalette = (palettes)=>palettes[Math.round(Math.random()*(palettes.length-1))]
 
