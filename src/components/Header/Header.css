@@ -77,6 +77,9 @@ h1 {
   .download-text, .download-list{
     display: none;
   }
+  .visible .download-text, .visible .download-list{
+    display: block;
+  }
   .download-button {
     align-self: flex-start;
     margin: .8rem .5rem;
