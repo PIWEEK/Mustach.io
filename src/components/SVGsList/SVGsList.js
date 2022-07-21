@@ -7,8 +7,7 @@ const SVGsList = ({feature, changeTypeSelected, changeSubsectionsSelected}) => {
     const el = document.getElementById(`${elementId}`);
     const d = el.getAttribute('d');
     if (d) {
-      const bbox = svgPathBbox(d)
-      console.log(elementId, d, bbox)
+      const bbox = svgPathBbox(d);
       return `${bbox[0] - 10} ${bbox[1] - 10} ${bbox[2] + 10} ${bbox[3] + 10}`
     }
     const r = el.getAttribute('r');

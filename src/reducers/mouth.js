@@ -25,7 +25,9 @@ export default (state = initialState, action) => {
     case 'SET_SHAPE_MOUTH':
       return {...state, shape: action.payload};
     case 'SET_POSITION_MOUTH':
-      return {...state, position: action.payload};
+      var position = action.payload;
+      position.x = state.position.x;
+      return {...state, position};
     case 'SET_ROTATE_MOUTH':
       return {...state, rotate: action.payload};
     case 'SET_SCALE_MOUTH':
