@@ -24,6 +24,7 @@ const initialState = {
   wrinklescheekbonesPosition: {x:100, y:200},
   wrinklesmouthPosition: {x:120, y:240},
   wrinkleschinPosition: {x:150, y:270},
+  wrinkleseyesPosition: {x:101, y:155},
   fill: null
 }
 
