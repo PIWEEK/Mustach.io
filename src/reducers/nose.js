@@ -22,7 +22,9 @@ export default (state = initialState, action) => {
     case 'SET_NOSE':
       return {...state, ...action.payload};
     case 'SET_POSITION_NOSE':
-      return {...state, position: action.payload};
+      var position = action.payload;
+      position.x = state.position.x;
+      return {...state, position};
     case 'SET_ROTATE_NOSE':
       return {...state, rotate: action.payload};
     case 'SET_SCALE_NOSE':
