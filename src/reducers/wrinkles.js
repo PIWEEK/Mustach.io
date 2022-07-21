@@ -1,32 +1,42 @@
-
 const initialState = {
   id: 'wrinkles',
-  wrinklescheekbonesPosition: {x:-200,y:305},
   scale: 0,
   subsections: ['Wrinkles Forehead', 'Wrinkles Cheekbones', 'Wrinkles Mouth', 'Wrinkles Chin', 'Wrinkles Eyes'],
   subsectionSelected:'Wrinkles Forehead',
+  
   nTypesWrinklesForehead: 3,
-  nTypesWrinklesCheekbones: 9,
-  nTypesWrinklesMouth:12,
-  nTypesWrinklesChin:8,
-  nTypesWrinklesEyes:10,
   wrinklesforeheadType:'',
   wrinklesforeheadColor:'',
+  wrinklesforeheadWidth: 3,
+
+  nTypesWrinklesCheekbones: 9,
   wrinklescheekbonesType:'',
   wrinklescheekbonesColor:'',
+  wrinklescheekbonesWidth: 3,
+
+  nTypesWrinklesMouth:12,
   wrinklesmouthType:'',
   wrinklesmouthColor:'',
+  wrinklesmouthWidth: 3,
+
+  nTypesWrinklesChin:8,
   wrinkleschinType:'',
   wrinkleschinColor:'',
+  wrinkleschinWidth:3,
+
+  nTypesWrinklesEyes:10,
   wrinkleseyesType:'',
   wrinkleseyesColor:'',
-  wrinklesforeheadPosition: {x:100, y:100},
-  wrinklescheekbonesPosition: {x:100, y:200},
-  wrinklesmouthPosition: {x:120, y:240},
-  wrinkleschinPosition: {x:150, y:270},
+  wrinkleseyesWidth:3,
+
   wrinkleseyesPosition: {x:101, y:155},
+  wrinklesforeheadPosition: {x:134, y:130},
+  wrinklescheekbonesPosition: {x:92, y:180},
+  wrinklesmouthPosition: {x:130, y:204},
+  wrinkleschinPosition: {x:148, y:266},
   fill: null
 }
+
 
 export default (state = initialState, action) => {
   switch (action.type) {

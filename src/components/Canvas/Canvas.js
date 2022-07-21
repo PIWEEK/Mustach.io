@@ -24,26 +24,27 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
 
               <g>
                 <use xlinkHref={`#fringe-${state.fringe.type}`} style={{fill:state.fringe.color, stroke:"none"}} />
-                <use xlinkHref={`#wrinklesforehead-${state.wrinkles.wrinklesforeheadType}`} style={{stroke:state.wrinkles.wrinklesforeheadColor, fill:"none"}} transform={`translate(${state.wrinkles.wrinklesforeheadPosition.x}, ${state.wrinkles.wrinklesforeheadPosition.y})`}/>
-                <use xlinkHref={`#wrinklesforehead-${state.wrinkles.wrinklesforeheadType}`} style={{stroke:state.wrinkles.wrinklesforeheadColor, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinklesforeheadPosition.x}, ${state.wrinkles.wrinklesforeheadPosition.y}) scale(-1, 1)`} />
+                <use xlinkHref={`#wrinklesforehead-${state.wrinkles.wrinklesforeheadType}`} style={{stroke:state.wrinkles.wrinklesforeheadColor, "strokeWidth": state.wrinkles.wrinklesforeheadWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinklesforeheadPosition.x}, ${state.wrinkles.wrinklesforeheadPosition.y})`}/>
+                <use xlinkHref={`#wrinklesforehead-${state.wrinkles.wrinklesforeheadType}`} style={{stroke:state.wrinkles.wrinklesforeheadColor, "strokeWidth": state.wrinkles.wrinklesforeheadWidth, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinklesforeheadPosition.x}, ${state.wrinkles.wrinklesforeheadPosition.y}) scale(-1, 1)`} />
               </g>
 
               <g>
                 <use xlinkHref={`#jawline-${state.jawline.type}`} style={{fill:state.jawline.color, stroke:"none"}} />
-                <use xlinkHref={`#wrinkleschin-${state.wrinkles.wrinkleschinType}`} style={{stroke:state.wrinkles.wrinkleschinColor, fill:"none"}} transform={`translate(${state.wrinkles.wrinkleschinPosition.x}, ${state.wrinkles.wrinkleschinPosition.y})`} />
-                <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none"}} transform={`translate(${state.wrinkles.wrinklescheekbonesPosition.x}, ${state.wrinkles.wrinklescheekbonesPosition.y})`} />
-                <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinklescheekbonesPosition.x}, ${state.wrinkles.wrinklescheekbonesPosition.y}) scale(-1, 1)`} />
+                <use xlinkHref={`#wrinkleschin-${state.wrinkles.wrinkleschinType}`} style={{stroke:state.wrinkles.wrinkleschinColor, "strokeWidth": state.wrinkles.wrinklescheekbonesWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinkleschinPosition.x}, ${state.wrinkles.wrinkleschinPosition.y})`} />
+                <use xlinkHref={`#wrinkleschin-${state.wrinkles.wrinkleschinType}`} style={{stroke:state.wrinkles.wrinkleschinColor, "strokeWidth": state.wrinkles.wrinklescheekbonesWidth, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinkleschinPosition.x}, ${state.wrinkles.wrinkleschinPosition.y}) scale(-1, 1)`} />
+                <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, "strokeWidth": state.wrinkles.wrinklescheekbonesWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinklescheekbonesPosition.x}, ${state.wrinkles.wrinklescheekbonesPosition.y})`} />
+                <use xlinkHref={`#wrinklescheekbones-${state.wrinkles.wrinklescheekbonesType}`} style={{stroke:state.wrinkles.wrinklescheekbonesColor, "strokeWidth": state.wrinkles.wrinklescheekbonesWidth, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinklescheekbonesPosition.x}, ${state.wrinkles.wrinklescheekbonesPosition.y}) scale(-1, 1)`} />
+              </g>
+
+              <g>
+                <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, "strokeWidth": state.wrinkles.wrinklesmouthWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinklesmouthPosition.x}, ${state.wrinkles.wrinklesmouthPosition.y})`} />
+                <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, "strokeWidth": state.wrinkles.wrinklesmouthWidth, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinklesmouthPosition.x}, ${state.wrinkles.wrinklesmouthPosition.y}) scale(-1, 1)`} />
               </g>
 
               <g transform={`scale(${state.mouth.scale}, ${state.mouth.scale}) translate(${-1*state.mouth.position.x}, ${state.mouth.position.y})`}>
                 <use xlinkHref={`#lowerlip-${state.mouth.lowerlipType}`} style={{fill:state.mouth.lowerlipColor, stroke:"none"}} />
                 <use xlinkHref={`#upperlip-${state.mouth.upperlipType}`} style={{fill:state.mouth.upperlipColor, stroke:"none"}} />
                 <use xlinkHref={`#smile-${state.mouth.smileType}`} style={{stroke:state.mouth.smileColor, "strokeWidth": state.mouth.smileWidth, fill:"none"}} />
-              </g>
-
-              <g>
-                <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none"}} transform={`translate(${state.wrinkles.wrinklesmouthPosition.x}, ${state.wrinkles.wrinklesmouthPosition.y})`} />
-                <use xlinkHref={`#wrinklesmouth-${state.wrinkles.wrinklesmouthType}`} style={{stroke:state.wrinkles.wrinklesmouthColor, fill:"none"}} transform={`translate(${360-state.wrinkles.wrinklesmouthPosition.x}, ${state.wrinkles.wrinklesmouthPosition.y}) scale(-1, 1)`} />
               </g>
 
               <g transform-origin={`${state.facialhair.position.x+30} ${state.facialhair.position.y+30}`} transform={`rotate(${state.facialhair.rotate}) scale(${state.facialhair.scale}) translate(${state.facialhair.position.x}, ${state.facialhair.position.y})`}>
@@ -80,8 +81,8 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
               </g>
 
               <g>
-                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, fill:"none"}} transform={`translate(${state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})`}/>
-                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, fill:"none"}}  transform={`translate(${360 - state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})scale(-1, 1)`}/>
+                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, "strokeWidth": state.wrinkles.wrinkleseyesWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})`}/>
+                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, "strokeWidth": state.wrinkles.wrinkleseyesWidth, fill:"none"}}  transform={`translate(${360 - state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})scale(-1, 1)`}/>
               </g>
 
               <g>
