@@ -64,6 +64,11 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
                 <use xlinkHref={`#nostrils-${state.nose.nostrilsType}`} style={{stroke:state.nose.nostrilsColor, "strokeWidth": state.nose.nostrilsWidth, fill:"none"}} />
               </g>
 
+              <g>
+                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, "strokeWidth": state.wrinkles.wrinkleseyesWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})`}/>
+                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, "strokeWidth": state.wrinkles.wrinkleseyesWidth, fill:"none"}}  transform={`translate(${360 - state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})scale(-1, 1)`}/>
+              </g>
+
               <g transform={`scale(${state.eyes.scale}) translate(${-1*state.eyes.position.x}, ${state.eyes.position.y})`}>
                 <use xlinkHref={`#white-${state.eyes.whiteType}`} style={{fill:state.eyes.whiteColor, stroke:"none"}} />
                 <use xlinkHref={`#iris-${state.eyes.irisType}`} style={{fill:state.eyes.irisColor, stroke:"none"}} />
@@ -78,11 +83,6 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
                 <use xlinkHref={`#pupil-${state.eyes.pupilType}`} style={{fill:state.eyes.pupilColor, stroke:"none"}} />
                 <use xlinkHref={`#eyelid-${state.eyes.eyelidType}`} style={{fill:state.eyes.eyelidColor, stroke:"none"}} />
                 <use xlinkHref={`#eyelashes-${state.eyes.eyelashesType}`} style={{stroke:state.eyes.eyelashesColor, "strokeWidth": state.eyes.eyelashesWidth, fill:"none"}} />
-              </g>
-
-              <g>
-                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, "strokeWidth": state.wrinkles.wrinkleseyesWidth, fill:"none"}} transform={`translate(${state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})`}/>
-                <use xlinkHref={`#wrinkleseyes-${state.wrinkles.wrinkleseyesType}`} style={{stroke:state.wrinkles.wrinkleseyesColor, "strokeWidth": state.wrinkles.wrinkleseyesWidth, fill:"none"}}  transform={`translate(${360 - state.wrinkles.wrinkleseyesPosition.x}, ${state.wrinkles.wrinkleseyesPosition.y})scale(-1, 1)`}/>
               </g>
 
               <g>

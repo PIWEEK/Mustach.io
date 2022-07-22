@@ -46,12 +46,14 @@ h1 {
   text-align: center;
   font-size: 0.9rem;
 }
-.download-list {
-  margin-bottom: -7.5rem;
-  transition: margin-bottom .5s ease;
-}
-.download-button:hover .download-list {
-  margin-bottom: 2rem;
+@media (min-width: 50rem) {
+  .download-list {
+    margin-bottom: -7.5rem;
+    transition: margin-bottom .5s ease;
+  }
+  .download-button:hover .download-list {
+    margin-bottom: 2rem;
+  }
 }
 .download-list li {
   margin: 1rem 0;
@@ -74,14 +76,15 @@ h1 {
   h1::first-letter {
     visibility: visible;
   }
-  .download-text, .download-list{
-    display: none;
+  .download-list{
+    margin-bottom: -11rem;
+    transition: margin-bottom .5s ease;
   }
-  .visible .download-text, .visible .download-list{
-    display: block;
+  .visible .download-list{
+    margin-bottom: 0rem;
   }
   .download-button {
     align-self: flex-start;
-    margin: .8rem .5rem;
+    margin: .8rem -.5rem;
   }
 }
