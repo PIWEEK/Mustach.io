@@ -42,6 +42,7 @@ li {
 .App-body {
   display: flex;
   flex-flow: wrap;
+  overflow: hidden;
   width: 100vw;
   max-height: 100vh;
   height: 100vh;

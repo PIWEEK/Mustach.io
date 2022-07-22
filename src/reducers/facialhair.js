@@ -1,7 +1,7 @@
 
 const initialState = {
   id: 'facialhair',
-  position: {x:88, y:188},
+  position: {x:88.5, y:187.5},
   rotate: 0,
   scale: 1,
   subsections: ['Mustachio','Beard'],
