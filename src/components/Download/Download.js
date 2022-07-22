@@ -15,7 +15,7 @@ const Download = () => {
         <li onClick={()=>selectDownload('SVG')}>SVG</li>
       </ul>
     </div>
-    <p className="legal">This is a project by @samuel_mad, @reversotenebros and @estdubois made during the piweek</p>
+    <p className="legal">This is a project by @samuel_mad, @reversotenebros, <a href="https://github.com/superalex" target="_blank">superalex</a> and @estdubois made during the piweek</p>
   </div>
 }
 export default Download;
