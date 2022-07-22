@@ -47,19 +47,19 @@ const Canvas = ({sectionSelected, setSectionSelected}) => {
                 <use xlinkHref={`#smile-${state.mouth.smileType}`} style={{stroke:state.mouth.smileColor, "strokeWidth": state.mouth.smileWidth, fill:"none"}} />
               </g>
 
-              <g transform-origin={`${state.facialhair.position.x+30} ${state.facialhair.position.y+30}`} transform={`rotate(${state.facialhair.rotate}) scale(${state.facialhair.scale}) translate(${state.facialhair.position.x}, ${state.facialhair.position.y})`}>
+              <g transform={`rotate(${state.facialhair.rotate}, ${state.facialhair.position.x}, ${state.facialhair.position.y}) scale(${state.facialhair.scale}) translate(${state.facialhair.position.x}, ${state.facialhair.position.y})`}>
                 <use xlinkHref={`#beard-${state.facialhair.beardType}`} style={{fill:state.facialhair.beardColor, stroke:"none"}} />
               </g>
 
-              <g transform={`scale(${state.facialhair.scale}) translate(${-1*state.facialhair.pairPosition.x}, ${state.facialhair.pairPosition.y})`}>
+              <g transform={`rotate(${state.facialhair.rotate}, ${state.facialhair.position.x}, ${state.facialhair.position.y}) scale(${state.facialhair.scale}) translate(${state.facialhair.position.x + 18}, ${state.facialhair.position.y + 32})`}>
                 <use xlinkHref={`#mustachio-${state.facialhair.mustachioType}`} style={{fill:state.facialhair.mustachioColor, stroke:"none"}} />
               </g>
 
-              <g transform={`scale(-${state.facialhair.scale}, ${state.facialhair.scale}) translate(${-1*(360+state.facialhair.pairPosition.x)}, ${state.facialhair.pairPosition.y})`}>
+              <g transform={`rotate(${state.facialhair.rotate}, ${state.facialhair.position.x}, ${state.facialhair.position.y}) scale(-${state.facialhair.scale}, ${state.facialhair.scale}) translate(${-1*(360-state.facialhair.position.x - 18)}, ${state.facialhair.position.y + 32})`}>
                 <use xlinkHref={`#mustachio-${state.facialhair.mustachioType}`} style={{fill:state.facialhair.mustachioColor, stroke:"none"}} />
               </g>
 
-              <g transform-origin={`${state.nose.position.x+30} ${state.nose.position.y+30}`} transform={`rotate(${state.nose.rotate}) scale(${state.nose.scale}) translate(${state.nose.position.x}, ${state.nose.position.y})`}>
+              <g transform={`rotate(${state.nose.rotate} ${state.nose.position.x} ${state.nose.position.y}) scale(${state.nose.scale}) translate(${state.nose.position.x}, ${state.nose.position.y})`}>
                 <use xlinkHref={`#septum-${state.nose.septumType}`} style={{stroke:state.nose.septumColor, "strokeWidth": state.nose.septumWidth, fill:"none"}} />
                 <use xlinkHref={`#nostrils-${state.nose.nostrilsType}`} style={{stroke:state.nose.nostrilsColor, "strokeWidth": state.nose.nostrilsWidth, fill:"none"}} />
               </g>

@@ -2,7 +2,6 @@
 const initialState = {
   id: 'facialhair',
   position: {x:88, y:188},
-  pairPosition: {x:-106, y:218},
   rotate: 0,
   scale: 1,
   subsections: ['Mustachio','Beard'],
@@ -23,15 +22,15 @@ export default (state = initialState, action) => {
     case 'SET_FACIALHAIR':
       return {...state, ...action.payload};
     case 'SET_POSITION_FACIALHAIR':
-      var pairPosition = action.payload;
-      pairPosition.x = state.pairPosition.x;
-      return {...state, pairPosition: pairPosition};
+      var position = action.payload;
+      position.x = state.position.x;
+      return {...state, position};
     case 'SET_ROTATE_FACIALHAIR':
       return {...state, rotate: action.payload};
     case 'SET_SCALE_FACIALHAIR':
       return {...state, scale: action.payload};
     case 'SET_COLOR_MUSTACHIO':
-      return {...state, mustachioColor: action.payload}; 
+      return {...state, mustachioColor: action.payload};
     case 'SET_TYPE_MUSTACHIO':
       return {...state, mustachioType: action.payload};
     case 'SET_COLOR_BEARD':
